@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { DollarSign, FileText, Gift } from "lucide-react";
 
@@ -64,12 +65,12 @@ const TuitionSection = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <a
-            href="#contact"
+          <Link
+            to="/tuition"
             className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-bold font-body hover:opacity-90 transition-all shadow-md"
           >
-            Contact Us for Pricing
-          </a>
+            Learn More About Tuition
+          </Link>
         </motion.div>
       </div>
     </section>

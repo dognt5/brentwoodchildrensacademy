@@ -1,16 +1,31 @@
 import { useState } from "react";
-import { Phone, Mail, MapPin, Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
+import { Phone, Mail, MapPin, Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { label: "The Brentwood Difference", href: "#difference" },
-  { label: "Programs", href: "#programs" },
-  { label: "Tuition & Aid", href: "#tuition" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "The Brentwood Difference", href: "/difference" },
+  {
+    label: "Programs",
+    href: "/programs",
+    children: [
+      { label: "All Programs", href: "/programs" },
+      { label: "Infant & Toddler", href: "/programs/infant-toddler" },
+      { label: "Preschool", href: "/programs/preschool" },
+      { label: "Pre-Kindergarten", href: "/programs/pre-kindergarten" },
+      { label: "School Age / Varsity Club", href: "/programs/school-age" },
+      { label: "Summer Camp", href: "/programs/summer-camp" },
+    ],
+  },
+  { label: "Tuition & Aid", href: "/tuition" },
+  { label: "About Us", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [programsOpen, setProgramsOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <>
@@ -46,7 +61,7 @@ const Navbar = () => {
       {/* Main nav */}
       <nav className="sticky top-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
-          <a href="#" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-display font-bold text-lg">B</span>
             </div>
@@ -54,25 +69,67 @@ const Navbar = () => {
               <span className="font-display font-bold text-foreground text-lg block">Brentwood</span>
               <span className="text-muted-foreground text-xs font-body tracking-wide">Children's Academy</span>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop links */}
           <div className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-sm font-semibold font-body text-muted-foreground hover:text-primary transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-            <a
-              href="#contact"
+            {navLinks.map((link) =>
+              link.children ? (
+                <div
+                  key={link.label}
+                  className="relative group"
+                  onMouseEnter={() => setProgramsOpen(true)}
+                  onMouseLeave={() => setProgramsOpen(false)}
+                >
+                  <Link
+                    to={link.href}
+                    className={`text-sm font-semibold font-body flex items-center gap-1 transition-colors ${
+                      location.pathname.startsWith("/programs") ? "text-primary" : "text-muted-foreground hover:text-primary"
+                    }`}
+                  >
+                    {link.label}
+                    <ChevronDown className="w-3.5 h-3.5" />
+                  </Link>
+                  <AnimatePresence>
+                    {programsOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 8 }}
+                        transition={{ duration: 0.15 }}
+                        className="absolute top-full left-0 mt-2 bg-card rounded-xl border border-border shadow-lg py-2 min-w-[220px] z-50"
+                      >
+                        {link.children.map((child) => (
+                          <Link
+                            key={child.href}
+                            to={child.href}
+                            className="block px-4 py-2 text-sm font-body text-muted-foreground hover:text-primary hover:bg-muted/50 transition-colors"
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              ) : (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className={`text-sm font-semibold font-body transition-colors ${
+                    location.pathname === link.href ? "text-primary" : "text-muted-foreground hover:text-primary"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
+            <Link
+              to="/schedule-tour"
               className="bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full text-sm font-bold font-body hover:opacity-90 transition-opacity shadow-md"
             >
               Schedule a Tour
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -94,24 +151,39 @@ const Navbar = () => {
               exit={{ height: 0, opacity: 0 }}
               className="lg:hidden overflow-hidden bg-card border-t border-border"
             >
-              <div className="flex flex-col px-4 py-4 gap-3">
+              <div className="flex flex-col px-4 py-4 gap-1">
                 {navLinks.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="text-sm font-semibold font-body text-foreground py-2"
-                  >
-                    {link.label}
-                  </a>
+                  <div key={link.label}>
+                    <Link
+                      to={link.href}
+                      onClick={() => !link.children && setMobileOpen(false)}
+                      className="text-sm font-semibold font-body text-foreground py-2 block"
+                    >
+                      {link.label}
+                    </Link>
+                    {link.children && (
+                      <div className="pl-4 flex flex-col gap-1">
+                        {link.children.map((child) => (
+                          <Link
+                            key={child.href}
+                            to={child.href}
+                            onClick={() => setMobileOpen(false)}
+                            className="text-sm font-body text-muted-foreground py-1.5 block"
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))}
-                <a
-                  href="#contact"
+                <Link
+                  to="/schedule-tour"
                   onClick={() => setMobileOpen(false)}
-                  className="bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full text-sm font-bold font-body text-center"
+                  className="bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full text-sm font-bold font-body text-center mt-2"
                 >
                   Schedule a Tour
-                </a>
+                </Link>
               </div>
             </motion.div>
           )}
