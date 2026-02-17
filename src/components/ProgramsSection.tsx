@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import toddlerImg from "@/assets/programs-toddler.jpg";
 import preschoolImg from "@/assets/programs-preschool.jpg";
@@ -9,18 +10,21 @@ const programs = [
     ages: "6 weeks – 2 years",
     description: "A safe, nurturing environment with gentle routines, sensory exploration, and bonding activities that support early development milestones.",
     image: toddlerImg,
+    link: "/programs/infant-toddler",
   },
   {
     title: "Preschool",
     ages: "3 – 4 years",
     description: "Creative curriculum focusing on literacy, math fundamentals, social skills, and hands-on discovery through play-based learning.",
     image: preschoolImg,
+    link: "/programs/preschool",
   },
   {
     title: "Pre-Kindergarten",
     ages: "4 – 5 years",
     description: "Comprehensive school-readiness program building confidence, independence, and academic foundations for kindergarten success.",
     image: prekImg,
+    link: "/programs/pre-kindergarten",
   },
 ];
 
@@ -51,26 +55,47 @@ const ProgramsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15, duration: 0.5 }}
-              className="bg-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group"
             >
-              <div className="relative h-56 overflow-hidden">
-                <img
-                  src={program.image}
-                  alt={program.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                />
-                <div className="absolute top-4 left-4 bg-primary text-primary-foreground text-xs font-bold font-body px-3 py-1 rounded-full">
-                  {program.ages}
+              <Link
+                to={program.link}
+                className="bg-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group block h-full"
+              >
+                <div className="relative h-56 overflow-hidden">
+                  <img
+                    src={program.image}
+                    alt={program.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-4 left-4 bg-primary text-primary-foreground text-xs font-bold font-body px-3 py-1 rounded-full">
+                    {program.ages}
+                  </div>
                 </div>
-              </div>
-              <div className="p-6">
-                <h3 className="font-display font-bold text-xl text-foreground mb-2">{program.title}</h3>
-                <p className="text-muted-foreground font-body leading-relaxed">{program.description}</p>
-              </div>
+                <div className="p-6">
+                  <h3 className="font-display font-bold text-xl text-foreground mb-2">{program.title}</h3>
+                  <p className="text-muted-foreground font-body leading-relaxed">{program.description}</p>
+                  <span className="inline-block mt-4 text-primary font-body font-bold text-sm">
+                    Learn More →
+                  </span>
+                </div>
+              </Link>
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <Link
+            to="/programs"
+            className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-bold font-body hover:opacity-90 transition-all shadow-md"
+          >
+            View All Programs
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

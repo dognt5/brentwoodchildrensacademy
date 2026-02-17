@@ -1,10 +1,10 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-children.jpg";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-      {/* Background image */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
@@ -51,23 +51,22 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.45 }}
             className="flex flex-wrap gap-4"
           >
-            <a
-              href="#contact"
+            <Link
+              to="/schedule-tour"
               className="bg-secondary text-secondary-foreground px-8 py-4 rounded-full text-base font-bold font-body hover:opacity-90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
               Schedule a Tour
-            </a>
-            <a
-              href="#difference"
+            </Link>
+            <Link
+              to="/difference"
               className="bg-card/15 backdrop-blur-sm text-card border-2 border-card/30 px-8 py-4 rounded-full text-base font-bold font-body hover:bg-card/25 transition-all"
             >
               Learn More
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>
 
-      {/* Bottom wave */}
       <div className="absolute bottom-0 left-0 right-0">
         <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
           <path

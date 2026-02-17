@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Shield, Star, Users, Heart, BookOpen, Sun } from "lucide-react";
 
@@ -89,6 +90,20 @@ const DifferenceSection = () => {
               <p className="text-muted-foreground font-body leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <Link
+            to="/difference"
+            className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-bold font-body hover:opacity-90 transition-all shadow-md"
+          >
+            Explore the Brentwood Difference
+          </Link>
         </motion.div>
       </div>
     </section>
