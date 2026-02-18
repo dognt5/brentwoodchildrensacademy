@@ -1,78 +1,37 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { MessageSquare, Camera, FileText, HelpCircle, Newspaper } from "lucide-react";
+import { MessageSquare, Camera, FileText, HelpCircle, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import heroImg from "@/assets/hero-children.jpg";
+import preschoolImg from "@/assets/preschool-classroom.jpg";
+import artImg from "@/assets/art-activities.jpg";
+import outdoorImg from "@/assets/outdoor-playground.jpg";
 
 const resources = [
-  {
-    icon: MessageSquare,
-    title: "Parent Testimonials",
-    description: "Hear from families who trust Brentwood Children's Academy with their little ones. Real stories from real parents.",
-    color: "bg-primary/10 text-primary",
-  },
-  {
-    icon: Camera,
-    title: "Photo Gallery",
-    description: "Take a virtual tour through our classrooms, playgrounds, and special events. See our academy in action.",
-    color: "bg-secondary/10 text-secondary",
-  },
-  {
-    icon: FileText,
-    title: "Enrollment Information",
-    description: "Everything you need to know about enrolling your child, from required documents to start dates.",
-    color: "bg-accent/20 text-accent-foreground",
-  },
-  {
-    icon: Newspaper,
-    title: "News & Updates",
-    description: "Stay up to date with the latest happenings, events, and announcements from Brentwood Children's Academy.",
-    color: "bg-coral/10 text-coral",
-  },
+  { icon: MessageSquare, title: "Parent Testimonials", description: "Real stories from families who trust Brentwood Children's Academy with their little ones.", color: "bg-primary/10 text-primary", link: "/testimonials" },
+  { icon: Camera, title: "Photo Gallery", description: "Take a virtual tour through our classrooms, playgrounds, and special events.", color: "bg-secondary/10 text-secondary", link: "/gallery" },
+  { icon: FileText, title: "Enrollment Information", description: "Everything you need to know about enrolling your child, from documents to start dates.", color: "bg-accent/20 text-accent-foreground", link: "/contact" },
+  { icon: HelpCircle, title: "FAQs", description: "Quick answers to the questions we hear most from parents every day.", color: "bg-coral/10 text-coral", link: "#faqs" },
 ];
 
 const faqs = [
-  {
-    question: "What are your hours of operation?",
-    answer: "Both our Houston and Deer Park locations are open Monday through Friday, 6:00 AM to 6:30 PM. We are closed on major holidays.",
-  },
-  {
-    question: "What ages do you accept?",
-    answer: "We accept children from 6 weeks through 12 years of age. Our programs include Infant & Toddler, Preschool, Pre-Kindergarten, School Age / Varsity Club, and Summer Camp.",
-  },
-  {
-    question: "Do you accept subsidies?",
-    answer: "Yes! We accept CCMS (Child Care Management Services) and Workforce Solutions subsidies. Our team can help guide you through the application process.",
-  },
-  {
-    question: "What is your teacher-to-child ratio?",
-    answer: "We maintain ratios that meet or exceed Texas state requirements. Our small class sizes ensure every child receives personalized attention and care.",
-  },
-  {
-    question: "Is there a waiting list?",
-    answer: "Availability varies by age group and location. We recommend scheduling a tour and inquiring about current openings as early as possible.",
-  },
-  {
-    question: "What should my child bring on the first day?",
-    answer: "We'll provide a detailed checklist during enrollment. Generally, you'll need a change of clothes, diapers/pull-ups (if applicable), comfort item, and completed enrollment forms.",
-  },
-  {
-    question: "Do you provide meals and snacks?",
-    answer: "We provide nutritious snacks throughout the day. Families are welcome to pack lunches, and we can accommodate allergies and dietary restrictions with advance notice.",
-  },
-  {
-    question: "How do you handle emergencies?",
-    answer: "All staff are CPR and First Aid certified. We have comprehensive emergency action plans, conduct regular drills, and maintain direct communication with parents during any incident.",
-  },
+  { question: "What are your hours of operation?", answer: "Both our Houston and Deer Park locations are open Monday through Friday, 6:00 AM to 6:30 PM. We are closed on weekends and major holidays." },
+  { question: "What ages do you accept?", answer: "We accept children from 6 weeks through 12 years of age. Programs include Infant & Toddler, Preschool, Pre-Kindergarten, School Age / Varsity Club, and Summer Camp." },
+  { question: "Do you accept subsidies?", answer: "Yes! We accept CCMS (Child Care Management Services) and Workforce Solutions subsidies at both locations. Our team actively helps guide families through the application process." },
+  { question: "What curriculum do you use?", answer: "We use the Frog Street research-based curriculum, which is aligned with Texas state standards and the Texas Rising Star framework. It covers literacy, math, science, social studies, and social-emotional development." },
+  { question: "What is your TRS rating?", answer: "Brentwood Children's Academy holds a Texas Rising Star 4-Star rating — the highest achievable — and participates in the Center of Excellence (CoE) program, reflecting our sustained commitment to quality." },
+  { question: "What is your teacher-to-child ratio?", answer: "We maintain ratios that meet or exceed Texas state requirements for every age group. Our small class sizes ensure every child receives personalized attention, care, and learning support." },
+  { question: "Is there a waiting list?", answer: "Availability varies by age group and location. We recommend scheduling a tour and asking about current openings as early as possible. Early registration is especially encouraged for summer camp." },
+  { question: "What should my child bring on the first day?", answer: "We provide a detailed checklist during enrollment. Typically you'll need a change of clothes, diapers/pull-ups if applicable, a comfort item, and completed enrollment forms. We'll walk you through everything." },
+  { question: "Do you provide meals and snacks?", answer: "We provide nutritious snacks throughout the day. Families are welcome to pack lunches, and we accommodate allergies and dietary restrictions with advance notice." },
+  { question: "Do you offer bilingual care?", answer: "Yes — Se Habla Español. We have bilingual staff at both locations to ensure Spanish-speaking families feel fully welcomed, informed, and at home." },
+  { question: "How do you handle emergencies?", answer: "All staff are CPR and First Aid certified. We have comprehensive emergency action plans, conduct regular drills, and maintain immediate communication with parents during any incident." },
+  { question: "Can I tour before enrolling?", answer: "Absolutely — and we strongly encourage it! Tours are free, no-pressure, and available Monday through Friday, 9 AM to 4 PM by appointment. Walk-ins are welcome when scheduling allows." },
 ];
 
 const ParentResources = () => {
@@ -80,68 +39,66 @@ const ParentResources = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main>
-        <PageHero
-          badge="📚 Resources"
-          title="Parent"
-          highlight="Resources"
-          subtitle="Helpful information, answers to common questions, and everything you need as a Brentwood family."
-        />
+        <PageHero badge="📚 Resources" title="Parent" highlight="Resources" subtitle="Helpful information, real testimonials, galleries, and answers to every question — everything you need as a Brentwood family." image={heroImg} />
 
         {/* Resource Cards */}
         <section className="py-20 md:py-28 bg-background">
           <div className="container mx-auto px-4">
-            <SectionHeader
-              label="For families"
-              title="Helpful Resources"
-              subtitle="Quick access to the information you need most."
-            />
-
+            <SectionHeader label="For families" title="Helpful Resources" subtitle="Quick access to the information and resources you need most as a Brentwood family." />
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
               {resources.map((resource, i) => (
-                <motion.div
-                  key={resource.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="bg-card rounded-2xl p-6 border border-border hover:shadow-lg transition-shadow text-center"
-                >
-                  <div className={`w-14 h-14 rounded-xl ${resource.color} flex items-center justify-center mx-auto mb-4`}>
-                    <resource.icon className="w-7 h-7" />
-                  </div>
-                  <h3 className="font-display font-bold text-lg text-foreground mb-2">{resource.title}</h3>
-                  <p className="text-muted-foreground font-body text-sm leading-relaxed">{resource.description}</p>
+                <motion.div key={resource.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
+                  <Link to={resource.link} className="bg-card rounded-2xl p-6 border border-border hover:shadow-lg transition-shadow text-center block group">
+                    <div className={`w-14 h-14 rounded-xl ${resource.color} flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
+                      <resource.icon className="w-7 h-7" />
+                    </div>
+                    <h3 className="font-display font-bold text-lg text-foreground mb-2">{resource.title}</h3>
+                    <p className="text-muted-foreground font-body text-sm leading-relaxed">{resource.description}</p>
+                  </Link>
                 </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Testimonials */}
-        <section className="py-20 md:py-28 bg-green-light">
+        {/* Photo strip */}
+        <section className="py-10 bg-green-light">
           <div className="container mx-auto px-4">
-            <SectionHeader label="What parents say" title="Testimonials" subtitle="Real feedback from the families we serve." labelColor="text-secondary" />
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid grid-cols-3 gap-4 max-w-4xl mx-auto">
+              {[preschoolImg, artImg, outdoorImg].map((img, i) => (
+                <div key={i} className="rounded-2xl overflow-hidden h-40 md:h-56">
+                  <img src={img} alt="Brentwood Children's Academy" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+              ))}
+            </div>
+            <div className="text-center mt-8">
+              <Link to="/gallery" className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-bold font-body hover:opacity-90 transition-all shadow-md">
+                View Full Photo Gallery →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Enrollment Info */}
+        <section className="py-20 md:py-28 bg-background">
+          <div className="container mx-auto px-4">
+            <SectionHeader label="Getting started" title="Enrollment Information" subtitle="Enrolling at Brentwood is simple. Here's what to expect and what you'll need." />
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {[
-                { name: "Maria G.", text: "Brentwood has been an absolute blessing for our family. Our daughter has thrived in the preschool program and comes home excited to tell us what she learned every day.", stars: 5 },
-                { name: "James & Lisa T.", text: "The safety and security at Brentwood gives us total peace of mind. The teachers genuinely love the kids, and you can see it in how happy our son is every morning at drop-off.", stars: 5 },
-                { name: "Sarah M.", text: "We've tried other daycares before, but nothing compares to Brentwood. The curriculum is excellent, the communication is great, and the staff truly cares. We're Brentwood for life!", stars: 5 },
-              ].map((testimonial, i) => (
-                <motion.div
-                  key={testimonial.name}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="bg-card rounded-2xl p-8 border border-border"
-                >
-                  <div className="flex gap-1 mb-4">
-                    {Array.from({ length: testimonial.stars }).map((_, j) => (
-                      <span key={j} className="text-accent text-lg">⭐</span>
-                    ))}
+                { title: "Step 1: Schedule a Tour", desc: "Visit our academy, meet our team, see the classrooms, and ask any questions you have. Tours are free and no-pressure." },
+                { title: "Step 2: Complete Enrollment Forms", desc: "We'll provide all required paperwork including health records, emergency contacts, authorization forms, and program agreements." },
+                { title: "Step 3: Discuss Tuition & Aid", desc: "Our team will walk you through pricing, subsidy options (CCMS, Workforce Solutions), and sibling discounts during your tour." },
+                { title: "Step 4: Welcome to Brentwood!", desc: "Once enrolled, we'll share your child's start date, daily schedule, what to bring, and introduce you to their teacher." },
+              ].map((step, i) => (
+                <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
+                  className="bg-card rounded-2xl p-6 border border-border flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center flex-shrink-0 font-bold font-body">
+                    {i + 1}
                   </div>
-                  <p className="text-foreground font-body leading-relaxed mb-4 italic">"{testimonial.text}"</p>
-                  <p className="text-primary font-body font-bold text-sm">— {testimonial.name}</p>
+                  <div>
+                    <h3 className="font-display font-bold text-lg text-foreground mb-1">{step.title}</h3>
+                    <p className="text-muted-foreground font-body text-sm leading-relaxed">{step.desc}</p>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -149,23 +106,15 @@ const ParentResources = () => {
         </section>
 
         {/* FAQs */}
-        <section className="py-20 md:py-28 bg-background">
+        <section id="faqs" className="py-20 md:py-28 bg-green-light">
           <div className="container mx-auto px-4">
-            <SectionHeader label="Common questions" title="Frequently Asked Questions" subtitle="Quick answers to the questions we hear most from parents." />
+            <SectionHeader label="Common questions" title="Frequently Asked Questions" subtitle="Honest, detailed answers to the questions parents ask us most." />
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-3">
                 {faqs.map((faq, i) => (
-                  <AccordionItem
-                    key={i}
-                    value={`faq-${i}`}
-                    className="bg-card rounded-2xl border border-border px-6 data-[state=open]:shadow-md transition-shadow"
-                  >
-                    <AccordionTrigger className="font-body font-bold text-foreground text-left hover:no-underline">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground font-body leading-relaxed">
-                      {faq.answer}
-                    </AccordionContent>
+                  <AccordionItem key={i} value={`faq-${i}`} className="bg-card rounded-2xl border border-border px-6 data-[state=open]:shadow-md transition-shadow">
+                    <AccordionTrigger className="font-body font-bold text-foreground text-left hover:no-underline">{faq.question}</AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground font-body leading-relaxed">{faq.answer}</AccordionContent>
                   </AccordionItem>
                 ))}
               </Accordion>
@@ -173,7 +122,7 @@ const ParentResources = () => {
           </div>
         </section>
 
-        <CTABlock title="Still Have Questions?" subtitle="We're here to help. Reach out anytime — we'd love to hear from you." />
+        <CTABlock title="Ready to Get Started?" subtitle="Schedule a tour, call us, or send a message — we're here to make this easy for your family." />
       </main>
       <Footer />
     </div>

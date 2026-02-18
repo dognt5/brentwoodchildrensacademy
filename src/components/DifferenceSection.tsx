@@ -1,42 +1,43 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Shield, Star, Users, Heart, BookOpen, Sun } from "lucide-react";
+import staffImg from "@/assets/staff-team.jpg";
 
 const features = [
   {
     icon: Users,
     title: "Expert Management",
-    description: "Owners with multiple degrees in Education and a Director with 20+ years of experience leading our team.",
+    description: "Owners Hugh & Nidhi Trivedi hold degrees in Education. Our Director brings 20+ years of childcare leadership to every decision.",
     color: "bg-primary/10 text-primary",
   },
   {
     icon: Shield,
     title: "Safety First",
-    description: "4K security cameras, secure keypad entry, and rigorous safety protocols protect your little ones every day.",
+    description: "4K security cameras, secure keypad entry, CPR-certified staff, and rigorous daily sanitation protocols protect your child every day.",
     color: "bg-secondary/10 text-secondary",
   },
   {
     icon: Star,
     title: "TRS 4-Star Rating",
-    description: "The highest rating in Texas, reflecting our commitment to quality care and early childhood education.",
+    description: "Texas Rising Star's highest rating — and a Center of Excellence (CoE) participant — reflecting our proven commitment to quality education.",
     color: "bg-accent/20 text-accent-foreground",
   },
   {
     icon: Heart,
     title: "Loving Environment",
-    description: "Small class sizes ensure every child gets the individual attention, warmth, and encouragement they deserve.",
+    description: "Small class sizes and low ratios mean every child receives individual warmth and encouragement. We treat every family like our own.",
     color: "bg-coral/10 text-coral",
   },
   {
     icon: BookOpen,
     title: "Proven Curriculum",
-    description: "Research-based learning programs that prepare children academically, socially, and emotionally for school.",
+    description: "Research-based Frog Street curriculum builds academic, social, and emotional foundations aligned with Texas state standards.",
     color: "bg-primary/10 text-primary",
   },
   {
     icon: Sun,
     title: "Enrichment Activities",
-    description: "Music, art, outdoor play, and STEM activities woven into every day to spark curiosity and creativity.",
+    description: "Music, art, outdoor play, and STEM activities woven into every day across all age groups to spark curiosity and creativity.",
     color: "bg-secondary/10 text-secondary",
   },
 ];
@@ -59,15 +60,25 @@ const DifferenceSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-6"
         >
           <span className="text-secondary font-body font-bold text-sm uppercase tracking-widest">Why choose us</span>
           <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mt-3">
             The Brentwood Difference
           </h2>
           <p className="text-muted-foreground font-body text-lg mt-4 max-w-2xl mx-auto">
-            More than daycare — we're a community dedicated to nurturing your child's fullest potential.
+            More than childcare — we're a TRS 4-Star community dedicated to nurturing every child's fullest potential.
           </p>
+        </motion.div>
+
+        {/* Photo strip */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-16 rounded-2xl overflow-hidden h-64 md:h-80"
+        >
+          <img src={staffImg} alt="Brentwood Children's Academy staff team" className="w-full h-full object-cover object-top" />
         </motion.div>
 
         <motion.div

@@ -8,42 +8,50 @@ import SectionHeader from "@/components/SectionHeader";
 import toddlerImg from "@/assets/programs-toddler.jpg";
 import preschoolImg from "@/assets/programs-preschool.jpg";
 import prekImg from "@/assets/programs-prek.jpg";
+import schoolAgeImg from "@/assets/school-age-program.jpg";
+import summerImg from "@/assets/summer-camp.jpg";
+import heroImg from "@/assets/hero-children.jpg";
 
 const programs = [
   {
     title: "Infant & Toddler",
     ages: "6 weeks – 2 years",
-    description: "A safe, nurturing environment with gentle routines, sensory exploration, and bonding activities that support early development milestones.",
+    description: "A warm, safe nursery environment with low teacher-to-child ratios, gentle daily routines, sensory exploration, and bonding activities that support every developmental milestone.",
     image: toddlerImg,
     link: "/programs/infant-toddler",
+    highlights: ["Low ratios exceeding state requirements", "Daily sensory exploration", "Language & motor development", "Loving, consistent caregivers"],
   },
   {
     title: "Preschool",
     ages: "3 – 4 years",
-    description: "Creative curriculum focusing on literacy, math fundamentals, social skills, and hands-on discovery through play-based learning.",
+    description: "Creative, play-based Frog Street curriculum focusing on early literacy, math fundamentals, social-emotional skills, and hands-on discovery that builds a lifelong love of learning.",
     image: preschoolImg,
     link: "/programs/preschool",
+    highlights: ["Frog Street research-based curriculum", "Early literacy & phonics", "Math foundations & counting", "Social-emotional development"],
   },
   {
     title: "Pre-Kindergarten",
     ages: "4 – 5 years",
-    description: "Comprehensive school-readiness program building confidence, independence, and academic foundations for kindergarten success.",
+    description: "A comprehensive school-readiness program that builds confidence, independence, and strong academic foundations in reading, writing, and math to ensure kindergarten success.",
     image: prekImg,
     link: "/programs/pre-kindergarten",
+    highlights: ["Kindergarten readiness focus", "Reading & writing foundations", "STEAM exposure and exploration", "Critical thinking skills"],
   },
   {
     title: "School Age / Varsity Club",
     ages: "5 – 12 years",
-    description: "Before- and after-school care with homework help, enrichment activities, and social development in a fun, supervised environment.",
-    image: toddlerImg,
+    description: "Before and after-school care with dedicated homework assistance, enrichment activities, organized sports, and meaningful social development in a safe, supervised environment.",
+    image: schoolAgeImg,
     link: "/programs/school-age",
+    highlights: ["Homework help with teacher support", "STEM enrichment projects", "Organized sports & outdoor play", "Leadership development"],
   },
   {
     title: "Summer Camp",
     ages: "All Ages",
-    description: "An exciting summer adventure filled with field trips, themed weeks, STEM projects, water play, and creative arts to keep kids engaged all summer.",
-    image: preschoolImg,
+    description: "An exciting summer adventure with weekly themed units, field trips to local attractions, water play, STEM challenges, performing arts, and creative projects to keep minds active all summer.",
+    image: summerImg,
     link: "/programs/summer-camp",
+    highlights: ["Weekly themed adventure units", "Field trips to museums & parks", "Water play & outdoor activities", "Arts, STEM & performing arts"],
   },
 ];
 
@@ -53,20 +61,41 @@ const Programs = () => {
       <Navbar />
       <main>
         <PageHero
-          badge="Our Programs"
+          badge="🎓 Our Programs"
           title="Programs for Every"
           highlight="Stage"
           subtitle="From infants to school age, our age-appropriate programs help every child thrive with love, learning, and laughter."
+          image={heroImg}
         />
 
-        <section className="py-20 md:py-28 bg-background">
+        {/* Intro */}
+        <section className="py-16 md:py-20 bg-background">
           <div className="container mx-auto px-4">
-            <SectionHeader
-              label="Age-appropriate learning"
-              title="Find the Right Program"
-              subtitle="Each program is designed to meet the developmental needs of your child's unique stage."
-            />
+            <div className="max-w-4xl mx-auto text-center">
+              <SectionHeader
+                label="Age-appropriate learning"
+                title="Find the Right Program"
+                subtitle="Each program at Brentwood Children's Academy is thoughtfully designed to meet the developmental needs of your child's unique stage — from a 6-week-old infant to a 12-year-old Varsity Club member."
+              />
+              <div className="grid sm:grid-cols-3 gap-6 -mt-4">
+                {[
+                  { label: "Texas Rising Star", value: "4-Star Rated", color: "bg-accent/10 text-accent-foreground" },
+                  { label: "Ages Served", value: "6 Weeks – 12 Years", color: "bg-primary/10 text-primary" },
+                  { label: "Both Locations", value: "Houston & Deer Park", color: "bg-secondary/10 text-secondary" },
+                ].map((stat) => (
+                  <div key={stat.label} className={`${stat.color} rounded-2xl p-6 border border-border`}>
+                    <p className="font-display font-bold text-2xl">{stat.value}</p>
+                    <p className="font-body text-sm mt-1 opacity-70">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
 
+        {/* Program Cards */}
+        <section className="pb-20 md:pb-28 bg-background">
+          <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {programs.map((program, i) => (
                 <motion.div
@@ -78,9 +107,9 @@ const Programs = () => {
                 >
                   <Link
                     to={program.link}
-                    className="bg-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group block h-full"
+                    className="bg-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group block h-full"
                   >
-                    <div className="relative h-56 overflow-hidden">
+                    <div className="relative h-52 overflow-hidden">
                       <img
                         src={program.image}
                         alt={program.title}
@@ -93,8 +122,16 @@ const Programs = () => {
                     </div>
                     <div className="p-6">
                       <h3 className="font-display font-bold text-xl text-foreground mb-2">{program.title}</h3>
-                      <p className="text-muted-foreground font-body leading-relaxed">{program.description}</p>
-                      <span className="inline-block mt-4 text-primary font-body font-bold text-sm">
+                      <p className="text-muted-foreground font-body leading-relaxed text-sm mb-4">{program.description}</p>
+                      <ul className="space-y-1.5 mb-4">
+                        {program.highlights.map((h) => (
+                          <li key={h} className="flex items-center gap-2 text-foreground font-body text-xs">
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                            {h}
+                          </li>
+                        ))}
+                      </ul>
+                      <span className="inline-block text-primary font-body font-bold text-sm group-hover:underline">
                         Learn More →
                       </span>
                     </div>

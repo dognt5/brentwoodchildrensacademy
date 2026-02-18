@@ -12,6 +12,8 @@ import ScheduleTour from "./pages/ScheduleTour";
 import About from "./pages/About";
 import ParentResources from "./pages/ParentResources";
 import Contact from "./pages/Contact";
+import Testimonials from "./pages/Testimonials";
+import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -34,6 +36,8 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/parent-resources" element={<ParentResources />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/gallery" element={<Gallery />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
