@@ -19,12 +19,22 @@ const navLinks = [
   },
   { label: "Tuition & Aid", href: "/tuition" },
   { label: "About Us", href: "/about" },
+  {
+    label: "Parent Resources",
+    href: "/parent-resources",
+    children: [
+      { label: "All Resources", href: "/parent-resources" },
+      { label: "Testimonials", href: "/testimonials" },
+      { label: "Photo Gallery", href: "/gallery" },
+      { label: "FAQs", href: "/parent-resources#faqs" },
+    ],
+  },
   { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [programsOpen, setProgramsOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const location = useLocation();
 
   return (
@@ -72,26 +82,26 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop links */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) =>
               link.children ? (
                 <div
                   key={link.label}
                   className="relative group"
-                  onMouseEnter={() => setProgramsOpen(true)}
-                  onMouseLeave={() => setProgramsOpen(false)}
+                  onMouseEnter={() => setOpenDropdown(link.label)}
+                  onMouseLeave={() => setOpenDropdown(null)}
                 >
                   <Link
                     to={link.href}
                     className={`text-sm font-semibold font-body flex items-center gap-1 transition-colors ${
-                      location.pathname.startsWith("/programs") ? "text-primary" : "text-muted-foreground hover:text-primary"
+                      location.pathname.startsWith(link.href) ? "text-primary" : "text-muted-foreground hover:text-primary"
                     }`}
                   >
                     {link.label}
                     <ChevronDown className="w-3.5 h-3.5" />
                   </Link>
                   <AnimatePresence>
-                    {programsOpen && (
+                    {openDropdown === link.label && (
                       <motion.div
                         initial={{ opacity: 0, y: 8 }}
                         animate={{ opacity: 1, y: 0 }}
