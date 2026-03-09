@@ -9,14 +9,6 @@ const locations = [
     hours: "Mon–Fri: 6:00 AM – 6:30 PM",
     mapUrl: "https://maps.google.com/?q=7210+N+Eldridge+Pkwy+Houston+TX+77041",
   },
-  {
-    name: "Deer Park Location",
-    address: "2202 Center St, Deer Park, TX 77536",
-    phone: "713-466-9407",
-    hours: "Mon–Fri: 6:00 AM – 6:30 PM",
-    mapUrl: "https://maps.google.com/?q=2202+Center+St+Deer+Park+TX+77536",
-    isNew: true,
-  },
 ];
 
 const LocationsSection = () => {
