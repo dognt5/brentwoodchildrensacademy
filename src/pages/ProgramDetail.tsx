@@ -170,17 +170,6 @@ const programData: Record<string, {
       "Creative writing, storytelling, and public speaking",
       "Health and nutrition awareness programs",
     ],
-    dailyRoutine: [
-      { time: "6:00 AM", activity: "Morning arrival & breakfast (before school)" },
-      { time: "7:00 AM", activity: "Morning enrichment activities" },
-      { time: "7:30 AM", activity: "School departure coordination" },
-      { time: "3:00 PM", activity: "After-school arrival & snack" },
-      { time: "3:30 PM", activity: "Homework help session" },
-      { time: "4:30 PM", activity: "Enrichment activities (STEM, arts, cooking)" },
-      { time: "5:00 PM", activity: "Outdoor recreation & sports" },
-      { time: "5:45 PM", activity: "Free choice & social time" },
-      { time: "6:30 PM", activity: "Departure" },
-    ],
     enrichment: [
       { icon: Star, title: "STEM Challenges", description: "Weekly engineering and science challenges that promote critical thinking and problem-solving." },
       { icon: Palette, title: "Creative Arts", description: "Art projects, crafts, photography, and creative expression for all interests and skill levels." },
