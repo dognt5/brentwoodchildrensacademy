@@ -56,7 +56,7 @@ const Footer = () => {
               <h4 className="font-display font-bold text-card mb-3 text-sm">Hours</h4>
               <div className="flex items-start gap-2 text-card/60 font-body text-sm">
                 <Clock className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
-                <span>Mon – Fri: 6:00 AM – 6:30 PM<br /><span className="text-card/40 text-xs">Closed Weekends & Major Holidays</span></span>
+                <span>Mon – Fri: 6:30 AM – 6:00 PM<br /><span className="text-card/40 text-xs">Closed Weekends & Major Holidays</span></span>
               </div>
             </div>
           </div>

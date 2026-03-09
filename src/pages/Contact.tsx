@@ -140,7 +140,7 @@ const Contact = () => {
                   <div className="space-y-2 font-body">
                     <div className="flex justify-between text-foreground text-sm">
                       <span>Monday – Friday</span>
-                      <span className="font-semibold">6:00 AM – 6:30 PM</span>
+                      <span className="font-semibold">6:30 AM – 6:00 PM</span>
                     </div>
                     <div className="flex justify-between text-muted-foreground text-sm">
                       <span>Saturday – Sunday</span>
