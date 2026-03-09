@@ -1,3 +1,4 @@
+// Program Detail Page
 import { motion } from "framer-motion";
 import { useParams, Navigate, Link } from "react-router-dom";
 import { BookOpen, Shield, Star, Music, Palette, Leaf } from "lucide-react";
