@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useParams, Navigate, Link } from "react-router-dom";
-import { BookOpen, Shield, Star, Music, Palette, Leaf } from "lucide-react";
+import { n, Shield, Star, Music, Palette, Leaf } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
@@ -31,8 +31,7 @@ const programData: Record<string, {
   overview: string;
   overviewExtra: string;
   curriculum: string[];
-  dailyRoutine: { time: string; activity: string }[];
-  enrichment: { icon: React.ElementType; title: string; description: string }[];
+  dailyRochment: { icon: React.ElementType; title: string; description: string }[];
   safety: string[];
 }> = {
   "infant-toddler": {
