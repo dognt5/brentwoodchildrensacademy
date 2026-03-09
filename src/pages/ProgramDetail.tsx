@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useParams, Navigate, Link } from "react-router-dom";
-import { n, Shield, Star, Music, Palette, Leaf } from "lucide-react";
+import { BookOpen, Shield, Star, Music, Palette, Leaf } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
