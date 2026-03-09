@@ -16,7 +16,7 @@ const ScheduleTour = () => {
           badge="📅 Visit Us"
           title="Schedule a"
           highlight="Tour"
-          subtitle="Come see our classrooms, meet our teachers, and experience firsthand why families across Houston and Deer Park love Brentwood."
+          subtitle="Come see our classrooms, meet our teachers, and experience firsthand why families across Houston love Brentwood."
         />
 
         {/* Trust bar */}
