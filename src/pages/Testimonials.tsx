@@ -34,7 +34,7 @@ const Testimonials = () => {
               <div className="text-5xl mb-3">⭐⭐⭐⭐⭐</div>
               <h2 className="font-display font-bold text-2xl md:text-3xl text-foreground mb-3">5-Star Rated by Our Families</h2>
               <p className="text-muted-foreground font-body text-lg leading-relaxed">
-                Hundreds of Houston and Deer Park families have trusted Brentwood Children's Academy with their most precious ones. Here are some of their stories.
+                Hundreds of Houston families have trusted Brentwood Children's Academy with their most precious ones. Here are some of their stories.
               </p>
             </div>
           </div>
