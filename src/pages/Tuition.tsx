@@ -28,8 +28,7 @@ const tuitionCards = [
     description: "We proudly accept CCMS (Child Care Management Services) and Workforce Solutions subsidies — and our team actively helps guide families through the application process from start to finish.",
     color: "bg-secondary/10 text-secondary",
     details: [
-      "CCMS (Child Care Management Services) accepted at both locations",
-      "Workforce Solutions subsidies warmly welcomed",
+      "CCMS (Child Care Management Services) acceptede Solutions subsidies warmly welcomed",
       "Our team guides you through the application process",
       "We work directly with subsidy programs on your behalf",
       "Bilingual support available for Spanish-speaking families",
@@ -42,7 +41,7 @@ const tuitionCards = [
     color: "bg-accent/20 text-accent-foreground",
     details: [
       "Generous discounts for second and additional enrolled children",
-      "Discounts apply across all age programs and locations",
+      "Discounts apply across all age programs",
       "Can be combined with subsidy programs",
       "Contact us directly for customized family rate details",
       "We work with families to find the most affordable option",
@@ -51,10 +50,10 @@ const tuitionCards = [
   {
     icon: Gift,
     title: "Current Promotions",
-    description: "Take advantage of our latest enrollment offers. Our new Deer Park location is now open with special introductory rates — and we regularly offer seasonal and referral incentives.",
+    description: "Take advantage of our latest enrollment offers. We regularly offer seasonal and referral incentives to make quality childcare even more accessible.",
     color: "bg-coral/10 text-coral",
     details: [
-      "New Deer Park location enrollment specials currently available",
+      "Current enrollment specials available — ask us for details",
       "Seasonal promotional rates for new family enrollments",
       "Referral bonus program for currently enrolled families",
       "Ask about limited-time summer camp enrollment discounts",

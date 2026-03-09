@@ -17,16 +17,6 @@ const locations = [
     mapUrl: "https://maps.google.com/?q=7210+N+Eldridge+Pkwy+Houston+TX+77041",
     directions: "Located off N. Eldridge Pkwy near Hwy 6, easily accessible from Northwest Houston and Katy area.",
   },
-  {
-    name: "Deer Park Location",
-    address: "2202 Center St, Deer Park, TX 77536",
-    phone: "713-466-9407",
-    email: "info@brentwoodchildrensacademy.com",
-    hours: "Mon–Fri: 6:00 AM – 6:30 PM",
-    mapUrl: "https://maps.google.com/?q=2202+Center+St+Deer+Park+TX+77536",
-    directions: "Located on Center St in Deer Park, serving families in Deer Park, La Porte, Pasadena, and surrounding communities.",
-    isNew: true,
-  },
 ];
 
 const Contact = () => {
@@ -91,8 +81,6 @@ const Contact = () => {
                       <select className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
                         <option value="">Select location</option>
                         <option>Houston / Eldridge</option>
-                        <option>Deer Park</option>
-                        <option>Both / No Preference</option>
                       </select>
                     </div>
                   </div>
@@ -172,11 +160,6 @@ const Contact = () => {
                 {/* Locations */}
                 {locations.map((loc) => (
                   <div key={loc.name} className="relative bg-card rounded-2xl p-6 border border-border">
-                    {loc.isNew && (
-                      <span className="absolute -top-3 right-6 bg-secondary text-secondary-foreground text-xs font-bold font-body px-3 py-1 rounded-full">
-                        NOW OPEN
-                      </span>
-                    )}
                     <h3 className="font-display font-bold text-lg text-foreground mb-4">{loc.name}</h3>
                     <div className="space-y-3">
                       <div className="flex items-start gap-3 text-muted-foreground font-body text-sm">

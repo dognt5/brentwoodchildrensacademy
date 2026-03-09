@@ -25,7 +25,7 @@ const features = [
       "Ongoing professional development required for all staff members",
       "Low teacher turnover means consistent, familiar faces for your child",
       "Bilingual staff available to serve Spanish-speaking families",
-      "Management team actively engaged in daily operations at both locations",
+      "Management team actively engaged in daily operations",
     ],
   },
   {
@@ -99,7 +99,7 @@ const features = [
       "STEM projects introducing science, technology, engineering, and math",
       "Outdoor play and physical fitness incorporated into every daily schedule",
       "Cultural celebrations and community awareness events throughout the year",
-      "Seasonal field trips to local Houston and Deer Park attractions",
+      "Seasonal field trips to local Houston attractions",
       "Summer camp with themed adventure weeks, water play, and performing arts showcases",
     ],
   },

@@ -9,14 +9,6 @@ const locations = [
     hours: "Mon–Fri: 6:00 AM – 6:30 PM",
     mapUrl: "https://maps.google.com/?q=7210+N+Eldridge+Pkwy+Houston+TX+77041",
   },
-  {
-    name: "Deer Park Location",
-    address: "2202 Center St, Deer Park, TX 77536",
-    phone: "713-466-9407",
-    hours: "Mon–Fri: 6:00 AM – 6:30 PM",
-    mapUrl: "https://maps.google.com/?q=2202+Center+St+Deer+Park+TX+77536",
-    isNew: true,
-  },
 ];
 
 const LocationsSection = () => {
@@ -31,14 +23,14 @@ const LocationsSection = () => {
         >
           <span className="text-secondary font-body font-bold text-sm uppercase tracking-widest">Locations</span>
           <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mt-3">
-            Two Convenient Locations
+            Our Location
           </h2>
           <p className="text-muted-foreground font-body text-lg mt-4 max-w-2xl mx-auto">
-            Proudly serving families across the Greater Houston area.
+            Proudly serving families in the Greater Houston area.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="max-w-lg mx-auto">
           {locations.map((loc, i) => (
             <motion.div
               key={loc.name}
@@ -48,11 +40,6 @@ const LocationsSection = () => {
               transition={{ delay: i * 0.15, duration: 0.5 }}
               className="relative bg-card rounded-2xl p-8 border border-border hover:shadow-lg transition-shadow"
             >
-              {loc.isNew && (
-                <span className="absolute -top-3 right-6 bg-secondary text-secondary-foreground text-xs font-bold font-body px-3 py-1 rounded-full">
-                  NEW!
-                </span>
-              )}
               <h3 className="font-display font-bold text-xl text-foreground mb-4">{loc.name}</h3>
               <div className="space-y-3">
                 <div className="flex items-start gap-3 text-muted-foreground font-body">

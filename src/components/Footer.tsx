@@ -18,7 +18,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="font-body text-sm leading-relaxed text-card/60 mb-4">
-              Nurturing young minds with love, laughter, and learning. TRS 4-Star rated childcare in Houston and Deer Park, TX.
+              Nurturing young minds with love, laughter, and learning. TRS 4-Star rated childcare in Houston, TX.
             </p>
             <div className="flex items-center gap-2 text-card/60 font-body text-xs">
               <span className="bg-accent/20 text-accent px-2 py-1 rounded-full font-semibold">⭐ TRS 4-Star Rated</span>
@@ -77,15 +77,6 @@ const Footer = () => {
                   <p className="font-semibold text-card/80 text-xs mb-0.5">Houston / Eldridge</p>
                   <a href="https://maps.google.com/?q=7210+N+Eldridge+Pkwy+Houston+TX+77041" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                     7210 N. Eldridge Pkwy<br />Houston, TX 77041
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start gap-2 text-card/60">
-                <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold text-card/80 text-xs mb-0.5">Deer Park <span className="text-secondary text-xs">(New!)</span></p>
-                  <a href="https://maps.google.com/?q=2202+Center+St+Deer+Park+TX+77536" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                    2202 Center St<br />Deer Park, TX 77536
                   </a>
                 </div>
               </div>

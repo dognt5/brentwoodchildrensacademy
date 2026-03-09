@@ -16,7 +16,7 @@ const ScheduleTour = () => {
           badge="📅 Visit Us"
           title="Schedule a"
           highlight="Tour"
-          subtitle="Come see our classrooms, meet our teachers, and experience firsthand why families across Houston and Deer Park love Brentwood."
+          subtitle="Come see our classrooms, meet our teachers, and experience firsthand why families across Houston love Brentwood."
         />
 
         {/* Trust bar */}
@@ -27,7 +27,7 @@ const ScheduleTour = () => {
                 { icon: Star, label: "TRS 4-Star Rated", sub: "Texas's Highest Rating" },
                 { icon: CheckCircle, label: "No Pressure Tours", sub: "We're here to answer questions" },
                 { icon: Phone, label: "713-466-9407", sub: "Call anytime Mon–Fri" },
-                { icon: MapPin, label: "2 Convenient Locations", sub: "Houston & Deer Park" },
+                { icon: MapPin, label: "Convenient Location", sub: "Houston / Eldridge Pkwy" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
@@ -92,8 +92,6 @@ const ScheduleTour = () => {
                       <select className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
                         <option value="">Select location</option>
                         <option>Houston / Eldridge Pkwy</option>
-                        <option>Deer Park (New Location)</option>
-                        <option>Either location works</option>
                       </select>
                     </div>
                   </div>

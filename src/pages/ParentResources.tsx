@@ -20,16 +20,16 @@ const resources = [
 ];
 
 const faqs = [
-  { question: "What are your hours of operation?", answer: "Both our Houston and Deer Park locations are open Monday through Friday, 6:00 AM to 6:30 PM. We are closed on weekends and major holidays." },
+  { question: "What are your hours of operation?", answer: "Our Houston location is open Monday through Friday, 6:00 AM to 6:30 PM. We are closed on weekends and major holidays." },
   { question: "What ages do you accept?", answer: "We accept children from 6 weeks through 12 years of age. Programs include Infant & Toddler, Preschool, Pre-Kindergarten, School Age / Varsity Club, and Summer Camp." },
-  { question: "Do you accept subsidies?", answer: "Yes! We accept CCMS (Child Care Management Services) and Workforce Solutions subsidies at both locations. Our team actively helps guide families through the application process." },
+  { question: "Do you accept subsidies?", answer: "Yes! We accept CCMS (Child Care Management Services) and Workforce Solutions subsidies. Our team actively helps guide families through the application process." },
   { question: "What curriculum do you use?", answer: "We use the Frog Street research-based curriculum, which is aligned with Texas state standards and the Texas Rising Star framework. It covers literacy, math, science, social studies, and social-emotional development." },
   { question: "What is your TRS rating?", answer: "Brentwood Children's Academy holds a Texas Rising Star 4-Star rating — the highest achievable — and participates in the Center of Excellence (CoE) program, reflecting our sustained commitment to quality." },
   { question: "What is your teacher-to-child ratio?", answer: "We maintain ratios that meet or exceed Texas state requirements for every age group. Our small class sizes ensure every child receives personalized attention, care, and learning support." },
-  { question: "Is there a waiting list?", answer: "Availability varies by age group and location. We recommend scheduling a tour and asking about current openings as early as possible. Early registration is especially encouraged for summer camp." },
+  { question: "Is there a waiting list?", answer: "Availability varies by age group. We recommend scheduling a tour and asking about current openings as early as possible. Early registration is especially encouraged for summer camp." },
   { question: "What should my child bring on the first day?", answer: "We provide a detailed checklist during enrollment. Typically you'll need a change of clothes, diapers/pull-ups if applicable, a comfort item, and completed enrollment forms. We'll walk you through everything." },
   { question: "Do you provide meals and snacks?", answer: "We provide nutritious snacks throughout the day. Families are welcome to pack lunches, and we accommodate allergies and dietary restrictions with advance notice." },
-  { question: "Do you offer bilingual care?", answer: "Yes — Se Habla Español. We have bilingual staff at both locations to ensure Spanish-speaking families feel fully welcomed, informed, and at home." },
+  { question: "Do you offer bilingual care?", answer: "Yes — Se Habla Español. We have bilingual staff to ensure Spanish-speaking families feel fully welcomed, informed, and at home." },
   { question: "How do you handle emergencies?", answer: "All staff are CPR and First Aid certified. We have comprehensive emergency action plans, conduct regular drills, and maintain immediate communication with parents during any incident." },
   { question: "Can I tour before enrolling?", answer: "Absolutely — and we strongly encourage it! Tours are free, no-pressure, and available Monday through Friday, 9 AM to 4 PM by appointment. Walk-ins are welcome when scheduling allows." },
 ];
