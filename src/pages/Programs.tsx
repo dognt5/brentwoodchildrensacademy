@@ -81,7 +81,7 @@ const Programs = () => {
                 {[
                   { label: "Texas Rising Star", value: "4-Star Rated", color: "bg-accent/10 text-accent-foreground" },
                   { label: "Ages Served", value: "6 Weeks – 12 Years", color: "bg-primary/10 text-primary" },
-                  { label: "Both Locations", value: "Houston & Deer Park", color: "bg-secondary/10 text-secondary" },
+                  { label: "Location", value: "Houston, TX", color: "bg-secondary/10 text-secondary" },
                 ].map((stat) => (
                   <div key={stat.label} className={`${stat.color} rounded-2xl p-6 border border-border`}>
                     <p className="font-display font-bold text-2xl">{stat.value}</p>

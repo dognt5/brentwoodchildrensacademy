@@ -104,7 +104,7 @@ const About = () => {
                       Hugh (Himanshu) and Nidhi Trivedi bring a rare combination of educational passion and business excellence to Brentwood Children's Academy. With backgrounds spanning education, management, and operations, they built this academy with a singular vision: to create a place where children genuinely love to come every day.
                     </p>
                     <p className="text-muted-foreground font-body leading-relaxed">
-                      As hands-on owners, Hugh and Nidhi are regularly present at the Houston location, ensuring the values they built this academy on — safety, love, and excellence — are felt in every classroom, every day.                </p>
+                      As hands-on owners, Hugh and Nidhi are regularly present at the Houston location, ensuring the values they built this academy on — safety, love, and excellence — are felt in every classroom, every day.felt in every classroom, every day.                </p>
                     <div className="mt-5 flex flex-wrap gap-2">
                       {["Education Degrees", "Hands-on Leadership", "Se Habla Español"].map((tag) => (
                         <span key={tag} className="bg-primary/10 text-primary font-body text-xs font-semibold px-3 py-1 rounded-full">
@@ -223,7 +223,7 @@ const About = () => {
             <div className="max-w-4xl mx-auto text-center">
               <SectionHeader label="Community involvement" title="Part of Your Community" />
               <p className="text-muted-foreground font-body text-lg leading-relaxed -mt-8 mb-6">
-                Brentwood Children's Academy is proud to be a true community partner in Houston and Deer Park. We collaborate with local organizations, participat events, and welcome families from every background. Our Se Habla Español commitment ensures every bilingual family feels genuinely welcome, heard, and at home.
+                Brentwood Children's Academy is proud to be . We collaborate with local organizations, participate in communityith local organizations, participat events, and welcome families from every background. Our Se Habla Español commitment ensures every bilingual family feels genuinely welcome, heard, and at home.
               </p>
               <p className="text-muted-foreground font-body text-lg leading-relaxed">
                 We also accept CCMS and Workforce Solutions subsidies because we believe financial constraints should never stand between a child and exceptional early education. Every child deserves Brentwood.

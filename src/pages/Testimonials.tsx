@@ -82,7 +82,7 @@ const Testimonials = () => {
                   Your Family's Story Starts Here
                 </h2>
                 <p className="text-muted-foreground font-body text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-                  Join the Brentwood family and discover for yourself why parents across Houston and Deer Park their children's earliest, most important years.
+                  Join the Brentwood family and discover for yourself why parents across Houston trust us with their children's earliest, most important years.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <Link to="/schedule-tour" className="bg-secondary text-secondary-foreground px-8 py-4 rounded-full text-base font-bold font-body hover:opacity-90 transition-all shadow-lg">
