@@ -56,18 +56,6 @@ const programData: Record<string, {
       "Introduction to colors, shapes, and early concepts through play",
       "Music and rhythm activities to support auditory development",
     ],
-    dailyRoutine: [
-      { time: "6:00 AM", activity: "Arrival & free play" },
-      { time: "8:00 AM", activity: "Morning circle with songs and stories" },
-      { time: "9:00 AM", activity: "Sensory & exploration activities" },
-      { time: "10:00 AM", activity: "Outdoor time (weather permitting)" },
-      { time: "11:30 AM", activity: "Lunch & bottle feeding (infants)" },
-      { time: "12:30 PM", activity: "Nap / rest time" },
-      { time: "2:30 PM", activity: "Afternoon art, music & play" },
-      { time: "3:30 PM", activity: "Snack time" },
-      { time: "4:00 PM", activity: "Free play & social time" },
-      { time: "6:30 PM", activity: "Departure" },
-    ],
     enrichment: [
       { icon: Music, title: "Music & Movement", description: "Daily singing, rhythm instruments, and dance to support auditory and motor development." },
       { icon: Palette, title: "Sensory Art", description: "Safe, age-appropriate art experiences with soft textures, bright colors, and shapes." },
