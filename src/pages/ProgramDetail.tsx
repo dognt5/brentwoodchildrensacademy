@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useParams, Navigate, Link } from "react-router-dom";
-import { Clock, BookOpen, Shield, Star, Music, Palette, Leaf } from "lucide-react";
+import { BookOpen, Shield, Star, Music, Palette, Leaf } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
@@ -31,7 +31,6 @@ const programData: Record<string, {
   overview: string;
   overviewExtra: string;
   curriculum: string[];
-  dailyRoutine: { time: string; activity: string }[];
   enrichment: { icon: React.ElementType; title: string; description: string }[];
   safety: string[];
 }> = {
@@ -56,18 +55,6 @@ const programData: Record<string, {
       "Tummy time and movement activities for physical growth",
       "Introduction to colors, shapes, and early concepts through play",
       "Music and rhythm activities to support auditory development",
-    ],
-    dailyRoutine: [
-      { time: "6:00 AM", activity: "Arrival & free play" },
-      { time: "8:00 AM", activity: "Morning circle with songs and stories" },
-      { time: "9:00 AM", activity: "Sensory & exploration activities" },
-      { time: "10:00 AM", activity: "Outdoor time (weather permitting)" },
-      { time: "11:30 AM", activity: "Lunch & bottle feeding (infants)" },
-      { time: "12:30 PM", activity: "Nap / rest time" },
-      { time: "2:30 PM", activity: "Afternoon art, music & play" },
-      { time: "3:30 PM", activity: "Snack time" },
-      { time: "4:00 PM", activity: "Free play & social time" },
-      { time: "6:30 PM", activity: "Departure" },
     ],
     enrichment: [
       { icon: Music, title: "Music & Movement", description: "Daily singing, rhythm instruments, and dance to support auditory and motor development." },
@@ -107,19 +94,6 @@ const programData: Record<string, {
       "STEAM exposure through building challenges and simple experiments",
       "Social-emotional learning: sharing, turn-taking, and conflict resolution",
     ],
-    dailyRoutine: [
-      { time: "6:00 AM", activity: "Arrival & morning centers" },
-      { time: "8:30 AM", activity: "Circle time with calendar, weather, and stories" },
-      { time: "9:15 AM", activity: "Literacy & language arts activities" },
-      { time: "10:00 AM", activity: "Outdoor play & gross motor development" },
-      { time: "10:45 AM", activity: "Snack time" },
-      { time: "11:00 AM", activity: "Math & science exploration" },
-      { time: "11:45 AM", activity: "Lunch" },
-      { time: "12:30 PM", activity: "Rest time with quiet activities" },
-      { time: "2:30 PM", activity: "Art & creative expression" },
-      { time: "3:30 PM", activity: "Afternoon snack & play" },
-      { time: "6:30 PM", activity: "Departure" },
-    ],
     enrichment: [
       { icon: Music, title: "Music & Performing Arts", description: "Weekly music classes with singing, instruments, and movement tied to learning themes." },
       { icon: Palette, title: "Creative Arts", description: "Daily art projects exploring painting, sculpture, collage, and mixed media expression." },
@@ -157,19 +131,6 @@ const programData: Record<string, {
       "Technology integration with age-appropriate tools and programs",
       "Social studies: community helpers, maps, and cultural awareness",
       "Performing arts: drama, presentations, and speaking confidence",
-    ],
-    dailyRoutine: [
-      { time: "6:00 AM", activity: "Arrival & journal writing" },
-      { time: "8:30 AM", activity: "Morning meeting & daily news" },
-      { time: "9:00 AM", activity: "Literacy block with guided reading groups" },
-      { time: "10:00 AM", activity: "Math workshop & hands-on activities" },
-      { time: "10:45 AM", activity: "Outdoor play & physical education" },
-      { time: "11:30 AM", activity: "Lunch" },
-      { time: "12:15 PM", activity: "Rest & independent quiet reading" },
-      { time: "1:30 PM", activity: "Science or social studies exploration" },
-      { time: "2:30 PM", activity: "Enrichment activities (STEM, art, music)" },
-      { time: "3:30 PM", activity: "Snack & afternoon learning centers" },
-      { time: "6:30 PM", activity: "Departure" },
     ],
     enrichment: [
       { icon: BookOpen, title: "Reading Club", description: "Small-group guided reading sessions to build vocabulary, comprehension, and reading confidence." },
@@ -209,17 +170,6 @@ const programData: Record<string, {
       "Creative writing, storytelling, and public speaking",
       "Health and nutrition awareness programs",
     ],
-    dailyRoutine: [
-      { time: "6:00 AM", activity: "Morning arrival & breakfast (before school)" },
-      { time: "7:00 AM", activity: "Morning enrichment activities" },
-      { time: "7:30 AM", activity: "School departure coordination" },
-      { time: "3:00 PM", activity: "After-school arrival & snack" },
-      { time: "3:30 PM", activity: "Homework help session" },
-      { time: "4:30 PM", activity: "Enrichment activities (STEM, arts, cooking)" },
-      { time: "5:00 PM", activity: "Outdoor recreation & sports" },
-      { time: "5:45 PM", activity: "Free choice & social time" },
-      { time: "6:30 PM", activity: "Departure" },
-    ],
     enrichment: [
       { icon: Star, title: "STEM Challenges", description: "Weekly engineering and science challenges that promote critical thinking and problem-solving." },
       { icon: Palette, title: "Creative Arts", description: "Art projects, crafts, photography, and creative expression for all interests and skill levels." },
@@ -257,18 +207,6 @@ const programData: Record<string, {
       "Community helpers and real-world career exploration",
       "Performing arts: talent shows, skits, and musical performances",
       "Physical fitness and team sports throughout the week",
-    ],
-    dailyRoutine: [
-      { time: "6:00 AM", activity: "Arrival & morning meeting" },
-      { time: "8:30 AM", activity: "Theme-based learning & morning activities" },
-      { time: "10:00 AM", activity: "Outdoor games & water play" },
-      { time: "11:30 AM", activity: "Lunch" },
-      { time: "12:15 PM", activity: "Rest & quiet time / reading" },
-      { time: "1:30 PM", activity: "Arts & crafts tied to weekly theme" },
-      { time: "2:30 PM", activity: "Field trip or special activity day" },
-      { time: "3:30 PM", activity: "Snack & free play" },
-      { time: "5:00 PM", activity: "Group games & social time" },
-      { time: "6:30 PM", activity: "Departure" },
     ],
     enrichment: [
       { icon: Leaf, title: "Field Trips", description: "Weekly excursions to museums, parks, farms, bowling alleys, and Houston area attractions." },
@@ -393,36 +331,8 @@ const ProgramDetail = () => {
           </div>
         </section>
 
-        {/* Daily Routine */}
-        <section className="py-20 md:py-28 bg-background">
-          <div className="container mx-auto px-4">
-            <SectionHeader
-              label="Daily Schedule"
-              title="A Day at Brentwood"
-              subtitle="Every day is thoughtfully structured to balance learning, play, socialization, and rest — giving children the consistency they thrive on."
-            />
-            <div className="max-w-2xl mx-auto">
-              {program.dailyRoutine.map((item, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.05 }}
-                  className="flex items-center gap-4 py-4 border-b border-border last:border-0"
-                >
-                  <div className="w-20 flex-shrink-0">
-                    <span className="text-primary font-body font-bold text-sm">{item.time}</span>
-                  </div>
-                  <div className="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-5 h-5" />
-                  </div>
-                  <p className="text-foreground font-body font-semibold">{item.activity}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
+
+
 
         {/* Enrichment */}
         <section className="py-20 md:py-28 bg-cream-dark">
