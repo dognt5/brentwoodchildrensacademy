@@ -29,7 +29,7 @@ const faqs = [
   { question: "Is there a waiting list?", answer: "Availability varies by age group and location. We recommend scheduling a tour and asking about current openings as early as possible. Early registration is especially encouraged for summer camp." },
   { question: "What should my child bring on the first day?", answer: "We provide a detailed checklist during enrollment. Typically you'll need a change of clothes, diapers/pull-ups if applicable, a comfort item, and completed enrollment forms. We'll walk you through everything." },
   { question: "Do you provide meals and snacks?", answer: "We provide nutritious snacks throughout the day. Families are welcome to pack lunches, and we accommodate allergies and dietary restrictions with advance notice." },
-  { question: "Do you offer bilingual care?", to ensure Spanish-speaking families fe have bilingual staff at both locations to ensure Spanish-spel fully welcomed, informed, and at home." },
+  { question: "Do you offer bilingual care?", answer: "Yes — Se Habla Español. We have bilingual staff to ensure Spanish-speaking families feel fully welcomed, informed, and at home." },
   { question: "How do you handle emergencies?", answer: "All staff are CPR and First Aid certified. We have comprehensive emergency action plans, conduct regular drills, and maintain immediate communication with parents during any incident." },
   { question: "Can I tour before enrolling?", answer: "Absolutely — and we strongly encourage it! Tours are free, no-pressure, and available Monday through Friday, 9 AM to 4 PM by appointment. Walk-ins are welcome when scheduling allows." },
 ];
