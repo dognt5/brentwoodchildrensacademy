@@ -104,7 +104,7 @@ const About = () => {
                       Hugh (Himanshu) and Nidhi Trivedi bring a rare combination of educational passion and business excellence to Brentwood Children's Academy. With backgrounds spanning education, management, and operations, they built this academy with a singular vision: to create a place where children genuinely love to come every day.
                     </p>
                     <p className="text-muted-foreground font-body leading-relaxed">
-                      As hands-on owners, Hugh and Nidhi are regularly present at both the Houston and Deer Parkthe Houston locationlt this acthe Houston locatione — are the Houston location                </p>
+                      As hands-on owners, Hugh and Nidhi are regularly present at the Houston location, ensuring the values they built this academy on — safety, love, and excellence — are felt in every classroom, every day.                </p>
                     <div className="mt-5 flex flex-wrap gap-2">
                       {["Education Degrees", "Hands-on Leadership", "Se Habla Español"].map((tag) => (
                         <span key={tag} className="bg-primary/10 text-primary font-body text-xs font-semibold px-3 py-1 rounded-full">
