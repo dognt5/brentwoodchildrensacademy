@@ -17,16 +17,6 @@ const locations = [
     mapUrl: "https://maps.google.com/?q=7210+N+Eldridge+Pkwy+Houston+TX+77041",
     directions: "Located off N. Eldridge Pkwy near Hwy 6, easily accessible from Northwest Houston and Katy area.",
   },
-  {
-    name: "Deer Park Location",
-    address: "2202 Center St, Deer Park, TX 77536",
-    phone: "713-466-9407",
-    email: "info@brentwoodchildrensacademy.com",
-    hours: "Mon–Fri: 6:00 AM – 6:30 PM",
-    mapUrl: "https://maps.google.com/?q=2202+Center+St+Deer+Park+TX+77536",
-    directions: "Located on Center St in Deer Park, serving families in Deer Park, La Porte, Pasadena, and surrounding communities.",
-    isNew: true,
-  },
 ];
 
 const Contact = () => {
