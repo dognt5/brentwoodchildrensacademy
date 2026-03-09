@@ -208,18 +208,6 @@ const programData: Record<string, {
       "Performing arts: talent shows, skits, and musical performances",
       "Physical fitness and team sports throughout the week",
     ],
-    dailyRoutine: [
-      { time: "6:00 AM", activity: "Arrival & morning meeting" },
-      { time: "8:30 AM", activity: "Theme-based learning & morning activities" },
-      { time: "10:00 AM", activity: "Outdoor games & water play" },
-      { time: "11:30 AM", activity: "Lunch" },
-      { time: "12:15 PM", activity: "Rest & quiet time / reading" },
-      { time: "1:30 PM", activity: "Arts & crafts tied to weekly theme" },
-      { time: "2:30 PM", activity: "Field trip or special activity day" },
-      { time: "3:30 PM", activity: "Snack & free play" },
-      { time: "5:00 PM", activity: "Group games & social time" },
-      { time: "6:30 PM", activity: "Departure" },
-    ],
     enrichment: [
       { icon: Leaf, title: "Field Trips", description: "Weekly excursions to museums, parks, farms, bowling alleys, and Houston area attractions." },
       { icon: Palette, title: "Creative Arts & Drama", description: "Theme-based painting, sculpture, drama performances, and creative expression projects." },
