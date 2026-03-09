@@ -31,7 +31,7 @@ const programData: Record<string, {
   overview: string;
   overviewExtra: string;
   curriculum: string[];
-  dailyRochment: { icon: React.ElementType; title: string; description: string }[];
+  enrichment: { icon: React.ElementType; title: string; description: string }[];
   safety: string[];
 }> = {
   "infant-toddler": {
