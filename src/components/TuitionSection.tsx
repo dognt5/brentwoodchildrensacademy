@@ -38,7 +38,7 @@ const TuitionSection = () => {
             {
               icon: Gift,
               title: "Current Promotions",
-              description: "New Deer Park location now open! Call today to learn about our special enrollment promotions.",
+              description: "Call today to learn about our special enrollment promotions and seasonal offers.",
               color: "bg-accent/20 text-accent-foreground",
             },
           ].map((item, i) => (

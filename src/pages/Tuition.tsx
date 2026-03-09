@@ -28,8 +28,7 @@ const tuitionCards = [
     description: "We proudly accept CCMS (Child Care Management Services) and Workforce Solutions subsidies — and our team actively helps guide families through the application process from start to finish.",
     color: "bg-secondary/10 text-secondary",
     details: [
-      "CCMS (Child Care Management Services) accepted",
-      "Workforce Solutions subsidies warmly welcomed",
+      "CCMS (Child Care Management Services) acceptede Solutions subsidies warmly welcomed",
       "Our team guides you through the application process",
       "We work directly with subsidy programs on your behalf",
       "Bilingual support available for Spanish-speaking families",
@@ -43,7 +42,7 @@ const tuitionCards = [
     details: [
       "Generous discounts for second and additional enrolled children",
       "Discounts apply across all age programs and locations",
-      "Can be combined with subsidy programs",
+ ombined with subsidy programs",
       "Contact us directly for customized family rate details",
       "We work with families to find the most affordable option",
     ],
@@ -51,7 +50,7 @@ const tuitionCards = [
   {
     icon: Gift,
     title: "Current Promotions",
-    description: "Take advantage of our latest enrollment offers. We regularly offer seasonal and referral incentives to make quality childcare even more accessibleew Deer Park location enrollmenCurrent enrollment specials avaiCurrent enrollment specials available — ask us for details      "Referral bonus program for currently enrolled families",
+    description: "Take advantage of our latest enrollment offers. We regularly offerWe regularly offer seasonal and referral incentives to make quality childcare even more accessiblespecials avaiCurrent enrollment specials available — ask us fCurrent enrollment specials available — ask us for details families",
       "Ask about limited-time summer camp enrollment discounts",
       "Follow us for updates on the latest offers and promotions",
     ],

@@ -80,15 +80,6 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex items-start gap-2 text-card/60">
-                <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold text-card/80 text-xs mb-0.5">Deer Park <span className="text-secondary text-xs">(New!)</span></p>
-                  <a href="https://maps.google.com/?q=2202+Center+St+Deer+Park+TX+77536" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                    2202 Center St<br />Deer Park, TX 77536
-                  </a>
-                </div>
-              </div>
             </div>
             <Link
               to="/schedule-tour"

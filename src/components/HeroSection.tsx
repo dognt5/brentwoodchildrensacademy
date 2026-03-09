@@ -42,7 +42,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="text-lg md:text-xl text-card/80 font-body mb-8 max-w-lg"
           >
-            Your child's future starts bright here. Two convenient locations in Houston and Deer Park serving families with love and excellence.
+            Your child's future starts bright here. Conveniently located in Houston, serving families with love and excellence.
           </motion.p>
 
           <motion.div

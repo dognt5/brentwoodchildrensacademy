@@ -81,8 +81,6 @@ const Contact = () => {
                       <select className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
                         <option value="">Select location</option>
                         <option>Houston / Eldridge</option>
-                        <option>Deer Park</option>
-                        <option>Both / No Preference</option>
                       </select>
                     </div>
                   </div>

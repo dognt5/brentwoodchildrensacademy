@@ -13,7 +13,7 @@ import heroImg from "@/assets/hero-children.jpg";
 const values = [
   { icon: Heart, title: "Love & Nurturing", description: "Every child is treated with patience, warmth, and genuine love as a cherished member of our extended family — because they are." },
   { icon: Award, title: "Excellence", description: "We hold ourselves to the highest standards in early childhood education, curriculum quality, and staff development. TRS 4-Star is our floor, not our ceiling." },
-  { icon: Users, title: "Community", description: "We build strong, lasting partnerships with families and actively support the Houston communityrowth", description: "We foster continuous learning — for children, for families, and for every member of our dedicated teaching team." },
+  { icon: Users, title: "Community", description: "We build strong, lasting partnerships with families and actively support the Houston communityion: "We foster continuous learning — for children, for families, and for every member of our dedicated teaching team." },
   { icon: Handshake, title: "Integrity", description: "Transparency, honesty, and trust guide every interaction we have with families, staff, and partners. We say what we mean and mean what we say." },
   { icon: Clock, title: "Consistency", description: "Reliable routines, familiar caregivers, and dependable schedules give children the stability they need — and parents the peace of mind they deserve." },
 ];
@@ -49,7 +49,7 @@ const About = () => {
                     At Brentwood Children's Academy, our mission is to provide a safe, nurturing, and stimulating environment where every child can grow, learn, and thrive. We believe that the early years are the most formative of a child's life — and we are deeply honored to be trusted with that time.
                   </p>
                   <p className="text-muted-foreground font-body leading-relaxed mb-5">
-                    Founded on the belief that every child deserves an exceptional start, we combine expert knowledge in early childhood education with a genuine, heartfelt love for children. Our TRS 4-Star rated centers in Houston and in Houston serv in Houston serv in Houston servesl stage — from 6 weeks through 12 years.
+                    Founded on the belief that every child deserves an exceptional start, we combine expert knowledge in early childhood education with a genuine, heartfelt love for children. Our TRS 4-Star rated centers in Houston and in Houston serv in Houston serv in Houston serv in Houston servesgh 12 years.
                   </p>
                   <p className="text-muted-foreground font-body leading-relaxed">
                     We don't just watch children — we invest in them. We celebrate their milestones, encourage their curiosity, and partner with parents to ensure every child reaches their fullest potential.
@@ -103,10 +103,9 @@ const About = () => {
                       Hugh (Himanshu) and Nidhi Trivedi bring a rare combination of educational passion and business excellence to Brentwood Children's Academy. With backgrounds spanning education, management, and operations, they built this academy with a singular vision: to create a place where children genuinely love to come every day.
                     </p>
                     <p className="text-muted-foreground font-body leading-relaxed">
-                      As hands-on owners, Hugh and Nidhi are regularly present at both the Houston and Deer Parkthe Houston locationlt this acthe Houston locatione — are felt in every classroom, every day.
-                    </p>
+                      As hands-on owners, Hugh and Nidhi are regularly present at both the Houston and Deer Parkthe Houston locationlt this acthe Houston locatione — are the Houston location                </p>
                     <div className="mt-5 flex flex-wrap gap-2">
-                      {["Education Degrees", "Hands-on Leadership", "Two Locations", "Se Habla Español"].map((tag) =>          <span key={tag} className="bg-primary/10 text-primary font-body text-xs font-semibold px-3 py-1 rounded-full">
+                      {["Education Degrees", "Hands-on Leadership", "Two Locations", "Se Habla Español"].map((tag) =>          <span key={tag} className="bg-primary/10 -body text-xs font-semibold px-3 py-1 rounded-full">
                           {tag}
                         </span>
                       ))}
@@ -222,7 +221,7 @@ const About = () => {
             <div className="max-w-4xl mx-auto text-center">
               <SectionHeader label="Community involvement" title="Part of Your Community" />
               <p className="text-muted-foreground font-body text-lg leading-relaxed -mt-8 mb-6">
-                Brentwood Children's Academy is proud to be a true community partner in Houston and Deer Park. We collaborate with local organizations, participate in community events, and welcome families from every background. Our Se Habla Español commitment ensures every bilingual family feels genuinely welcome, heard, and at home.
+                Brentwood Children's Academy is proud to be a true community partner in Houston and Deer Park. We collaborate with local organizations, participat events, and welcome families from every background. Our Se Habla Español commitment ensures every bilingual family feels genuinely welcome, heard, and at home.
               </p>
               <p className="text-muted-foreground font-body text-lg leading-relaxed">
                 We also accept CCMS and Workforce Solutions subsidies because we believe financial constraints should never stand between a child and exceptional early education. Every child deserves Brentwood.

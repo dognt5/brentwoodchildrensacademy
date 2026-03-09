@@ -25,10 +25,7 @@ const features = [
       "Ongoing professional development required for all staff members",
       "Low teacher turnover means consistent, familiar faces for your child",
       "Bilingual staff available to serve Spanish-speaking families",
-      "Management team actively engaged in daily operations",
-    ],
-  },
-  {
+      "Management team actively engaged in daily operations
     icon: Shield,
     title: "Safety First",
     description: "From 4K security cameras to CPR-certified teachers, every layer of our facility is designed to keep your child safe.",
@@ -99,8 +96,7 @@ const features = [
       "STEM projects introducing science, technology, engineering, and math",
       "Outdoor play and physical fitness incorporated into every daily schedule",
       "Cultural celebrations and community awareness events throughout the year",
-      "Seasonal field trips to local Houston and Deer Park attractions",
-      "Summer camp with themed adventure weeks, water play, and performing arts showcases",
+      "Seasonal field trips to local Houston and Deer Park attra "Summer camp with themed adventure weeks, water play, and performing arts showcases",
     ],
   },
 ];

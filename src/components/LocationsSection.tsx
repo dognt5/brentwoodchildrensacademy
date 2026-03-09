@@ -30,7 +30,7 @@ const LocationsSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="max-w-lg mx-auto">
           {locations.map((loc, i) => (
             <motion.div
               key={loc.name}

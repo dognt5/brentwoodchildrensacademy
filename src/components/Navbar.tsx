@@ -57,10 +57,6 @@ const Navbar = () => {
               <MapPin className="w-3.5 h-3.5" />
               Houston, TX
             </span>
-            <span className="hidden md:flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5" />
-              Deer Park, TX
-            </span>
             <span className="bg-secondary text-secondary-foreground px-2 py-0.5 rounded-full font-semibold text-xs">
               Se Habla Español
             </span>

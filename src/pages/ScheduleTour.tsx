@@ -91,8 +91,6 @@ const ScheduleTour = () => {
                       <select className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
                         <option value="">Select location</option>
                         <option>Houston / Eldridge Pkwy</option>
-                        <option>Deer Park (New Location)</option>
-                        <option>Either location works</option>
                       </select>
                     </div>
                   </div>
