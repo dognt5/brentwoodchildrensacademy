@@ -13,7 +13,7 @@ import heroImg from "@/assets/hero-children.jpg";
 const values = [
   { icon: Heart, title: "Love & Nurturing", description: "Every child is treated with patience, warmth, and genuine love as a cherished member of our extended family — because they are." },
   { icon: Award, title: "Excellence", description: "We hold ourselves to the highest standards in early childhood education, curriculum quality, and staff development. TRS 4-Star is our floor, not our ceiling." },
-  { icon: Users, title: "Community", description: "We build strong, lasting partnerships with families and actively support the Houston community we call home." },
+  { icon: Users, title: "Community", description: "We build strong, lasting partnerships with families and actively support the Houston community},
   { icon: BookOpen, title: "Growth", description: "We foster continuous learning — for children, for families, and for every member of our dedicated teaching team." },
   { icon: Handshake, title: "Integrity", description: "Transparency, honesty, and trust guide every interaction we have with families, staff, and partners. We say what we mean and mean what we say." },
   { icon: Clock, title: "Consistency", description: "Reliable routines, familiar caregivers, and dependable schedules give children the stability they need — and parents the peace of mind they deserve." },
@@ -50,7 +50,7 @@ const About = () => {
                     At Brentwood Children's Academy, our mission is to provide a safe, nurturing, and stimulating environment where every child can grow, learn, and thrive. We believe that the early years are the most formative of a child's life — and we are deeply honored to be trusted with that time.
                   </p>
                   <p className="text-muted-foreground font-body leading-relaxed mb-5">
-                    Founded on the belief that every child deserves an exceptional start, we combine expert knowledge in early childhood education with a genuine, heartfelt love for children. Our TRS 4-Star rated centers in Houston and Deer Park serve diverse families with programs thoughtfully designed for every developmental stage — from 6 weeks through 12 years.
+                    Founded on the belief that every child deserves an exceptional start, we combine expert knowledge in early childhood education with a genuine, heartfelt love for children. Our TRS 4-Star rated centers in Houston and in Houston servess with programs thoughtfully designed for every developmental stage — from 6 weeks through 12 years.
                   </p>
                   <p className="text-muted-foreground font-body leading-relaxed">
                     We don't just watch children — we invest in them. We celebrate their milestones, encourage their curiosity, and partner with parents to ensure every child reaches their fullest potential.
