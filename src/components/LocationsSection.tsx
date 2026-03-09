@@ -26,7 +26,7 @@ const LocationsSection = () => {
             Our Location
           </h2>
           <p className="text-muted-foreground font-body text-lg mt-4 max-w-2xl mx-auto">
-            Proudly serving families across the Greater Houston area.
+            Proudly serving families in the Greater Houston area.
           </p>
         </motion.div>
 
