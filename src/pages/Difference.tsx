@@ -25,7 +25,10 @@ const features = [
       "Ongoing professional development required for all staff members",
       "Low teacher turnover means consistent, familiar faces for your child",
       "Bilingual staff available to serve Spanish-speaking families",
-      "Management team actively engaged in daily operations
+      "Management team actively engaged in daily operations",
+    ],
+  },
+  {
     icon: Shield,
     title: "Safety First",
     description: "From 4K security cameras to CPR-certified teachers, every layer of our facility is designed to keep your child safe.",
