@@ -122,7 +122,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <span className="font-bold block">713-466-9407</span>
-                        <span className="text-muted-foreground text-xs">Mon–Fri, 6:00 AM – 6:30 PM</span>
+                        <span className="text-muted-foreground text-xs">Mon–Fri, 6:30 AM – 6:00 PM</span>
                       </div>
                     </a>
                     <a href="mailto:info@brentwoodchildrensacademy.com" className="flex items-center gap-3 text-foreground font-body hover:text-primary transition-colors">
