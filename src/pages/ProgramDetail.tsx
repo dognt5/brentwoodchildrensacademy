@@ -331,36 +331,8 @@ const ProgramDetail = () => {
           </div>
         </section>
 
-        {/* Daily Routine */}
-        <section className="py-20 md:py-28 bg-background">
-          <div className="container mx-auto px-4">
-            <SectionHeader
-              label="Daily Schedule"
-              title="A Day at Brentwood"
-              subtitle="Every day is thoughtfully structured to balance learning, play, socialization, and rest — giving children the consistency they thrive on."
-            />
-            <div className="max-w-2xl mx-auto">
-              {program.dailyRoutine.map((item, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.05 }}
-                  className="flex items-center gap-4 py-4 border-b border-border last:border-0"
-                >
-                  <div className="w-20 flex-shrink-0">
-                    <span className="text-primary font-body font-bold text-sm">{item.time}</span>
-                  </div>
-                  <div className="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-5 h-5" />
-                  </div>
-                  <p className="text-foreground font-body font-semibold">{item.activity}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
+
+
 
         {/* Enrichment */}
         <section className="py-20 md:py-28 bg-cream-dark">
