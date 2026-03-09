@@ -18,7 +18,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="font-body text-sm leading-relaxed text-card/60 mb-4">
-              Nurturing young minds with love, laughter, and learning. TRS 4-Star rated childcare in Houston and Deer Park, TX.
+              Nurturing young minds with love, laughter, and learning. TRS 4-Star rated childcare in Houston, TX.
             </p>
             <div className="flex items-center gap-2 text-card/60 font-body text-xs">
               <span className="bg-accent/20 text-accent px-2 py-1 rounded-full font-semibold">⭐ TRS 4-Star Rated</span>
