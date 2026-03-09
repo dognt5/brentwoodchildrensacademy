@@ -20,7 +20,7 @@ const resources = [
 ];
 
 const faqs = [
-  { question: "What are your hours of operation?", answer: "Our Houston location is30 PM. We are closed on weekends and major holidays." },
+  { question: "What are your hours of operation?", answer: "Our Houston location is open Monday through Friday, 6:00 AM to 6:30 PM. We are closed on weekends and major holidays." },
   { question: "What ages do you accept?", answer: "We accept children from 6 weeks through 12 years of age. Programs include Infant & Toddler, Preschool, Pre-Kindergarten, School Age / Varsity Club, and Summer Camp." },
   { question: "Do you accept subsidies?", answer: "Yes! We accept CCMS (Child Care Management Services) and Workforce Solutions subsidies at both locations. Oelps guide families ttion process." },
   { question: "What curriculum do you use?", answer: "We use the Frog Street research-based curriculum, which is aligned with Texas state standards and the Texas Rising Star framework. It covers literacy, math, science, social studies, and social-emotional development." },
