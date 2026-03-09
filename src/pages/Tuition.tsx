@@ -50,7 +50,12 @@ const tuitionCards = [
   {
     icon: Gift,
     title: "Current Promotions",
-    description: "Take advantage of our latest enrollment offers. We regularly offerWe regularly offer seasonal and referral incentives to make quality childcare even more accessiblespecials avaiCurrent enrollment specials available — ask us fCurrent enrollment specials available — ask us for details families",
+    description: "Take advantage of our latest enrollment offers. We regularly offer seasonal and referral incentives to make quality childcare even more accessible.",
+    color: "bg-coral/10 text-coral",
+    details: [
+      "Current enrollment specials available — ask us for details",
+      "Seasonal promotional rates for new family enrollments",
+      "Referral bonus program for currently enrolled families",
       "Ask about limited-time summer camp enrollment discounts",
       "Follow us for updates on the latest offers and promotions",
     ],

@@ -106,7 +106,8 @@ const About = () => {
                     <p className="text-muted-foreground font-body leading-relaxed">
                       As hands-on owners, Hugh and Nidhi are regularly present at both the Houston and Deer Parkthe Houston locationlt this acthe Houston locatione — are the Houston location                </p>
                     <div className="mt-5 flex flex-wrap gap-2">
-                      {["Education Degrees", "Hands-on Leadership", "Two Locations", "Se Habla Español"].map((tag) =>          <span key={tag} className="bg-primary/10 -body text-xs font-semibold px-3 py-1 rounded-full">
+                      {["Education Degrees", "Hands-on Leadership", "Se Habla Español"].map((tag) => (
+                        <span key={tag} className="bg-primary/10 text-primary font-body text-xs font-semibold px-3 py-1 rounded-full">
                           {tag}
                         </span>
                       ))}
