@@ -23,7 +23,7 @@ const LocationsSection = () => {
         >
           <span className="text-secondary font-body font-bold text-sm uppercase tracking-widest">Locations</span>
           <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mt-3">
-            Two Convenient Locations
+            Our Location
           </h2>
           <p className="text-muted-foreground font-body text-lg mt-4 max-w-2xl mx-auto">
             Proudly serving families across the Greater Houston area.
