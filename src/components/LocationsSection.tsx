@@ -21,7 +21,7 @@ const LocationsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-secondary font-body font-bold text-sm uppercase tracking-widest">Locations</span>
+          <span className="text-secondary font-body font-bold text-sm uppercase tracking-widest">Visit Us</span>
           <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mt-3">
             Our Location
           </h2>
