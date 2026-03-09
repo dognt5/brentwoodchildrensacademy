@@ -160,11 +160,6 @@ const Contact = () => {
                 {/* Locations */}
                 {locations.map((loc) => (
                   <div key={loc.name} className="relative bg-card rounded-2xl p-6 border border-border">
-                    {loc.isNew && (
-                      <span className="absolute -top-3 right-6 bg-secondary text-secondary-foreground text-xs font-bold font-body px-3 py-1 rounded-full">
-                        NOW OPEN
-                      </span>
-                    )}
                     <h3 className="font-display font-bold text-lg text-foreground mb-4">{loc.name}</h3>
                     <div className="space-y-3">
                       <div className="flex items-start gap-3 text-muted-foreground font-body text-sm">

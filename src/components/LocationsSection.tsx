@@ -40,11 +40,6 @@ const LocationsSection = () => {
               transition={{ delay: i * 0.15, duration: 0.5 }}
               className="relative bg-card rounded-2xl p-8 border border-border hover:shadow-lg transition-shadow"
             >
-              {loc.isNew && (
-                <span className="absolute -top-3 right-6 bg-secondary text-secondary-foreground text-xs font-bold font-body px-3 py-1 rounded-full">
-                  NEW!
-                </span>
-              )}
               <h3 className="font-display font-bold text-xl text-foreground mb-4">{loc.name}</h3>
               <div className="space-y-3">
                 <div className="flex items-start gap-3 text-muted-foreground font-body">
