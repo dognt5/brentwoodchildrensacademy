@@ -25,7 +25,7 @@ const features = [
       "Ongoing professional development required for all staff members",
       "Low teacher turnover means consistent, familiar faces for your child",
       "Bilingual staff available to serve Spanish-speaking families",
-      "Management team actively engaged in daily operations at both locations",
+      "Management team actively engaged in daily operations",
     ],
   },
   {
