@@ -51,7 +51,7 @@ const tuitionCards = [
   {
     icon: Gift,
     title: "Current Promotions",
-    description: "Take advantage of our latest enrollment offers. Our new Deer Park location is now open with special introductory rates — and we regularly offer seasonal and referral incentives.",
+    description: "Take advantage of our latest enrollment offers. We regularly offer seasonal and referral incentives to make quality childcare even more accessible.",
     color: "bg-coral/10 text-coral",
     details: [
       "New Deer Park location enrollment specials currently available",
