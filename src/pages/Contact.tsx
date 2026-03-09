@@ -13,7 +13,7 @@ const locations = [
     address: "7210 N. Eldridge Pkwy, Houston, TX 77041",
     phone: "713-466-9407",
     email: "info@brentwoodchildrensacademy.com",
-    hours: "Mon–Fri: 6:00 AM – 6:30 PM",
+    hours: "Mon–Fri: 6:30 AM – 6:00 PM",
     mapUrl: "https://maps.google.com/?q=7210+N+Eldridge+Pkwy+Houston+TX+77041",
     directions: "Located off N. Eldridge Pkwy near Hwy 6, easily accessible from Northwest Houston and Katy area.",
   },
@@ -122,7 +122,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <span className="font-bold block">713-466-9407</span>
-                        <span className="text-muted-foreground text-xs">Mon–Fri, 6:00 AM – 6:30 PM</span>
+                        <span className="text-muted-foreground text-xs">Mon–Fri, 6:30 AM – 6:00 PM</span>
                       </div>
                     </a>
                     <a href="mailto:info@brentwoodchildrensacademy.com" className="flex items-center gap-3 text-foreground font-body hover:text-primary transition-colors">
@@ -140,7 +140,7 @@ const Contact = () => {
                   <div className="space-y-2 font-body">
                     <div className="flex justify-between text-foreground text-sm">
                       <span>Monday – Friday</span>
-                      <span className="font-semibold">6:00 AM – 6:30 PM</span>
+                      <span className="font-semibold">6:30 AM – 6:00 PM</span>
                     </div>
                     <div className="flex justify-between text-muted-foreground text-sm">
                       <span>Saturday – Sunday</span>
