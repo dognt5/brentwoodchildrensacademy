@@ -13,7 +13,8 @@ import heroImg from "@/assets/hero-children.jpg";
 const values = [
   { icon: Heart, title: "Love & Nurturing", description: "Every child is treated with patience, warmth, and genuine love as a cherished member of our extended family — because they are." },
   { icon: Award, title: "Excellence", description: "We hold ourselves to the highest standards in early childhood education, curriculum quality, and staff development. TRS 4-Star is our floor, not our ceiling." },
-  { icon: Users, title: "Community", description: "We build strong, lasting partnerships with families and actively support the Houston communityion: "We foster continuous learning — for children, for families, and for every member of our dedicated teaching team." },
+  { icon: Users, title: "Community", description: "We build strong, lasting partnerships with families and actively support the Houston community we call home." },
+  { icon: BookOpen, title: "Growth", description: "We foster continuous learning — for children, for families, and for every member of our dedicated teaching team." },
   { icon: Handshake, title: "Integrity", description: "Transparency, honesty, and trust guide every interaction we have with families, staff, and partners. We say what we mean and mean what we say." },
   { icon: Clock, title: "Consistency", description: "Reliable routines, familiar caregivers, and dependable schedules give children the stability they need — and parents the peace of mind they deserve." },
 ];

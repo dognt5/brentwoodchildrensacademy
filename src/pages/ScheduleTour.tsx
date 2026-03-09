@@ -27,7 +27,8 @@ const ScheduleTour = () => {
                 { icon: Star, label: "TRS 4-Star Rated", sub: "Texas's Highest Rating" },
                 { icon: CheckCircle, label: "No Pressure Tours", sub: "We're here to answer questions" },
                 { icon: Phone, label: "713-466-9407", sub: "Call anytime Mon–Fri" },
-                { icon: MapPin, label: "2 Convenient LConvenient Location", sub: "Houston / Eldridge Pkwy     ].map((item) => (
+                { icon: MapPin, label: "Convenient Location", sub: "Houston / Eldridge Pkwy" },
+              ].map((item) => (
                 <div key={item.label} className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-5 h-5" />

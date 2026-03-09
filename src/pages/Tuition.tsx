@@ -41,8 +41,8 @@ const tuitionCards = [
     color: "bg-accent/20 text-accent-foreground",
     details: [
       "Generous discounts for second and additional enrolled children",
-      "Discounts apply across all age programs and locations",
- ombined with subsidy programs",
+      "Discounts apply across all age programs",
+      "Can be combined with subsidy programs",
       "Contact us directly for customized family rate details",
       "We work with families to find the most affordable option",
     ],

@@ -99,7 +99,8 @@ const features = [
       "STEM projects introducing science, technology, engineering, and math",
       "Outdoor play and physical fitness incorporated into every daily schedule",
       "Cultural celebrations and community awareness events throughout the year",
-      "Seasonal field trips to local Houston and Deer Park attra "Summer camp with themed adventure weeks, water play, and performing arts showcases",
+      "Seasonal field trips to local Houston attractions",
+      "Summer camp with themed adventure weeks, water play, and performing arts showcases",
     ],
   },
 ];
