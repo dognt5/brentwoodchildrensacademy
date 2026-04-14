@@ -58,7 +58,7 @@ const ScheduleTour = () => {
                 <p className="text-muted-foreground font-body mb-8">
                   Fill out the form below and our team will contact you within one business day to confirm your visit. Tours are free, friendly, and absolutely no-pressure.
                 </p>
-                <InquiryForm />
+                <InquiryForm tourMode />
               </motion.div>
 
               {/* Right - Info */}

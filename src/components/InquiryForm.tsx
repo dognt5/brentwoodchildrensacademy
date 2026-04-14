@@ -43,6 +43,24 @@ const hearAboutOptions = [
   "Referral",
 ] as const;
 
+const tourTimeOptions = [
+  "9:00 AM",
+  "9:30 AM",
+  "10:00 AM",
+  "10:30 AM",
+  "11:00 AM",
+  "11:30 AM",
+  "12:00 PM",
+  "12:30 PM",
+  "1:00 PM",
+  "1:30 PM",
+  "2:00 PM",
+  "2:30 PM",
+  "3:00 PM",
+  "3:30 PM",
+  "4:00 PM",
+] as const;
+
 const inquirySchema = z.object({
   firstName: z.string().trim().min(1, "First name is required").max(50),
   lastName: z.string().trim().min(1, "Last name is required").max(50),
@@ -55,6 +73,9 @@ const inquirySchema = z.object({
   email: z.string().trim().email("Enter a valid email address"),
   hearAbout: z.string().min(1, "Please tell us how you heard about us"),
   comments: z.string().max(1000).optional(),
+
+  tourDate: z.date().optional(),
+  tourTime: z.string().optional(),
 
   child1FirstName: z.string().trim().min(1, "Child's first name is required").max(50),
   child1LastName: z.string().trim().min(1, "Child's last name is required").max(50),
@@ -113,7 +134,11 @@ const SectionHeading = ({ children }: { children: React.ReactNode }) => (
   </div>
 );
 
-const InquiryForm = () => {
+interface InquiryFormProps {
+  tourMode?: boolean;
+}
+
+const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
   const [submitted, setSubmitted] = useState(false);
 
   const form = useForm<InquiryFormValues>({
@@ -143,6 +168,14 @@ const InquiryForm = () => {
         hearAbout: data.hearAbout,
         comments: data.comments || "None",
       },
+      ...(tourMode && data.tourDate
+        ? {
+            tour: {
+              date: format(data.tourDate, "MMM d, yyyy"),
+              time: data.tourTime || "No preference",
+            },
+          }
+        : {}),
       child1: {
         name: `${data.child1FirstName} ${data.child1LastName}`,
         dob: format(data.child1Dob, "MMM d, yyyy"),
@@ -309,6 +342,53 @@ const InquiryForm = () => {
             </FormItem>
           )}
         />
+
+        {/* ── Preferred Tour Date & Time (tour mode only) ── */}
+        {tourMode && (
+          <>
+            <SectionHeading>Preferred Tour Date & Time</SectionHeading>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <FormField
+                control={form.control}
+                name="tourDate"
+                render={({ field }) => (
+                  <FormItem className="flex flex-col">
+                    <FormLabel className="font-body font-semibold">Preferred Date</FormLabel>
+                    <FormControl>
+                      <DatePickerField value={field.value} onChange={field.onChange} placeholder="Select a date" disablePast />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="tourTime"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="font-body font-semibold">Preferred Time</FormLabel>
+                    <Select onValueChange={field.onChange} value={field.value || ""}>
+                      <FormControl>
+                        <SelectTrigger className="rounded-xl px-4 py-3 h-auto border-border bg-card font-body">
+                          <SelectValue placeholder="Select a time" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        {tourTimeOptions.map((t) => (
+                          <SelectItem key={t} value={t}>{t}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+            <p className="text-muted-foreground font-body text-xs -mt-2">
+              Tours available Mon–Fri, 9:00 AM – 4:00 PM. We'll confirm your time within one business day.
+            </p>
+          </>
+        )}
 
         {/* ── Child 1 Information ── */}
         <SectionHeading>Child 1 Information</SectionHeading>
