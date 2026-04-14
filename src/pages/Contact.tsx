@@ -3,21 +3,9 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
-import SectionHeader from "@/components/SectionHeader";
+import InquiryForm from "@/components/InquiryForm";
 import familiesImg from "@/assets/families-dropoff.jpg";
 import exteriorImg from "@/assets/center-exterior.jpg";
-
-const locations = [
-  {
-    name: "Houston / Eldridge Location",
-    address: "7210 N. Eldridge Pkwy, Houston, TX 77041",
-    phone: "713-466-9407",
-    email: "info@brentwoodchildrensacademy.com",
-    hours: "Mon–Fri: 6:30 AM – 6:00 PM",
-    mapUrl: "https://maps.google.com/?q=7210+N+Eldridge+Pkwy+Houston+TX+77041",
-    directions: "Located off N. Eldridge Pkwy near Hwy 6, easily accessible from Northwest Houston and Katy area.",
-  },
-];
 
 const Contact = () => {
   return (
@@ -46,58 +34,7 @@ const Contact = () => {
                 <p className="text-muted-foreground font-body mb-8">
                   Fill out the form below and a member of our friendly team will respond within one business day. We welcome questions in English and Spanish.
                 </p>
-
-                <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-body font-semibold text-foreground mb-1.5">Full Name *</label>
-                      <input type="text" className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Your full name" />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-body font-semibold text-foreground mb-1.5">Phone Number</label>
-                      <input type="tel" className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary" placeholder="(713) 000-0000" />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-body font-semibold text-foreground mb-1.5">Email Address *</label>
-                    <input type="email" className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary" placeholder="your@email.com" />
-                  </div>
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-body font-semibold text-foreground mb-1.5">Topic</label>
-                      <select className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
-                        <option value="">Select a topic</option>
-                        <option>Enrollment Inquiry</option>
-                        <option>Tour Request</option>
-                        <option>Tuition & Financial Aid</option>
-                        <option>Program Information</option>
-                        <option>Subsidy / CCMS Questions</option>
-                        <option>General Question</option>
-                        <option>Other</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-body font-semibold text-foreground mb-1.5">Preferred Location</label>
-                      <select className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
-                        <option value="">Select location</option>
-                        <option>Houston / Eldridge</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-body font-semibold text-foreground mb-1.5">Message</label>
-                    <textarea className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary" rows={5} placeholder="How can we help you today?" />
-                  </div>
-                  <button
-                    type="submit"
-                    className="bg-secondary text-secondary-foreground px-8 py-4 rounded-full text-base font-bold font-body hover:opacity-90 transition-all shadow-lg w-full sm:w-auto"
-                  >
-                    Send Message →
-                  </button>
-                  <p className="text-muted-foreground font-body text-xs">
-                    We typically respond within one business day. For urgent matters, please call us directly.
-                  </p>
-                </form>
+                <InquiryForm />
               </motion.div>
 
               {/* Contact info + locations */}
@@ -107,12 +44,10 @@ const Contact = () => {
                 viewport={{ once: true }}
                 className="space-y-6"
               >
-                {/* Photo */}
                 <div className="rounded-2xl overflow-hidden h-52">
                   <img src={familiesImg} alt="Welcoming staff at Brentwood Children's Academy" className="w-full h-full object-cover" />
                 </div>
 
-                {/* Quick contact */}
                 <div className="bg-card rounded-2xl p-6 border border-border">
                   <h3 className="font-display font-bold text-xl text-foreground mb-4">Quick Contact</h3>
                   <div className="space-y-4">
@@ -134,7 +69,6 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Business hours */}
                 <div className="bg-card rounded-2xl p-6 border border-border">
                   <h3 className="font-display font-bold text-xl text-foreground mb-4">Business Hours</h3>
                   <div className="space-y-2 font-body">
@@ -157,45 +91,41 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Locations */}
-                {locations.map((loc) => (
-                  <div key={loc.name} className="relative bg-card rounded-2xl p-6 border border-border">
-                    <h3 className="font-display font-bold text-lg text-foreground mb-4">{loc.name}</h3>
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3 text-muted-foreground font-body text-sm">
-                        <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                        <div>
-                          <a href={loc.mapUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors font-semibold text-foreground">
-                            {loc.address}
-                          </a>
-                          <p className="text-xs mt-1">{loc.directions}</p>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3 text-muted-foreground font-body text-sm">
-                        <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                        <a href={`tel:${loc.phone}`} className="hover:text-primary transition-colors">{loc.phone}</a>
-                      </div>
-                      <div className="flex items-center gap-3 text-muted-foreground font-body text-sm">
-                        <Clock className="w-4 h-4 text-primary flex-shrink-0" />
-                        <span>{loc.hours}</span>
+                <div className="relative bg-card rounded-2xl p-6 border border-border">
+                  <h3 className="font-display font-bold text-lg text-foreground mb-4">Houston / Eldridge Location</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3 text-muted-foreground font-body text-sm">
+                      <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <div>
+                        <a href="https://maps.google.com/?q=7210+N+Eldridge+Pkwy+Houston+TX+77041" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors font-semibold text-foreground">
+                          7210 N. Eldridge Pkwy, Houston, TX 77041
+                        </a>
+                        <p className="text-xs mt-1">Located off N. Eldridge Pkwy near Hwy 6, easily accessible from Northwest Houston and Katy area.</p>
                       </div>
                     </div>
-                    <a
-                      href={loc.mapUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-4 inline-block bg-primary/10 text-primary font-bold font-body text-sm px-5 py-2.5 rounded-full hover:bg-primary/20 transition-colors"
-                    >
-                      Get Directions →
-                    </a>
+                    <div className="flex items-center gap-3 text-muted-foreground font-body text-sm">
+                      <Phone className="w-4 h-4 text-primary flex-shrink-0" />
+                      <a href="tel:713-466-9407" className="hover:text-primary transition-colors">713-466-9407</a>
+                    </div>
+                    <div className="flex items-center gap-3 text-muted-foreground font-body text-sm">
+                      <Clock className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span>Mon–Fri: 6:30 AM – 6:00 PM</span>
+                    </div>
                   </div>
-                ))}
+                  <a
+                    href="https://maps.google.com/?q=7210+N+Eldridge+Pkwy+Houston+TX+77041"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-block bg-primary/10 text-primary font-bold font-body text-sm px-5 py-2.5 rounded-full hover:bg-primary/20 transition-colors"
+                  >
+                    Get Directions →
+                  </a>
+                </div>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* Exterior photo */}
         <section className="py-16 bg-green-light">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
