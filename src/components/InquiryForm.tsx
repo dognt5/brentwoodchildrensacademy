@@ -58,8 +58,8 @@ const inquirySchema = z.object({
 
   child1FirstName: z.string().trim().min(1, "Child's first name is required").max(50),
   child1LastName: z.string().trim().min(1, "Child's last name is required").max(50),
-  child1Dob: z.date({ required_error: "Date of birth is required" }),
-  child1StartDate: z.date({ required_error: "Desired start date is required" }),
+  child1Dob: z.date({ error: "Date of birth is required" }),
+  child1StartDate: z.date({ error: "Desired start date is required" }),
 
   child2FirstName: z.string().trim().max(50).optional().or(z.literal("")),
   child2LastName: z.string().trim().max(50).optional().or(z.literal("")),
