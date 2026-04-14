@@ -3,7 +3,7 @@ import { Phone, Mail, Clock, MapPin, CheckCircle, Star } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
-import SectionHeader from "@/components/SectionHeader";
+import InquiryForm from "@/components/InquiryForm";
 import familiesImg from "@/assets/families-dropoff.jpg";
 import classroomImg from "@/assets/preschool-classroom.jpg";
 
@@ -58,61 +58,7 @@ const ScheduleTour = () => {
                 <p className="text-muted-foreground font-body mb-8">
                   Fill out the form below and our team will contact you within one business day to confirm your visit. Tours are free, friendly, and absolutely no-pressure.
                 </p>
-
-                <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-body font-semibold text-foreground mb-1.5">Parent / Guardian Name *</label>
-                      <input type="text" className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Your full name" />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-body font-semibold text-foreground mb-1.5">Phone Number *</label>
-                      <input type="tel" className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary" placeholder="(713) 000-0000" />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-body font-semibold text-foreground mb-1.5">Email Address *</label>
-                    <input type="email" className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary" placeholder="your@email.com" />
-                  </div>
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-body font-semibold text-foreground mb-1.5">Child's Age *</label>
-                      <select className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
-                        <option value="">Select age range</option>
-                        <option>6 weeks – 1 year (Infant)</option>
-                        <option>1 – 2 years (Toddler)</option>
-                        <option>3 – 4 years (Preschool)</option>
-                        <option>4 – 5 years (Pre-K)</option>
-                        <option>5 – 12 years (School Age / Varsity Club)</option>
-                        <option>Summer Camp Interest</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-body font-semibold text-foreground mb-1.5">Preferred Location *</label>
-                      <select className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
-                        <option value="">Select location</option>
-                        <option>Houston / Eldridge Pkwy</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-body font-semibold text-foreground mb-1.5">Preferred Date & Time (optional)</label>
-                    <input type="text" className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Tuesday morning or any weekday afternoon" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-body font-semibold text-foreground mb-1.5">Questions or Comments</label>
-                    <textarea className="w-full px-4 py-3 rounded-xl border border-border bg-card font-body text-foreground focus:outline-none focus:ring-2 focus:ring-primary" rows={4} placeholder="Anything specific you'd like to discuss or see during your tour?" />
-                  </div>
-                  <button
-                    type="submit"
-                    className="bg-secondary text-secondary-foreground px-8 py-4 rounded-full text-base font-bold font-body hover:opacity-90 transition-all shadow-lg w-full sm:w-auto"
-                  >
-                    Request My Tour →
-                  </button>
-                  <p className="text-muted-foreground font-body text-xs">
-                    We respect your privacy. Your information will only be used to schedule your tour.
-                  </p>
-                </form>
+                <InquiryForm />
               </motion.div>
 
               {/* Right - Info */}
@@ -122,18 +68,13 @@ const ScheduleTour = () => {
                 viewport={{ once: true }}
                 className="space-y-6"
               >
-                {/* Photo */}
                 <div className="rounded-2xl overflow-hidden h-52">
                   <img src={classroomImg} alt="Brentwood Children's Academy classroom" className="w-full h-full object-cover" />
                 </div>
 
-                {/* Phone call */}
                 <div className="bg-card rounded-2xl p-6 border border-border">
                   <h3 className="font-display font-bold text-xl text-foreground mb-3">Prefer to Call?</h3>
-                  <a
-                    href="tel:713-466-9407"
-                    className="flex items-center gap-3 text-foreground font-body text-lg hover:text-primary transition-colors"
-                  >
+                  <a href="tel:713-466-9407" className="flex items-center gap-3 text-foreground font-body text-lg hover:text-primary transition-colors">
                     <div className="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0">
                       <Phone className="w-6 h-6" />
                     </div>
@@ -143,10 +84,7 @@ const ScheduleTour = () => {
                     </div>
                   </a>
                   <div className="mt-3 border-t border-border pt-3">
-                    <a
-                      href="mailto:info@brentwoodchildrensacademy.com"
-                      className="flex items-center gap-3 text-foreground font-body hover:text-primary transition-colors"
-                    >
+                    <a href="mailto:info@brentwoodchildrensacademy.com" className="flex items-center gap-3 text-foreground font-body hover:text-primary transition-colors">
                       <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
                         <Mail className="w-5 h-5" />
                       </div>
@@ -155,7 +93,6 @@ const ScheduleTour = () => {
                   </div>
                 </div>
 
-                {/* What to expect */}
                 <div className="bg-card rounded-2xl p-6 border border-border">
                   <h3 className="font-display font-bold text-xl text-foreground mb-4">What to Expect on Your Tour</h3>
                   <div className="space-y-3">
@@ -176,7 +113,6 @@ const ScheduleTour = () => {
                   </div>
                 </div>
 
-                {/* Hours */}
                 <div className="bg-card rounded-2xl p-6 border border-border">
                   <h3 className="font-display font-bold text-xl text-foreground mb-4">Tour Hours</h3>
                   <div className="flex items-center gap-3 text-muted-foreground font-body mb-2">
@@ -192,7 +128,6 @@ const ScheduleTour = () => {
           </div>
         </section>
 
-        {/* Second photo row + reassurance */}
         <section className="py-16 bg-green-light">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
