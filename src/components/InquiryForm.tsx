@@ -134,7 +134,11 @@ const SectionHeading = ({ children }: { children: React.ReactNode }) => (
   </div>
 );
 
-const InquiryForm = () => {
+interface InquiryFormProps {
+  tourMode?: boolean;
+}
+
+const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
   const [submitted, setSubmitted] = useState(false);
 
   const form = useForm<InquiryFormValues>({
