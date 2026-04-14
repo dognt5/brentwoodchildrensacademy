@@ -168,6 +168,14 @@ const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
         hearAbout: data.hearAbout,
         comments: data.comments || "None",
       },
+      ...(tourMode && data.tourDate
+        ? {
+            tour: {
+              date: format(data.tourDate, "MMM d, yyyy"),
+              time: data.tourTime || "No preference",
+            },
+          }
+        : {}),
       child1: {
         name: `${data.child1FirstName} ${data.child1LastName}`,
         dob: format(data.child1Dob, "MMM d, yyyy"),
@@ -334,6 +342,53 @@ const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
             </FormItem>
           )}
         />
+
+        {/* ── Preferred Tour Date & Time (tour mode only) ── */}
+        {tourMode && (
+          <>
+            <SectionHeading>Preferred Tour Date & Time</SectionHeading>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <FormField
+                control={form.control}
+                name="tourDate"
+                render={({ field }) => (
+                  <FormItem className="flex flex-col">
+                    <FormLabel className="font-body font-semibold">Preferred Date</FormLabel>
+                    <FormControl>
+                      <DatePickerField value={field.value} onChange={field.onChange} placeholder="Select a date" disablePast />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="tourTime"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="font-body font-semibold">Preferred Time</FormLabel>
+                    <Select onValueChange={field.onChange} value={field.value || ""}>
+                      <FormControl>
+                        <SelectTrigger className="rounded-xl px-4 py-3 h-auto border-border bg-card font-body">
+                          <SelectValue placeholder="Select a time" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        {tourTimeOptions.map((t) => (
+                          <SelectItem key={t} value={t}>{t}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+            <p className="text-muted-foreground font-body text-xs -mt-2">
+              Tours available Mon–Fri, 9:00 AM – 4:00 PM. We'll confirm your time within one business day.
+            </p>
+          </>
+        )}
 
         {/* ── Child 1 Information ── */}
         <SectionHeading>Child 1 Information</SectionHeading>
