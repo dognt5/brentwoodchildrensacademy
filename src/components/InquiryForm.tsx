@@ -43,6 +43,24 @@ const hearAboutOptions = [
   "Referral",
 ] as const;
 
+const tourTimeOptions = [
+  "9:00 AM",
+  "9:30 AM",
+  "10:00 AM",
+  "10:30 AM",
+  "11:00 AM",
+  "11:30 AM",
+  "12:00 PM",
+  "12:30 PM",
+  "1:00 PM",
+  "1:30 PM",
+  "2:00 PM",
+  "2:30 PM",
+  "3:00 PM",
+  "3:30 PM",
+  "4:00 PM",
+] as const;
+
 const inquirySchema = z.object({
   firstName: z.string().trim().min(1, "First name is required").max(50),
   lastName: z.string().trim().min(1, "Last name is required").max(50),
@@ -55,6 +73,9 @@ const inquirySchema = z.object({
   email: z.string().trim().email("Enter a valid email address"),
   hearAbout: z.string().min(1, "Please tell us how you heard about us"),
   comments: z.string().max(1000).optional(),
+
+  tourDate: z.date().optional(),
+  tourTime: z.string().optional(),
 
   child1FirstName: z.string().trim().min(1, "Child's first name is required").max(50),
   child1LastName: z.string().trim().min(1, "Child's last name is required").max(50),
