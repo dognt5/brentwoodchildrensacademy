@@ -64,7 +64,7 @@ const tourTimeOptions = [
   "5:30 PM",
 ] as const;
 
-const inquirySchema = z.object({
+const baseSchema = {
   firstName: z.string().trim().min(1, "First name is required").max(50),
   lastName: z.string().trim().min(1, "Last name is required").max(50),
   phone: z
@@ -77,9 +77,6 @@ const inquirySchema = z.object({
   hearAbout: z.string().min(1, "Please tell us how you heard about us"),
   comments: z.string().max(1000).optional(),
 
-  tourDate: z.date().optional(),
-  tourTime: z.string().optional(),
-
   child1FirstName: z.string().trim().min(1, "Child's first name is required").max(50),
   child1LastName: z.string().trim().min(1, "Child's last name is required").max(50),
   child1Dob: z.date({ error: "Date of birth is required" }),
@@ -89,6 +86,18 @@ const inquirySchema = z.object({
   child2LastName: z.string().trim().max(50).optional().or(z.literal("")),
   child2Dob: z.date().optional(),
   child2StartDate: z.date().optional(),
+};
+
+const inquirySchema = z.object({
+  ...baseSchema,
+  tourDate: z.date().optional(),
+  tourTime: z.string().optional(),
+});
+
+const tourInquirySchema = z.object({
+  ...baseSchema,
+  tourDate: z.date({ error: "Preferred date is required" }),
+  tourTime: z.string().min(1, "Preferred time is required"),
 });
 
 type InquiryFormValues = z.infer<typeof inquirySchema>;
@@ -156,7 +165,7 @@ const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
   const [submitted, setSubmitted] = useState(false);
 
   const form = useForm<InquiryFormValues>({
-    resolver: zodResolver(inquirySchema),
+    resolver: zodResolver(tourMode ? tourInquirySchema : inquirySchema),
     defaultValues: {
       firstName: "",
       lastName: "",
@@ -367,7 +376,7 @@ const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
                 name="tourDate"
                 render={({ field }) => (
                   <FormItem className="flex flex-col">
-                    <FormLabel className="font-body font-semibold">Preferred Date</FormLabel>
+                    <FormLabel className="font-body font-semibold">Preferred Date *</FormLabel>
                     <FormControl>
                       <DatePickerField value={field.value} onChange={field.onChange} placeholder="Select a date" disablePast />
                     </FormControl>
@@ -380,7 +389,7 @@ const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
                 name="tourTime"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="font-body font-semibold">Preferred Time</FormLabel>
+                    <FormLabel className="font-body font-semibold">Preferred Time *</FormLabel>
                     <Select onValueChange={field.onChange} value={field.value || ""}>
                       <FormControl>
                         <SelectTrigger className="rounded-xl px-4 py-3 h-auto border-border bg-card font-body">
