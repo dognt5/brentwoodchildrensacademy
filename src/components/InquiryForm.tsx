@@ -59,6 +59,9 @@ const tourTimeOptions = [
   "3:00 PM",
   "3:30 PM",
   "4:00 PM",
+  "4:30 PM",
+  "5:00 PM",
+  "5:30 PM",
 ] as const;
 
 const inquirySchema = z.object({
@@ -119,7 +122,18 @@ const DatePickerField = ({
         mode="single"
         selected={value}
         onSelect={onChange}
-        disabled={disablePast ? (date) => date < new Date(new Date().setHours(0, 0, 0, 0)) : undefined}
+        disabled={
+          disablePast
+            ? (date) => {
+                const day = date.getDay();
+                return (
+                  date < new Date(new Date().setHours(0, 0, 0, 0)) ||
+                  day === 0 ||
+                  day === 6
+                );
+              }
+            : undefined
+        }
         initialFocus
         className="p-3 pointer-events-auto"
       />
