@@ -64,7 +64,7 @@ const tourTimeOptions = [
   "5:30 PM",
 ] as const;
 
-const inquirySchema = z.object({
+const baseSchema = {
   firstName: z.string().trim().min(1, "First name is required").max(50),
   lastName: z.string().trim().min(1, "Last name is required").max(50),
   phone: z
@@ -77,20 +77,6 @@ const inquirySchema = z.object({
   hearAbout: z.string().min(1, "Please tell us how you heard about us"),
   comments: z.string().max(1000).optional(),
 
-  tourDate: z.date().optional(),
-  tourTime: z.string().optional(),
-  requireTour: z.boolean().optional(),
-}).superRefine((data, ctx) => {
-  if (data.requireTour) {
-    if (!data.tourDate) {
-      ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["tourDate"], message: "Preferred date is required" });
-    }
-    if (!data.tourTime) {
-      ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["tourTime"], message: "Preferred time is required" });
-    }
-  }
-}).and(z.object({
-
   child1FirstName: z.string().trim().min(1, "Child's first name is required").max(50),
   child1LastName: z.string().trim().min(1, "Child's last name is required").max(50),
   child1Dob: z.date({ error: "Date of birth is required" }),
@@ -100,6 +86,18 @@ const inquirySchema = z.object({
   child2LastName: z.string().trim().max(50).optional().or(z.literal("")),
   child2Dob: z.date().optional(),
   child2StartDate: z.date().optional(),
+};
+
+const inquirySchema = z.object({
+  ...baseSchema,
+  tourDate: z.date().optional(),
+  tourTime: z.string().optional(),
+});
+
+const tourInquirySchema = z.object({
+  ...baseSchema,
+  tourDate: z.date({ error: "Preferred date is required" }),
+  tourTime: z.string().min(1, "Preferred time is required"),
 });
 
 type InquiryFormValues = z.infer<typeof inquirySchema>;
