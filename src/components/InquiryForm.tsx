@@ -165,7 +165,7 @@ const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
   const [submitted, setSubmitted] = useState(false);
 
   const form = useForm<InquiryFormValues>({
-    resolver: zodResolver(inquirySchema),
+    resolver: zodResolver(tourMode ? tourInquirySchema : inquirySchema),
     defaultValues: {
       firstName: "",
       lastName: "",
