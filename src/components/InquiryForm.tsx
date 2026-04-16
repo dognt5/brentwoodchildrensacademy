@@ -79,6 +79,17 @@ const inquirySchema = z.object({
 
   tourDate: z.date().optional(),
   tourTime: z.string().optional(),
+  requireTour: z.boolean().optional(),
+}).superRefine((data, ctx) => {
+  if (data.requireTour) {
+    if (!data.tourDate) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["tourDate"], message: "Preferred date is required" });
+    }
+    if (!data.tourTime) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["tourTime"], message: "Preferred time is required" });
+    }
+  }
+}).and(z.object({
 
   child1FirstName: z.string().trim().min(1, "Child's first name is required").max(50),
   child1LastName: z.string().trim().min(1, "Child's last name is required").max(50),
