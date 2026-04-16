@@ -376,7 +376,7 @@ const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
                 name="tourDate"
                 render={({ field }) => (
                   <FormItem className="flex flex-col">
-                    <FormLabel className="font-body font-semibold">Preferred Date</FormLabel>
+                    <FormLabel className="font-body font-semibold">Preferred Date *</FormLabel>
                     <FormControl>
                       <DatePickerField value={field.value} onChange={field.onChange} placeholder="Select a date" disablePast />
                     </FormControl>
@@ -389,7 +389,7 @@ const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
                 name="tourTime"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="font-body font-semibold">Preferred Time</FormLabel>
+                    <FormLabel className="font-body font-semibold">Preferred Time *</FormLabel>
                     <Select onValueChange={field.onChange} value={field.value || ""}>
                       <FormControl>
                         <SelectTrigger className="rounded-xl px-4 py-3 h-auto border-border bg-card font-body">
