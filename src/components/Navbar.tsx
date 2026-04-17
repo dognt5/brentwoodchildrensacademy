@@ -29,7 +29,7 @@ const navLinks = [
       { label: "FAQs", href: "/parent-resources#faqs" },
     ],
   },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const Navbar = () => {
