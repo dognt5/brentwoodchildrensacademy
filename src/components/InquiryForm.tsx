@@ -1,3 +1,4 @@
+import * as React from "react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -107,48 +108,64 @@ const DatePickerField = ({
   onChange,
   placeholder,
   disablePast = false,
+  enableYearNav = false,
 }: {
   value?: Date;
   onChange: (date: Date | undefined) => void;
   placeholder: string;
   disablePast?: boolean;
-}) => (
-  <Popover>
-    <PopoverTrigger asChild>
-      <Button
-        variant="outline"
-        className={cn(
-          "w-full justify-start text-left font-body font-normal px-4 py-3 h-auto rounded-xl border-border bg-card",
-          !value && "text-muted-foreground"
-        )}
-      >
-        <CalendarIcon className="mr-2 h-4 w-4" />
-        {value ? format(value, "MMM d, yyyy") : placeholder}
-      </Button>
-    </PopoverTrigger>
-    <PopoverContent className="w-auto p-0" align="start">
-      <Calendar
-        mode="single"
-        selected={value}
-        onSelect={onChange}
-        disabled={
-          disablePast
-            ? (date) => {
-                const day = date.getDay();
-                return (
-                  date < new Date(new Date().setHours(0, 0, 0, 0)) ||
-                  day === 0 ||
-                  day === 6
-                );
-              }
-            : undefined
-        }
-        initialFocus
-        className="p-3 pointer-events-auto"
-      />
-    </PopoverContent>
-  </Popover>
-);
+  enableYearNav?: boolean;
+}) => {
+  const today = new Date();
+  const [month, setMonth] = React.useState<Date>(value ?? today);
+
+  React.useEffect(() => {
+    if (value) setMonth(value);
+  }, [value]);
+
+  return (
+    <Popover>
+      <PopoverTrigger asChild>
+        <Button
+          variant="outline"
+          className={cn(
+            "w-full justify-start text-left font-body font-normal px-4 py-3 h-auto rounded-xl border-border bg-card",
+            !value && "text-muted-foreground"
+          )}
+        >
+          <CalendarIcon className="mr-2 h-4 w-4" />
+          {value ? format(value, "MMM d, yyyy") : placeholder}
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent className="w-auto p-0" align="start">
+        <Calendar
+          mode="single"
+          selected={value}
+          onSelect={onChange}
+          month={month}
+          onMonthChange={setMonth}
+          captionLayout={enableYearNav ? "dropdown-buttons" : undefined}
+          fromYear={enableYearNav ? today.getFullYear() - 12 : undefined}
+          toYear={enableYearNav ? today.getFullYear() + 1 : undefined}
+          disabled={
+            disablePast
+              ? (date) => {
+                  const day = date.getDay();
+                  return (
+                    date < new Date(new Date().setHours(0, 0, 0, 0)) ||
+                    day === 0 ||
+                    day === 6
+                  );
+                }
+              : undefined
+          }
+          initialFocus
+          className="p-3 pointer-events-auto"
+        />
+      </PopoverContent>
+    </Popover>
+  );
+};
 
 const SectionHeading = ({ children }: { children: React.ReactNode }) => (
   <div className="pt-4 pb-1">
@@ -453,7 +470,7 @@ const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
               <FormItem className="flex flex-col">
                 <FormLabel className="font-body font-semibold">Date of Birth *</FormLabel>
                 <FormControl>
-                  <DatePickerField value={field.value} onChange={field.onChange} placeholder="Select date of birth" />
+                  <DatePickerField value={field.value} onChange={field.onChange} placeholder="Select date of birth" enableYearNav />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -517,7 +534,7 @@ const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
               <FormItem className="flex flex-col">
                 <FormLabel className="font-body font-semibold">Date of Birth</FormLabel>
                 <FormControl>
-                  <DatePickerField value={field.value} onChange={field.onChange} placeholder="Select date of birth" />
+                  <DatePickerField value={field.value} onChange={field.onChange} placeholder="Select date of birth" enableYearNav />
                 </FormControl>
                 <FormMessage />
               </FormItem>
