@@ -470,7 +470,7 @@ const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
               <FormItem className="flex flex-col">
                 <FormLabel className="font-body font-semibold">Date of Birth *</FormLabel>
                 <FormControl>
-                  <DatePickerField value={field.value} onChange={field.onChange} placeholder="Select date of birth" />
+                  <DatePickerField value={field.value} onChange={field.onChange} placeholder="Select date of birth" enableYearNav />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -534,7 +534,7 @@ const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
               <FormItem className="flex flex-col">
                 <FormLabel className="font-body font-semibold">Date of Birth</FormLabel>
                 <FormControl>
-                  <DatePickerField value={field.value} onChange={field.onChange} placeholder="Select date of birth" />
+                  <DatePickerField value={field.value} onChange={field.onChange} placeholder="Select date of birth" enableYearNav />
                 </FormControl>
                 <FormMessage />
               </FormItem>
