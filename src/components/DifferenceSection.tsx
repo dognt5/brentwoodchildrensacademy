@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Shield, Star, Users, Heart, BookOpen, Sun } from "lucide-react";
-import staffImg from "@/assets/staff-team.jpg";
+import classroomImg from "@/assets/classroom-interior.jpg";
 
 const features = [
   {
@@ -78,7 +78,7 @@ const DifferenceSection = () => {
           viewport={{ once: true }}
           className="mb-16 rounded-2xl overflow-hidden h-64 md:h-80"
         >
-          <img src={staffImg} alt="Brentwood Children's Academy staff team" className="w-full h-full object-cover object-top" />
+          <img src={classroomImg} alt="Bright, welcoming Brentwood classroom with books, toys, and children's artwork" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
         </motion.div>
 
         <motion.div
