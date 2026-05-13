@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-2 text-card/60 font-body text-xs">
               <span className="bg-accent/20 text-accent px-2 py-1 rounded-full font-semibold">⭐ TRS 4-Star Rated</span>
-              <span className="bg-primary/20 text-primary px-2 py-1 rounded-full font-semibold">Se Habla Español</span>
+              <Link to="/es" className="bg-primary/20 text-primary px-2 py-1 rounded-full font-semibold hover:bg-primary/30 transition-colors">Se Habla Español</Link>
             </div>
           </div>
 
