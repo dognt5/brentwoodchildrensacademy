@@ -198,7 +198,7 @@ const programData: Record<string, {
       { src: artImg, alt: "Arts and crafts tied to summer camp theme week" },
     ],
     overview: "Our Summer Camp is the highlight of the year for Brentwood families! Each week features a unique themed adventure with field trips to local attractions, hands-on STEM projects, water play, creative arts, outdoor exploration, and performing arts showcases. Children build friendships, discover new talents, and create memories that last a lifetime.",
-    overviewExtra: "Camp is available for all ages and runs throughout the summer with flexible scheduling options. Early registration is recommended as spots fill quickly. Ask about our sibling discounts and special early-enrollment pricing for returning families.",
+    overviewExtra: "Camp is available for all ages (0 to 12 years) and runs throughout the summer with flexible scheduling options. Early registration is recommended as spots fill quickly. Ask about our sibling discounts and special early-enrollment pricing for returning families.",
     curriculum: [
       "Weekly themed units: space, ocean, dinosaurs, world cultures, superheroes, nature, and more",
       "STEM challenges and maker space activities tied to each week's theme",
