@@ -205,7 +205,7 @@ const programData: Record<string, {
       "Creative writing, storytelling, and journaling",
       "Nature science, outdoor exploration, and environmental education",
       "Cooking and healthy nutrition workshops",
-      "Community helpers and real-world career exploration",
+      "Community helpers and real-world career exploration with weekly field trips",
       "Performing arts: talent shows, skits, and musical performances",
       "Physical fitness and team sports throughout the week",
     ],
