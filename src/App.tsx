@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import Testimonials from "./pages/Testimonials";
 import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
+import Espanol from "./pages/Espanol";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/es" element={<Espanol />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
