@@ -119,7 +119,7 @@ const HeroSection = () => {
           className="flex justify-center mb-8"
         >
           <span className="inline-flex items-center gap-2 bg-accent text-accent-foreground font-body font-bold text-sm px-4 py-1.5 rounded-full shadow-md">
-            <Star className="h-4 w-4 fill-current" /> TRS 4-Star Rated • Houston, TX
+            <Star className="h-4 w-4 fill-current" /> TRS 4/4 -Star Rated • Houston, TX
           </span>
         </motion.div>
 
