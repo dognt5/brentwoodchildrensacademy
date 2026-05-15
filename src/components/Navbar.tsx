@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Phone, Mail, MapPin, Menu, X, ChevronDown } from "lucide-react";
+import { Phone, Mail, MapPin, Menu, X, ChevronDown, Instagram } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
