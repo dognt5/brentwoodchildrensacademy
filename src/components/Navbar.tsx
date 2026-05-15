@@ -52,30 +52,31 @@ const Navbar = () => {
               <span>info@brentwoodchildrensacademy.com</span>
             </a>
           </div>
-          <div className="flex items-center gap-4 flex-wrap text-xs">
+          <div className="flex items-center gap-3 flex-wrap text-xs">
             <span className="flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5" />
               Houston, TX
             </span>
-            <a
-              href="https://www.instagram.com/brentwoodchildrensacademy/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 hover:opacity-80 transition-opacity"
-              aria-label="Instagram"
-            >
-              <Instagram className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Follow Us</span>
-            </a>
-            <a
-              href="https://www.facebook.com/BrentwoodChildrensAcademy/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 hover:opacity-80 transition-opacity"
-              aria-label="Facebook"
-            >
-              <Facebook className="w-3.5 h-3.5" />
-            </a>
+            <div className="flex items-center gap-2">
+              <a
+                href="https://www.instagram.com/brentwoodchildrensacademy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-3.5 h-3.5" />
+              </a>
+              <a
+                href="https://www.facebook.com/BrentwoodChildrensAcademy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-3.5 h-3.5" />
+              </a>
+            </div>
             <span className="bg-secondary text-secondary-foreground px-2 py-0.5 rounded-full font-semibold text-xs">
               Se Habla Español
             </span>
