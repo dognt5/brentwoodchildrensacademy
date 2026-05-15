@@ -67,6 +67,15 @@ const Navbar = () => {
               <Instagram className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">Follow Us</span>
             </a>
+            <a
+              href="https://www.facebook.com/BrentwoodChildrensAcademy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 hover:opacity-80 transition-opacity"
+              aria-label="Facebook"
+            >
+              <Facebook className="w-3.5 h-3.5" />
+            </a>
             <span className="bg-secondary text-secondary-foreground px-2 py-0.5 rounded-full font-semibold text-xs">
               Se Habla Español
             </span>
