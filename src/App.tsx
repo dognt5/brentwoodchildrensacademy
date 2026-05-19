@@ -16,6 +16,7 @@ import Testimonials from "./pages/Testimonials";
 import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 import Espanol from "./pages/Espanol";
+import Robotics from "./pages/Robotics";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/es" element={<Espanol />} />
+          <Route path="/robotics-steam" element={<Robotics />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
