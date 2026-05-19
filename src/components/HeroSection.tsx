@@ -12,6 +12,8 @@ import {
   Star,
   Sun,
   Cloud,
+  Bot,
+  Cpu,
 } from "lucide-react";
 
 const features = [
@@ -24,6 +26,29 @@ const features = [
   { icon: ShieldCheck, label: "Safe, Nurturing Environment", bg: "bg-primary", fg: "text-primary-foreground" },
   { icon: Baby, label: "Ages Infant to School Age", bg: "bg-accent", fg: "text-accent-foreground" },
   { icon: Star, label: "TRS Highest Star Rating", bg: "bg-coral", fg: "text-secondary-foreground" },
+];
+
+const floatingExtras = [
+  {
+    icon: Bot,
+    label: "Robotics",
+    href: "/robotics-steam",
+    bg: "bg-green-dark",
+    fg: "text-primary-foreground",
+    position: "top-24 left-4 md:top-32 md:left-10",
+    floatDelay: 0,
+    tilt: -6,
+  },
+  {
+    icon: Cpu,
+    label: "KIBO",
+    href: "/robotics-steam",
+    bg: "bg-secondary",
+    fg: "text-secondary-foreground",
+    position: "top-40 right-4 md:top-48 md:right-12",
+    floatDelay: 0.8,
+    tilt: 6,
+  },
 ];
 
 const HeroSection = () => {
