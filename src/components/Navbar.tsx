@@ -17,6 +17,7 @@ const navLinks = [
       { label: "Summer Camp", href: "/programs/summer-camp" },
     ],
   },
+  { label: "Robotics & STEAM", href: "/robotics-steam" },
   { label: "Tuition & Aid", href: "/tuition" },
   { label: "About Us", href: "/about" },
   {
