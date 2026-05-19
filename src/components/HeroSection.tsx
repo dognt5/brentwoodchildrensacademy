@@ -12,6 +12,8 @@ import {
   Star,
   Sun,
   Cloud,
+  Bot,
+  Cpu,
 } from "lucide-react";
 
 const features = [
@@ -24,6 +26,29 @@ const features = [
   { icon: ShieldCheck, label: "Safe, Nurturing Environment", bg: "bg-primary", fg: "text-primary-foreground" },
   { icon: Baby, label: "Ages Infant to School Age", bg: "bg-accent", fg: "text-accent-foreground" },
   { icon: Star, label: "TRS Highest Star Rating", bg: "bg-coral", fg: "text-secondary-foreground" },
+];
+
+const floatingExtras = [
+  {
+    icon: Bot,
+    label: "Robotics",
+    href: "/robotics-steam",
+    bg: "bg-green-dark",
+    fg: "text-primary-foreground",
+    position: "top-24 left-4 md:top-32 md:left-10",
+    floatDelay: 0,
+    tilt: -6,
+  },
+  {
+    icon: Cpu,
+    label: "KIBO",
+    href: "/robotics-steam",
+    bg: "bg-secondary",
+    fg: "text-secondary-foreground",
+    position: "top-40 right-4 md:top-48 md:right-12",
+    floatDelay: 0.8,
+    tilt: 6,
+  },
 ];
 
 const HeroSection = () => {
@@ -109,6 +134,40 @@ const HeroSection = () => {
         <div className="absolute top-1/4 right-2 h-3 w-3 rounded-full bg-secondary/70" />
         <div className="absolute bottom-1/3 left-1/2 h-3 w-3 rounded-full bg-accent/70" />
       </div>
+
+      {/* Floating Robotics & KIBO badges */}
+      {floatingExtras.map((f) => (
+        <motion.a
+          key={f.label}
+          href={f.href}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            y: [0, -10, 0],
+            rotate: f.tilt,
+          }}
+          transition={{
+            opacity: { duration: 0.6, delay: 0.6 },
+            scale: { duration: 0.6, delay: 0.6 },
+            rotate: { duration: 0.6, delay: 0.6 },
+            y: {
+              duration: 4.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: f.floatDelay,
+            },
+          }}
+          whileHover={{ scale: 1.1, rotate: 0, y: -8 }}
+          className={`hidden md:flex absolute z-20 ${f.position} items-center gap-2 ${f.bg} ${f.fg} rounded-2xl pl-2 pr-4 py-2 shadow-xl border-2 border-card/40 cursor-pointer`}
+        >
+          <span className="flex items-center justify-center h-10 w-10 rounded-xl bg-card/90 text-foreground shrink-0 shadow-inner">
+            <f.icon className="h-5 w-5" />
+          </span>
+          <span className="font-body font-bold text-sm leading-tight">{f.label}</span>
+        </motion.a>
+      ))}
+
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Badge */}
