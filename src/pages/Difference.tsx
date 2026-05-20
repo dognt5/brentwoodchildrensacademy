@@ -19,7 +19,7 @@ const features = [
     title: "Expert Management",
     description: "Owners Hugh (Himanshu) and Nidhi Trivedi bring advanced education degrees and hands-on leadership to Brentwood every day.",
     color: "bg-primary/10 text-primary",
-    image: staffImg,
+    image: certificationsImg,
     details: [
       "Owners hold multiple degrees in Education and Business Administration",
       "On-site director with over 20 years of childcare leadership experience",
