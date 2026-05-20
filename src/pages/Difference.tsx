@@ -11,6 +11,7 @@ import artImg from "@/assets/art-activities.jpg";
 import readingImg from "@/assets/reading-time.jpg";
 import musicImg from "@/assets/music-activities.jpg";
 import heroImg from "@/assets/hero-children.jpg";
+import certificationsImg from "@/assets/certifications-awards.jpg";
 
 const features = [
   {
