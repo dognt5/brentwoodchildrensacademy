@@ -11,7 +11,7 @@ import artImg from "@/assets/art-activities.jpg";
 import readingImg from "@/assets/reading-time.jpg";
 import musicImg from "@/assets/music-activities.jpg";
 import heroImg from "@/assets/hero-children.jpg";
-import certificationsImg from "@/assets/certifications-awards.jpg";
+import certificationsImg from "@/assets/trs-four-star-badge.png";
 
 const features = [
   {
@@ -226,12 +226,12 @@ const Difference = () => {
                     initial={{ opacity: 0, x: i % 2 === 0 ? 30 : -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className={`rounded-2xl overflow-hidden h-80 md:h-96 ${i % 2 !== 0 ? "lg:order-1" : ""}`}
+                    className={`rounded-2xl overflow-hidden h-80 md:h-96 ${feature.title === "Expert Management" ? "bg-[#cdeaf7]" : ""} ${i % 2 !== 0 ? "lg:order-1" : ""}`}
                   >
                     <img
                       src={feature.image}
                       alt={feature.title}
-                      className="w-full h-full object-cover"
+                      className={`w-full h-full ${feature.title === "Expert Management" ? "object-contain" : "object-cover"}`}
                       loading="lazy"
                     />
                   </motion.div>
