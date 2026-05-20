@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
-import staffImg from "@/assets/staff-team.jpg";
+
 import outdoorImg from "@/assets/outdoor-playground.jpg";
 import artImg from "@/assets/art-activities.jpg";
 import readingImg from "@/assets/reading-time.jpg";
