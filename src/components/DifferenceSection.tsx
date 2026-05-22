@@ -78,7 +78,7 @@ const DifferenceSection = () => {
           viewport={{ once: true }}
           className="mb-16 rounded-2xl overflow-hidden h-64 md:h-80"
         >
-          <img src={classroomImg} alt="Bright, welcoming Brentwood classroom with books, toys, and children's artwork" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+          <img src={classroomImg} alt="Bright, welcoming Brentwood classroom with books, toys, and children's artwork" className="w-full h-full object-cover object-[center_60%]" loading="lazy" width={1920} height={1080} />
         </motion.div>
 
         <motion.div
