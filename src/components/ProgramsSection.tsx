@@ -20,6 +20,7 @@ const programs = [
     description: "Play-based Frog Street curriculum building literacy, math, social skills, and creative expression through hands-on discovery.",
     image: preschoolImg,
     link: "/programs/preschool",
+    objectPosition: "center 40%",
   },
   {
     title: "Pre-Kindergarten",
@@ -80,7 +81,8 @@ const ProgramsSection = () => {
                   <img
                     src={program.image}
                     alt={program.title}
-                    className="w-full h-full object-cover object-[center_35%] group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    style={{ objectPosition: (program as any).objectPosition ?? "center 35%" }}
                     loading="lazy"
                   />
                   <div className="absolute top-4 left-4 bg-primary text-primary-foreground text-xs font-bold font-body px-3 py-1 rounded-full">
