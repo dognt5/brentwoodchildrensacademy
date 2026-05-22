@@ -229,12 +229,12 @@ const Difference = () => {
                     initial={{ opacity: 0, x: i % 2 === 0 ? 30 : -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className={`rounded-2xl overflow-hidden h-80 md:h-96 ${feature.title === "Expert Management" ? "bg-[#cdeaf7]" : ""} ${i % 2 !== 0 ? "lg:order-1" : ""}`}
+                    className={`rounded-2xl overflow-hidden h-80 md:h-96 ${i % 2 !== 0 ? "lg:order-1" : ""}`}
                   >
                     <img
                       src={feature.image}
                       alt={feature.title}
-                      className={`w-full h-full ${feature.title === "Expert Management" ? "object-contain" : "object-cover"}`}
+                      className="w-full h-full object-cover object-top"
                       loading="lazy"
                     />
                   </motion.div>
