@@ -37,7 +37,7 @@ const features = [
     title: "Safety First",
     description: "From 4K security cameras to CPR-certified teachers, every layer of our facility is designed to keep your child safe.",
     color: "bg-secondary/10 text-secondary",
-    image: outdoorImg,
+    image: safetyImg,
     details: [
       "4K security cameras covering all indoor and outdoor areas 24/7",
       "Secure keypad entry — only authorized persons may enter the facility",
