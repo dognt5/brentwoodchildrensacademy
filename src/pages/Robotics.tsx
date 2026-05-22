@@ -22,6 +22,19 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
+import kiboBlocksImg from "@/assets/robotics-kibo-blocks.jpg";
+import handsBuildingImg from "@/assets/robotics-hands-building.jpg";
+import steamRoomImg from "@/assets/robotics-steam-room.jpg";
+import microscopeImg from "@/assets/robotics-microscope.jpg";
+import digitalLearningImg from "@/assets/robotics-digital-learning.jpg";
+
+const galleryImages = [
+  { src: kiboBlocksImg, alt: "KIBO wooden robot and coding blocks", caption: "KIBO in action" },
+  { src: handsBuildingImg, alt: "Children building with STEAM gears and blocks", caption: "Hands-on engineering" },
+  { src: steamRoomImg, alt: "Brentwood dedicated STEAM room", caption: "Our STEAM room" },
+  { src: microscopeImg, alt: "Child exploring with a biological microscope", caption: "Real science tools" },
+  { src: digitalLearningImg, alt: "HATCH digital learning tablet in classroom", caption: "Digital learning" },
+];
 
 const heroBadges = [
   { icon: Bot, label: "KIBO Robotics", bg: "bg-primary", fg: "text-primary-foreground" },
@@ -304,6 +317,52 @@ const Robotics = () => {
                   <p className="text-muted-foreground font-body text-sm leading-relaxed">{f.desc}</p>
                 </motion.div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 6b. GALLERY */}
+        <section className="py-20 md:py-24 bg-cream">
+          <div className="container mx-auto px-4">
+            <SectionHeader
+              label="See It For Yourself"
+              title="Inside Our Robotics & STEAM Program"
+              subtitle="A peek at the tools, materials, and spaces that make STEAM come alive at Brentwood every day."
+              labelColor="text-secondary"
+            />
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto auto-rows-[180px] md:auto-rows-[220px]">
+              {galleryImages.map((img, i) => {
+                const spans = [
+                  "col-span-2 row-span-2",
+                  "col-span-2 row-span-1",
+                  "col-span-1 row-span-1",
+                  "col-span-1 row-span-1",
+                  "col-span-2 row-span-1",
+                ];
+                return (
+                  <motion.figure
+                    key={img.src}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.08, duration: 0.5 }}
+                    className={`${spans[i]} relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all group border border-border`}
+                  >
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      width={1024}
+                      height={768}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent text-card font-body font-semibold text-sm px-4 py-3">
+                      {img.caption}
+                    </figcaption>
+                  </motion.figure>
+                );
+              })}
             </div>
           </div>
         </section>
