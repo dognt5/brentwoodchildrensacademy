@@ -15,6 +15,7 @@ import differenceHero from "@/assets/difference-hero.jpg";
 import certificationsImg from "@/assets/trs-four-star-badge.png";
 import expertManagementImg from "@/assets/expert-management.jpg";
 import safetyImg from "@/assets/safety-camera.jpg";
+import trsRatingImg from "@/assets/trs-rating-post.png";
 
 const features = [
   {
