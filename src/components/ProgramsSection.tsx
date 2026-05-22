@@ -20,6 +20,7 @@ const programs = [
     description: "Play-based Frog Street curriculum building literacy, math, social skills, and creative expression through hands-on discovery.",
     image: preschoolImg,
     link: "/programs/preschool",
+    objectPosition: "center 40%",
   },
   {
     title: "Pre-Kindergarten",
