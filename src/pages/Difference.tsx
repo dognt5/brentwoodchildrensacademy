@@ -239,7 +239,7 @@ const Difference = () => {
                     <img
                       src={feature.image}
                       alt={feature.title}
-                      className={`w-full h-full ${feature.title === "TRS 4-Star Rating" ? "object-contain" : "object-cover object-top"}`}
+                      className={`w-full h-full ${feature.title === "TRS 4-Star Rating" ? "object-contain" : feature.title === "Enrichment Activities" ? "object-cover object-right" : "object-cover object-top"}`}
                       loading="lazy"
                     />
                   </motion.div>
