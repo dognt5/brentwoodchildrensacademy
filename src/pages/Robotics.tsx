@@ -35,6 +35,7 @@ const galleryImages = [
   { src: steamRoomImg, alt: "Brentwood dedicated STEAM room", caption: "Our STEAM room" },
   { src: microscopeImg, alt: "Child exploring with a biological microscope", caption: "Real science tools" },
   { src: digitalLearningImg, alt: "HATCH digital learning tablet in classroom", caption: "Digital learning" },
+  { src: creativeBuildImg, alt: "Colorful blocks and gears for creative building", caption: "Creative building" },
 ];
 
 const heroBadges = [
