@@ -127,6 +127,7 @@ const Difference = () => {
           title="The Brentwood"
           highlight="Difference"
           subtitle="More than childcare — a TRS 4-Star community dedicated to nurturing your child's fullest potential with expert leadership, proven curriculum, and genuine love."
+          image={differenceHero}
         />
 
         {/* Intro summary */}
