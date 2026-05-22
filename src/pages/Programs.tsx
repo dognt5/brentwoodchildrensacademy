@@ -10,7 +10,7 @@ import preschoolImg from "@/assets/programs-preschool.jpg";
 import prekImg from "@/assets/programs-prek.jpg";
 import schoolAgeImg from "@/assets/school-age-program.jpg";
 import summerImg from "@/assets/summer-camp.jpg";
-import heroImg from "@/assets/hero-children.jpg";
+import differenceHero from "@/assets/difference-hero.jpg";
 
 const programs = [
   {
@@ -65,7 +65,7 @@ const Programs = () => {
           title="Programs for Every"
           highlight="Stage"
           subtitle="From infants to school age, our age-appropriate programs help every child thrive with love, learning, and laughter."
-          image={heroImg}
+          image={differenceHero}
         />
 
         {/* Intro */}
