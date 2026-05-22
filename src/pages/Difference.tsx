@@ -101,7 +101,7 @@ const features = [
     title: "Enrichment Activities",
     description: "Music, art, STEM, outdoor play, and performing arts woven into every day to spark curiosity, creativity, and confidence.",
     color: "bg-secondary/10 text-secondary",
-    image: musicImg,
+    image: enrichmentImg,
     details: [
       "Daily music, art, and creative expression activities for all ages",
       "STEM projects introducing science, technology, engineering, and math",
