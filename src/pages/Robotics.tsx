@@ -27,6 +27,7 @@ import handsBuildingImg from "@/assets/robotics-hands-building.jpg";
 import steamRoomImg from "@/assets/robotics-steam-room.jpg";
 import microscopeImg from "@/assets/robotics-microscope.jpg";
 import digitalLearningImg from "@/assets/robotics-digital-learning.jpg";
+import creativeBuildImg from "@/assets/robotics-creative-build.jpg";
 
 const galleryImages = [
   { src: kiboBlocksImg, alt: "KIBO wooden robot and coding blocks", caption: "KIBO in action" },
@@ -34,6 +35,7 @@ const galleryImages = [
   { src: steamRoomImg, alt: "Brentwood dedicated STEAM room", caption: "Our STEAM room" },
   { src: microscopeImg, alt: "Child exploring with a biological microscope", caption: "Real science tools" },
   { src: digitalLearningImg, alt: "HATCH digital learning tablet in classroom", caption: "Digital learning" },
+  { src: creativeBuildImg, alt: "Colorful blocks and gears for creative building", caption: "Creative building" },
 ];
 
 const heroBadges = [
@@ -338,6 +340,7 @@ const Robotics = () => {
                   "col-span-2 row-span-1",
                   "col-span-1 row-span-1",
                   "col-span-1 row-span-1",
+                  "col-span-2 row-span-1",
                   "col-span-2 row-span-1",
                 ];
                 return (
