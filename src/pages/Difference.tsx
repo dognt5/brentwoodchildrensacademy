@@ -85,7 +85,7 @@ const features = [
     title: "Proven Curriculum",
     description: "The Frog Street research-based curriculum prepares children academically, socially, and emotionally for long-term school success.",
     color: "bg-primary/10 text-primary",
-    image: artImg,
+    image: provenCurriculumImg,
     details: [
       "Frog Street curriculum — proven, research-backed, and Texas state-aligned",
       "Balanced approach to academics, social-emotional, and physical development",
