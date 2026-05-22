@@ -16,6 +16,7 @@ import certificationsImg from "@/assets/trs-four-star-badge.png";
 import expertManagementImg from "@/assets/expert-management.jpg";
 import safetyImg from "@/assets/safety-camera.jpg";
 import trsRatingImg from "@/assets/trs-rating-post.png";
+import lovingEnvironmentImg from "@/assets/loving-environment.jpg";
 
 const features = [
   {
@@ -68,7 +69,7 @@ const features = [
     title: "Loving Environment",
     description: "Small class sizes, consistent caregivers, and a genuine culture of warmth ensure every child feels truly at home.",
     color: "bg-coral/10 text-coral",
-    image: readingImg,
+    image: lovingEnvironmentImg,
     details: [
       "Small class sizes maintained well below state maximum ratios",
       "Nurturing, family-like atmosphere in every classroom every day",
