@@ -15,6 +15,7 @@ import differenceHero from "@/assets/difference-hero.jpg";
 import certificationsImg from "@/assets/trs-four-star-badge.png";
 import expertManagementImg from "@/assets/expert-management.jpg";
 import safetyImg from "@/assets/safety-camera.jpg";
+import trsRatingImg from "@/assets/trs-rating-post.png";
 
 const features = [
   {
@@ -52,7 +53,7 @@ const features = [
     title: "TRS 4-Star Rating",
     description: "Texas Rising Star's highest rating — and Center of Excellence (CoE) program participants — reflecting years of demonstrated excellence.",
     color: "bg-accent/20 text-accent-foreground",
-    image: heroImg,
+    image: trsRatingImg,
     details: [
       "Texas Rising Star 4-Star — the highest achievable rating in Texas",
       "Active participants in the Center of Excellence (CoE) program",
@@ -230,12 +231,12 @@ const Difference = () => {
                     initial={{ opacity: 0, x: i % 2 === 0 ? 30 : -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className={`rounded-2xl overflow-hidden h-80 md:h-96 ${i % 2 !== 0 ? "lg:order-1" : ""}`}
+                    className={`rounded-2xl overflow-hidden h-80 md:h-96 ${feature.title === "TRS 4-Star Rating" ? "bg-[#d6eef9]" : ""} ${i % 2 !== 0 ? "lg:order-1" : ""}`}
                   >
                     <img
                       src={feature.image}
                       alt={feature.title}
-                      className="w-full h-full object-cover object-top"
+                      className={`w-full h-full ${feature.title === "TRS 4-Star Rating" ? "object-contain" : "object-cover object-top"}`}
                       loading="lazy"
                     />
                   </motion.div>
