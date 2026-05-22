@@ -16,7 +16,7 @@ const PageHero = ({ badge, title, highlight, subtitle, image }: PageHeroProps) =
         <img
           src={image || heroImage}
           alt={title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[center_65%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" />
       </div>
