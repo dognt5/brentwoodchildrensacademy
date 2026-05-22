@@ -11,6 +11,7 @@ import artImg from "@/assets/art-activities.jpg";
 import readingImg from "@/assets/reading-time.jpg";
 import musicImg from "@/assets/music-activities.jpg";
 import heroImg from "@/assets/hero-children.jpg";
+import differenceHero from "@/assets/difference-hero.jpg";
 import certificationsImg from "@/assets/trs-four-star-badge.png";
 
 const features = [
@@ -126,6 +127,7 @@ const Difference = () => {
           title="The Brentwood"
           highlight="Difference"
           subtitle="More than childcare — a TRS 4-Star community dedicated to nurturing your child's fullest potential with expert leadership, proven curriculum, and genuine love."
+          image={differenceHero}
         />
 
         {/* Intro summary */}
