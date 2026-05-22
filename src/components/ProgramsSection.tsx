@@ -35,6 +35,7 @@ const programs = [
     description: "Before & after-school care with homework help, enrichment activities, and social development in a fun supervised environment.",
     image: schoolAgeImg,
     link: "/programs/school-age",
+    objectPosition: "30% 65%",
   },
   {
     title: "Summer Camp",
