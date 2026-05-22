@@ -18,6 +18,7 @@ import safetyImg from "@/assets/safety-camera.jpg";
 import trsRatingImg from "@/assets/trs-rating-post.png";
 import lovingEnvironmentImg from "@/assets/loving-environment.jpg";
 import provenCurriculumImg from "@/assets/proven-curriculum.jpg";
+import enrichmentImg from "@/assets/enrichment-activities.jpg";
 
 const features = [
   {
