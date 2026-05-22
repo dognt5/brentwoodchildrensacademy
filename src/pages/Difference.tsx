@@ -13,6 +13,7 @@ import musicImg from "@/assets/music-activities.jpg";
 import heroImg from "@/assets/hero-children.jpg";
 import differenceHero from "@/assets/difference-hero.jpg";
 import certificationsImg from "@/assets/trs-four-star-badge.png";
+import expertManagementImg from "@/assets/expert-management.jpg";
 
 const features = [
   {
@@ -20,7 +21,7 @@ const features = [
     title: "Expert Management",
     description: "Owners Hugh (Himanshu) and Nidhi Trivedi bring advanced education degrees and hands-on leadership to Brentwood every day.",
     color: "bg-primary/10 text-primary",
-    image: certificationsImg,
+    image: expertManagementImg,
     details: [
       "Owners hold multiple degrees in Education and Business Administration",
       "On-site director with over 20 years of childcare leadership experience",
@@ -228,12 +229,12 @@ const Difference = () => {
                     initial={{ opacity: 0, x: i % 2 === 0 ? 30 : -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className={`rounded-2xl overflow-hidden h-80 md:h-96 ${feature.title === "Expert Management" ? "bg-[#cdeaf7]" : ""} ${i % 2 !== 0 ? "lg:order-1" : ""}`}
+                    className={`rounded-2xl overflow-hidden h-80 md:h-96 ${i % 2 !== 0 ? "lg:order-1" : ""}`}
                   >
                     <img
                       src={feature.image}
                       alt={feature.title}
-                      className={`w-full h-full ${feature.title === "Expert Management" ? "object-contain" : "object-cover"}`}
+                      className="w-full h-full object-cover object-top"
                       loading="lazy"
                     />
                   </motion.div>
