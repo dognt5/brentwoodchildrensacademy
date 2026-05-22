@@ -69,7 +69,7 @@ const features = [
     title: "Loving Environment",
     description: "Small class sizes, consistent caregivers, and a genuine culture of warmth ensure every child feels truly at home.",
     color: "bg-coral/10 text-coral",
-    image: readingImg,
+    image: lovingEnvironmentImg,
     details: [
       "Small class sizes maintained well below state maximum ratios",
       "Nurturing, family-like atmosphere in every classroom every day",
