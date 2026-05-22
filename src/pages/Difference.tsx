@@ -18,6 +18,7 @@ import safetyImg from "@/assets/safety-camera.jpg";
 import trsRatingImg from "@/assets/trs-rating-post.png";
 import lovingEnvironmentImg from "@/assets/loving-environment.jpg";
 import provenCurriculumImg from "@/assets/proven-curriculum.jpg";
+import enrichmentImg from "@/assets/enrichment-activities.jpg";
 
 const features = [
   {
@@ -100,7 +101,7 @@ const features = [
     title: "Enrichment Activities",
     description: "Music, art, STEM, outdoor play, and performing arts woven into every day to spark curiosity, creativity, and confidence.",
     color: "bg-secondary/10 text-secondary",
-    image: musicImg,
+    image: enrichmentImg,
     details: [
       "Daily music, art, and creative expression activities for all ages",
       "STEM projects introducing science, technology, engineering, and math",
@@ -238,7 +239,7 @@ const Difference = () => {
                     <img
                       src={feature.image}
                       alt={feature.title}
-                      className={`w-full h-full ${feature.title === "TRS 4-Star Rating" ? "object-contain" : "object-cover object-top"}`}
+                      className={`w-full h-full ${feature.title === "TRS 4-Star Rating" ? "object-contain" : feature.title === "Enrichment Activities" ? "object-cover object-right" : "object-cover object-top"}`}
                       loading="lazy"
                     />
                   </motion.div>
