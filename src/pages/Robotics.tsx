@@ -35,7 +35,7 @@ const galleryImages = [
   { src: steamRoomImg, alt: "Brentwood dedicated STEAM room", caption: "Our STEAM room" },
   { src: microscopeImg, alt: "Child exploring with a biological microscope", caption: "Real science tools" },
   { src: digitalLearningImg, alt: "Colorful 'Welcome to STEAM' chalkboard mural with gears, robot, butterfly, and science doodles", caption: "Welcome to STEAM" },
-  { src: creativeBuildImg, alt: "Colorful blocks and gears for creative building", caption: "Creative building" },
+  { src: creativeBuildImg, alt: "Hands-on anatomy learning station with human torso model, science books, and dental kit", caption: "Hands-on science" },
 ];
 
 const heroBadges = [
