@@ -23,7 +23,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
 import kiboBlocksImg from "@/assets/robotics-kibo-blocks.jpg";
-import handsBuildingImg from "@/assets/robotics-hands-building.jpg";
+import handsBuildingImg from "@/assets/robotics-steam-classroom.jpg";
 import steamRoomImg from "@/assets/robotics-steam-room.jpg";
 import microscopeImg from "@/assets/robotics-microscope.jpg";
 import digitalLearningImg from "@/assets/robotics-digital-learning.jpg";
