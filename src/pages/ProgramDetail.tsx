@@ -30,7 +30,7 @@ const programData: Record<string, {
   ages: string;
   badge: string;
   image: string;
-  galleryImages: { src: string; alt: string }[];
+  galleryImages: { src: string; alt: string; position?: string }[];
   overview: string;
   overviewExtra: string;
   curriculum: string[];
