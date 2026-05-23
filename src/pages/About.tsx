@@ -7,7 +7,7 @@ import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
 import leadershipImg from "@/assets/leadership-team.jpg";
 import staffImg from "@/assets/staff-team.jpg";
-import familiesImg from "@/assets/families-dropoff.jpg";
+import familiesImg from "@/assets/about-mission-bunny.jpg";
 import heroImg from "@/assets/difference-hero.jpg";
 
 const values = [
@@ -62,7 +62,7 @@ const About = () => {
                   viewport={{ once: true }}
                   className="rounded-2xl overflow-hidden h-80 md:h-96"
                 >
-                  <img src={familiesImg} alt="Families at Brentwood Children's Academy" className="w-full h-full object-cover" />
+                  <img src={familiesImg} alt="Children playing with Easter bunny mascot at Brentwood Children's Academy" className="w-full h-full object-cover object-bottom" />
                 </motion.div>
               </div>
             </div>
