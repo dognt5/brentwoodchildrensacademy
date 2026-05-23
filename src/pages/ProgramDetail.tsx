@@ -81,7 +81,7 @@ const programData: Record<string, {
     image: preschoolImg,
     galleryImages: [
       { src: preschoolClassroom, alt: "Preschool circle time with teacher reading a book" },
-      { src: artImg, alt: "Children painting and doing art projects" },
+      { src: preschoolStudentImg, alt: "Smiling preschool student in classroom" },
       { src: readingImg, alt: "Children in the reading nook with their teacher" },
     ],
     overview: "Our Preschool program ignites a lifelong love of learning through a creative, play-based curriculum built on the research-backed Frog Street framework. Children develop critical literacy, math, and social-emotional skills through hands-on activities, collaborative projects, and imaginative play.",
