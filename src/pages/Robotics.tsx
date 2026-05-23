@@ -27,7 +27,7 @@ import handsBuildingImg from "@/assets/robotics-steam-classroom.jpg";
 import steamRoomImg from "@/assets/robotics-steam-room.jpg";
 import microscopeImg from "@/assets/robotics-microscope.jpg";
 import digitalLearningImg from "@/assets/robotics-welcome-steam.jpg";
-import creativeBuildImg from "@/assets/robotics-creative-build.jpg";
+import creativeBuildImg from "@/assets/robotics-anatomy-station.jpg";
 
 const galleryImages = [
   { src: kiboBlocksImg, alt: "KIBO wooden robot and coding blocks", caption: "KIBO in action" },
@@ -35,7 +35,7 @@ const galleryImages = [
   { src: steamRoomImg, alt: "Brentwood dedicated STEAM room", caption: "Our STEAM room" },
   { src: microscopeImg, alt: "Child exploring with a biological microscope", caption: "Real science tools" },
   { src: digitalLearningImg, alt: "Colorful 'Welcome to STEAM' chalkboard mural with gears, robot, butterfly, and science doodles", caption: "Welcome to STEAM" },
-  { src: creativeBuildImg, alt: "Colorful blocks and gears for creative building", caption: "Creative building" },
+  { src: creativeBuildImg, alt: "Hands-on anatomy learning station with human torso model, science books, and dental kit", caption: "Hands-on science" },
 ];
 
 const heroBadges = [
