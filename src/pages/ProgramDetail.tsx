@@ -17,6 +17,7 @@ import preschoolClassroom from "@/assets/preschool-classroom.jpg";
 import prekClassroom from "@/assets/prek-classroom.jpg";
 import artImg from "@/assets/art-activities.jpg";
 import preschoolStudentImg from "@/assets/preschool-student.jpg";
+import preschoolLettersImg from "@/assets/preschool-letters.jpg";
 import musicImg from "@/assets/music-activities.jpg";
 import outdoorImg from "@/assets/outdoor-playground.jpg";
 import fieldTripImg from "@/assets/field-trip.jpg";
@@ -82,7 +83,7 @@ const programData: Record<string, {
     galleryImages: [
       { src: preschoolClassroom, alt: "Preschool circle time with teacher reading a book" },
       { src: preschoolStudentImg, alt: "Smiling preschool student in classroom" },
-      { src: readingImg, alt: "Children in the reading nook with their teacher" },
+      { src: preschoolLettersImg, alt: "Preschool children playing with colorful alphabet letter blocks" },
     ],
     overview: "Our Preschool program ignites a lifelong love of learning through a creative, play-based curriculum built on the research-backed Frog Street framework. Children develop critical literacy, math, and social-emotional skills through hands-on activities, collaborative projects, and imaginative play.",
     overviewExtra: "Our teachers create an encouraging, language-rich environment where curiosity is celebrated and every child is supported in their unique learning journey. We believe the best learning happens when children feel safe, valued, and genuinely excited about what they're exploring.",
