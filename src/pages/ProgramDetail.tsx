@@ -25,6 +25,7 @@ import musicImg from "@/assets/music-activities.jpg";
 import outdoorImg from "@/assets/outdoor-playground.jpg";
 import fieldTripImg from "@/assets/field-trip.jpg";
 import summerCampHorse from "@/assets/summer-camp-horse.jpg";
+import summerCampIcecream from "@/assets/summer-camp-icecream.jpg";
 import infantRoomImg from "@/assets/infant-room.jpg";
 import toddlerPlayImg from "@/assets/toddler-play.jpg";
 import readingImg from "@/assets/reading-time.jpg";
@@ -201,7 +202,7 @@ const programData: Record<string, {
     galleryImages: [
       { src: summerImg, alt: "Children enjoying summer water play" },
       { src: summerCampHorse, alt: "Summer camp child smiling on horseback during a field trip", position: "object-center" },
-      { src: artImg, alt: "Arts and crafts tied to summer camp theme week" },
+      { src: summerCampIcecream, alt: "Summer campers in matching shirts and paper hats on a Blue Bell Ice Cream factory field trip", position: "object-center" },
     ],
     overview: "Our Summer Camp is the highlight of the year for Brentwood families! Each week features a unique themed adventure with field trips to local attractions, hands-on STEM projects, water play, creative arts, outdoor exploration, and performing arts showcases. Children build friendships, discover new talents, and create memories that last a lifetime.",
     overviewExtra: "Camp is available for all ages (0 to 12 years) and runs throughout the summer with flexible scheduling options. Early registration is recommended as spots fill quickly. Ask about our sibling discounts and special early-enrollment pricing for returning families.",
