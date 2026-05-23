@@ -18,6 +18,7 @@ const Contact = () => {
           title="Get in"
           highlight="Touch"
           subtitle="We'd love to hear from you. Reach out with enrollment questions, tour requests, or anything at all — we're always happy to help."
+          image={differenceHero}
         />
 
         <section className="py-20 md:py-28 bg-background">
