@@ -27,7 +27,7 @@ import handsBuildingImg from "@/assets/robotics-steam-classroom.jpg";
 import steamRoomImg from "@/assets/robotics-steam-room.jpg";
 import microscopeImg from "@/assets/robotics-microscope.jpg";
 import digitalLearningImg from "@/assets/robotics-welcome-steam.jpg";
-import creativeBuildImg from "@/assets/robotics-creative-build.jpg";
+import creativeBuildImg from "@/assets/robotics-anatomy-station.jpg";
 
 const galleryImages = [
   { src: kiboBlocksImg, alt: "KIBO wooden robot and coding blocks", caption: "KIBO in action" },
