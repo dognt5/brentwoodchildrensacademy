@@ -26,7 +26,7 @@ import kiboBlocksImg from "@/assets/robotics-kibo-blocks.jpg";
 import handsBuildingImg from "@/assets/robotics-steam-classroom.jpg";
 import steamRoomImg from "@/assets/robotics-steam-room.jpg";
 import microscopeImg from "@/assets/robotics-microscope.jpg";
-import digitalLearningImg from "@/assets/robotics-digital-learning.jpg";
+import digitalLearningImg from "@/assets/robotics-welcome-steam.jpg";
 import creativeBuildImg from "@/assets/robotics-creative-build.jpg";
 
 const galleryImages = [
