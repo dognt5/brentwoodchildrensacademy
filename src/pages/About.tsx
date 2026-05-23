@@ -7,7 +7,7 @@ import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
 import leadershipImg from "@/assets/leadership-team.jpg";
 import staffImg from "@/assets/staff-team.jpg";
-import familiesImg from "@/assets/about-mission-bunny.jpg";
+import familiesImg from "@/assets/about-mission-basketball.jpg";
 import heroImg from "@/assets/difference-hero.jpg";
 
 const values = [
