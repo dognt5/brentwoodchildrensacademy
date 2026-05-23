@@ -73,7 +73,9 @@ const Tuition = () => {
           title="Affordable Quality"
           highlight="Care"
           subtitle="We believe every family deserves access to exceptional childcare. Explore our flexible, transparent options — and let us help you find the best fit."
+          image={differenceHero}
         />
+
 
         {/* Intro */}
         <section className="py-16 bg-background">
