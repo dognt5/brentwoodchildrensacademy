@@ -30,7 +30,7 @@ const programData: Record<string, {
   ages: string;
   badge: string;
   image: string;
-  galleryImages: { src: string; alt: string }[];
+  galleryImages: { src: string; alt: string; position?: string }[];
   overview: string;
   overviewExtra: string;
   curriculum: string[];
@@ -119,7 +119,7 @@ const programData: Record<string, {
     badge: "Ages 4 – 5 years",
     image: prekImg,
     galleryImages: [
-      { src: prekClassroom, alt: "Pre-K children at desks working on writing activities" },
+      { src: prekClassroom, alt: "Pre-K children at desks working on writing activities", position: "object-bottom" },
       { src: readingImg, alt: "Small group reading with the teacher" },
       { src: musicImg, alt: "Pre-K children in music class" },
     ],
@@ -295,7 +295,7 @@ const ProgramDetail = () => {
                       <img
                         src={img.src}
                         alt={img.alt}
-                        className="w-full h-full object-cover object-top"
+                        className={`w-full h-full object-cover ${img.position ?? "object-top"}`}
                         loading="lazy"
                       />
                     </div>
