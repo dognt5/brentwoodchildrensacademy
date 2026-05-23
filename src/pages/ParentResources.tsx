@@ -7,7 +7,7 @@ import PageHero from "@/components/PageHero";
 import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import heroImg from "@/assets/hero-children.jpg";
+import heroImg from "@/assets/difference-hero.jpg";
 import preschoolImg from "@/assets/preschool-classroom.jpg";
 import artImg from "@/assets/art-activities.jpg";
 import outdoorImg from "@/assets/outdoor-playground.jpg";
