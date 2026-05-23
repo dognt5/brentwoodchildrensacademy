@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
-import leadershipImg from "@/assets/leadership-team.jpg";
+import leadershipImg from "@/assets/leadership-trivedi.png";
 import staffImg from "@/assets/staff-team.jpg";
 import familiesImg from "@/assets/about-mission-basketball.jpg";
 import heroImg from "@/assets/difference-hero.jpg";
@@ -88,7 +88,7 @@ const About = () => {
                 {/* Owners */}
                 <div className="bg-card rounded-2xl overflow-hidden border border-border shadow-md lg:col-span-1">
                   <div className="h-64 overflow-hidden">
-                    <img src={leadershipImg} alt="Hugh and Nidhi Trivedi, Owners of Brentwood Children's Academy" className="w-full h-full object-cover object-top" />
+                    <img src={leadershipImg} alt="Hugh and Nidhi Trivedi, Owners of Brentwood Children's Academy" className="w-full h-full object-cover object-center" />
                   </div>
                   <div className="p-8">
                     <div className="flex items-center gap-3 mb-4">
