@@ -31,7 +31,7 @@ import creativeBuildImg from "@/assets/robotics-anatomy-station.jpg";
 
 const galleryImages = [
   { src: kiboBlocksImg, alt: "KIBO wooden robot and coding blocks", caption: "KIBO in action" },
-  { src: handsBuildingImg, alt: "Brentwood STEAM Learning Center classroom with robots, science tools, and creative play stations", caption: "STEAM Learning Center" },
+  { src: handsBuildingImg, alt: "STEAM exploration table with Gear-Bot kit, animal track specimens, magnifying glass, and wildlife cards", caption: "Discovery table" },
   { src: steamRoomImg, alt: "Brentwood dedicated STEAM room", caption: "Our STEAM room" },
   { src: microscopeImg, alt: "Child exploring with a biological microscope", caption: "Real science tools" },
   { src: digitalLearningImg, alt: "Colorful 'Welcome to STEAM' chalkboard mural with gears, robot, butterfly, and science doodles", caption: "Welcome to STEAM" },
