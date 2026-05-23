@@ -25,6 +25,7 @@ import musicImg from "@/assets/music-activities.jpg";
 import outdoorImg from "@/assets/outdoor-playground.jpg";
 import fieldTripImg from "@/assets/field-trip.jpg";
 import summerCampHorse from "@/assets/summer-camp-horse.jpg";
+import summerCampIcecream from "@/assets/summer-camp-icecream.jpg";
 import infantRoomImg from "@/assets/infant-room.jpg";
 import toddlerPlayImg from "@/assets/toddler-play.jpg";
 import readingImg from "@/assets/reading-time.jpg";
