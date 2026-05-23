@@ -45,7 +45,7 @@ const programData: Record<string, {
     image: toddlerImg,
     galleryImages: [
       { src: infantClassroom, alt: "Infants playing with colorful toys in the classroom", position: "object-bottom" },
-      { src: infantRoomImg, alt: "Safe, clean infant sleep room with cozy cribs" },
+      { src: infantRoomImg, alt: "Safe, clean infant sleep room with cozy cribs", position: "object-center" },
       { src: toddlerPlayImg, alt: "Toddlers playing with blocks and stacking rings" },
     ],
     overview: "Our Infant & Toddler program provides a warm, secure foundation for your child's earliest and most formative years. With teacher-to-child ratios that exceed Texas state requirements, gentle daily routines, and sensory-rich learning environments, we ensure every baby and toddler feels safe, deeply loved, and naturally curious.",
