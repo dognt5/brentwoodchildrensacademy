@@ -17,6 +17,7 @@ import preschoolClassroom from "@/assets/preschool-classroom.jpg";
 import prekClassroom from "@/assets/prek-classroom.jpg";
 import artImg from "@/assets/art-activities.jpg";
 import preschoolStudentImg from "@/assets/preschool-student.jpg";
+import preschoolLettersImg from "@/assets/preschool-letters.jpg";
 import musicImg from "@/assets/music-activities.jpg";
 import outdoorImg from "@/assets/outdoor-playground.jpg";
 import fieldTripImg from "@/assets/field-trip.jpg";
