@@ -88,7 +88,7 @@ const About = () => {
                 {/* Owners */}
                 <div className="bg-card rounded-2xl overflow-hidden border border-border shadow-md lg:col-span-1">
                   <div className="h-64 overflow-hidden">
-                    <img src={leadershipImg} alt="Hugh and Nidhi Trivedi, Owners of Brentwood Children's Academy" className="w-full h-full object-cover object-center" />
+                    <img src={leadershipImg} alt="Hugh and Nidhi Trivedi, Owners of Brentwood Children's Academy" className="w-full h-full object-cover object-top" />
                   </div>
                   <div className="p-8">
                     <div className="flex items-center gap-3 mb-4">
