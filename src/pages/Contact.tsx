@@ -47,7 +47,7 @@ const Contact = () => {
                 className="space-y-6"
               >
                 <div className="rounded-2xl overflow-hidden h-52">
-                  <img src={familiesImg} alt="Brentwood Children's Academy outdoor playground with slides and climbing wall" className="w-full h-full object-cover object-center" loading="lazy" />
+                  <img src={familiesImg} alt="Brentwood Children's Academy classroom" className="w-full h-full object-cover object-center" loading="lazy" />
                 </div>
 
                 <div className="bg-card rounded-2xl p-6 border border-border">
