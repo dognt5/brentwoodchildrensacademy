@@ -161,7 +161,7 @@ const programData: Record<string, {
     image: schoolAgeImg,
     galleryImages: [
       { src: schoolAgeImg, alt: "School age children doing STEM activities" },
-      { src: schoolAgePlayground, alt: "Large outdoor playground with slides and climbing wall", position: "object-center" },
+      { src: schoolAgePlayground, alt: "Large outdoor playground with slides and climbing wall", position: "object-bottom" },
       { src: schoolAgeScience, alt: "School age children exploring with science viewers in the classroom", position: "object-center" },
     ],
     overview: "Our School Age program — known as the Varsity Club — provides a safe, engaging, and enriching environment for children before and after school. We bridge the school day with meaningful homework help, exciting enrichment, and plenty of time for socialization, play, and physical activity.",
