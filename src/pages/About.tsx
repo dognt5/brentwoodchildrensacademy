@@ -6,7 +6,7 @@ import PageHero from "@/components/PageHero";
 import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
 import leadershipImg from "@/assets/leadership-trivedi.png";
-import staffImg from "@/assets/staff-team.jpg";
+import staffImg from "@/assets/ccp-certification.png";
 import familiesImg from "@/assets/about-mission-basketball.jpg";
 import heroImg from "@/assets/difference-hero.jpg";
 
@@ -117,8 +117,8 @@ const About = () => {
 
                 {/* Director */}
                 <div className="bg-card rounded-2xl border border-border shadow-md overflow-hidden">
-                  <div className="h-64 overflow-hidden">
-                    <img src={staffImg} alt="Brentwood Children's Academy management and teaching team" className="w-full h-full object-cover object-top" />
+                  <div className="h-64 overflow-hidden bg-white flex items-center justify-center p-6">
+                    <img src={staffImg} alt="NECPA Certified Childcare Professional (CCP) credential" className="max-h-full max-w-full object-contain" />
                   </div>
                   <div className="p-8">
                     <div className="flex items-center gap-3 mb-4">
