@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import InquiryForm from "@/components/InquiryForm";
-import familiesImg from "@/assets/contact-playground.jpg";
+import familiesImg from "@/assets/preschool-classroom.jpg";
 import exteriorImg from "@/assets/center-exterior.jpg";
 import differenceHero from "@/assets/difference-hero.jpg";
 
@@ -47,7 +47,7 @@ const Contact = () => {
                 className="space-y-6"
               >
                 <div className="rounded-2xl overflow-hidden h-52">
-                  <img src={familiesImg} alt="Brentwood Children's Academy outdoor playground with slides and climbing wall" className="w-full h-full object-cover object-center" loading="lazy" />
+                  <img src={familiesImg} alt="Brentwood Children's Academy classroom" className="w-full h-full object-cover object-center" loading="lazy" />
                 </div>
 
                 <div className="bg-card rounded-2xl p-6 border border-border">
