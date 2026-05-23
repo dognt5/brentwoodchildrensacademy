@@ -18,6 +18,7 @@ const ScheduleTour = () => {
           title="Schedule a"
           highlight="Tour"
           subtitle="Come see our classrooms, meet our teachers, and experience firsthand why families across Houston love Brentwood."
+          image={differenceHero}
         />
 
         {/* Trust bar */}
