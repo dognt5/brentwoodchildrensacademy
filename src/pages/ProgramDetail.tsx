@@ -44,7 +44,7 @@ const programData: Record<string, {
     badge: "Ages 6 weeks – 2 years",
     image: toddlerImg,
     galleryImages: [
-      { src: infantClassroom, alt: "Infants playing with colorful toys in the classroom" },
+      { src: infantClassroom, alt: "Infants playing with colorful toys in the classroom", position: "object-bottom" },
       { src: infantRoomImg, alt: "Safe, clean infant sleep room with cozy cribs" },
       { src: toddlerPlayImg, alt: "Toddlers playing with blocks and stacking rings" },
     ],
