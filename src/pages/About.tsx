@@ -62,7 +62,7 @@ const About = () => {
                   viewport={{ once: true }}
                   className="rounded-2xl overflow-hidden h-80 md:h-96"
                 >
-                  <img src={familiesImg} alt="Children playing with Easter bunny mascot at Brentwood Children's Academy" className="w-full h-full object-cover object-bottom" />
+                  <img src={familiesImg} alt="Indoor basketball arcade game in Brentwood Children's Academy activity room" className="w-full h-full object-cover object-center" />
                 </motion.div>
               </div>
             </div>
