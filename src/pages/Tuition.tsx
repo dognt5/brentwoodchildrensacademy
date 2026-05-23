@@ -7,6 +7,7 @@ import PageHero from "@/components/PageHero";
 import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
 import familiesImg from "@/assets/families-dropoff.jpg";
+import differenceHero from "@/assets/difference-hero.jpg";
 
 const tuitionCards = [
   {
@@ -72,7 +73,9 @@ const Tuition = () => {
           title="Affordable Quality"
           highlight="Care"
           subtitle="We believe every family deserves access to exceptional childcare. Explore our flexible, transparent options — and let us help you find the best fit."
+          image={differenceHero}
         />
+
 
         {/* Intro */}
         <section className="py-16 bg-background">

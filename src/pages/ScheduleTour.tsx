@@ -6,6 +6,7 @@ import PageHero from "@/components/PageHero";
 import InquiryForm from "@/components/InquiryForm";
 import familiesImg from "@/assets/families-dropoff.jpg";
 import classroomImg from "@/assets/preschool-classroom.jpg";
+import differenceHero from "@/assets/difference-hero.jpg";
 
 const ScheduleTour = () => {
   return (
@@ -17,6 +18,7 @@ const ScheduleTour = () => {
           title="Schedule a"
           highlight="Tour"
           subtitle="Come see our classrooms, meet our teachers, and experience firsthand why families across Houston love Brentwood."
+          image={differenceHero}
         />
 
         {/* Trust bar */}

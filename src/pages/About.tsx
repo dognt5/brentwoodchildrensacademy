@@ -8,7 +8,7 @@ import SectionHeader from "@/components/SectionHeader";
 import leadershipImg from "@/assets/leadership-team.jpg";
 import staffImg from "@/assets/staff-team.jpg";
 import familiesImg from "@/assets/families-dropoff.jpg";
-import heroImg from "@/assets/hero-children.jpg";
+import heroImg from "@/assets/difference-hero.jpg";
 
 const values = [
   { icon: Heart, title: "Love & Nurturing", description: "Every child is treated with patience, warmth, and genuine love as a cherished member of our extended family — because they are." },
