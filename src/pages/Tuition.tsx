@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
-import familiesImg from "@/assets/families-dropoff.jpg";
+import familiesImg from "@/assets/tuition-classroom.jpg";
 import differenceHero from "@/assets/difference-hero.jpg";
 
 const tuitionCards = [
