@@ -119,7 +119,7 @@ const programData: Record<string, {
     badge: "Ages 4 – 5 years",
     image: prekImg,
     galleryImages: [
-      { src: prekClassroom, alt: "Pre-K children at desks working on writing activities" },
+      { src: prekClassroom, alt: "Pre-K children at desks working on writing activities", position: "object-bottom" },
       { src: readingImg, alt: "Small group reading with the teacher" },
       { src: musicImg, alt: "Pre-K children in music class" },
     ],
