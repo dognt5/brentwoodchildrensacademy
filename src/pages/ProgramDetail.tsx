@@ -24,6 +24,7 @@ import prekSmallHandsImg from "@/assets/prek-small-hands.jpg";
 import musicImg from "@/assets/music-activities.jpg";
 import outdoorImg from "@/assets/outdoor-playground.jpg";
 import fieldTripImg from "@/assets/field-trip.jpg";
+import summerCampHorse from "@/assets/summer-camp-horse.jpg";
 import infantRoomImg from "@/assets/infant-room.jpg";
 import toddlerPlayImg from "@/assets/toddler-play.jpg";
 import readingImg from "@/assets/reading-time.jpg";
@@ -199,7 +200,7 @@ const programData: Record<string, {
     image: summerImg,
     galleryImages: [
       { src: summerImg, alt: "Children enjoying summer water play" },
-      { src: fieldTripImg, alt: "Summer camp field trip to local attraction" },
+      { src: summerCampHorse, alt: "Summer camp child smiling on horseback during a field trip", position: "object-top" },
       { src: artImg, alt: "Arts and crafts tied to summer camp theme week" },
     ],
     overview: "Our Summer Camp is the highlight of the year for Brentwood families! Each week features a unique themed adventure with field trips to local attractions, hands-on STEM projects, water play, creative arts, outdoor exploration, and performing arts showcases. Children build friendships, discover new talents, and create memories that last a lifetime.",
