@@ -122,7 +122,7 @@ const programData: Record<string, {
     galleryImages: [
       { src: prekClassroom, alt: "Pre-K children at desks working on writing activities", position: "object-bottom" },
       { src: prekSmallHandsImg, alt: "Pre-K children in front of a 'Small Hands Change the World' classroom wall", position: "object-bottom" },
-      { src: musicImg, alt: "Pre-K children in music class" },
+      { src: musicImg, alt: "Pre-K student smiling while holding a colorful 1-9 numbers puzzle" },
     ],
     overview: "Our Pre-K program is designed to give children the confidence, skills, and enthusiasm they need to thrive in kindergarten and beyond. Through a comprehensive, research-based curriculum, children develop strong academic foundations in reading, writing, and math alongside the social-emotional skills needed in a school setting.",
     overviewExtra: "We focus on fostering independence, critical thinking, and a genuine love of learning. Parents regularly tell us that their children enter kindergarten not just prepared — but excited and confident. Our teachers build warm relationships with every family and provide regular progress updates so you're always informed of your child's growth.",
