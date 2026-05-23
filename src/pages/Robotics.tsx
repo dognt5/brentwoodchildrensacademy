@@ -26,7 +26,7 @@ import kiboBlocksImg from "@/assets/robotics-kibo-blocks.jpg";
 import handsBuildingImg from "@/assets/robotics-steam-classroom.jpg";
 import steamRoomImg from "@/assets/robotics-steam-room.jpg";
 import microscopeImg from "@/assets/robotics-microscope.jpg";
-import digitalLearningImg from "@/assets/robotics-digital-learning.jpg";
+import digitalLearningImg from "@/assets/robotics-welcome-steam.jpg";
 import creativeBuildImg from "@/assets/robotics-creative-build.jpg";
 
 const galleryImages = [
@@ -34,7 +34,7 @@ const galleryImages = [
   { src: handsBuildingImg, alt: "Brentwood STEAM Learning Center classroom with robots, science tools, and creative play stations", caption: "STEAM Learning Center" },
   { src: steamRoomImg, alt: "Brentwood dedicated STEAM room", caption: "Our STEAM room" },
   { src: microscopeImg, alt: "Child exploring with a biological microscope", caption: "Real science tools" },
-  { src: digitalLearningImg, alt: "HATCH digital learning tablet in classroom", caption: "Digital learning" },
+  { src: digitalLearningImg, alt: "Colorful 'Welcome to STEAM' chalkboard mural with gears, robot, butterfly, and science doodles", caption: "Welcome to STEAM" },
   { src: creativeBuildImg, alt: "Colorful blocks and gears for creative building", caption: "Creative building" },
 ];
 
