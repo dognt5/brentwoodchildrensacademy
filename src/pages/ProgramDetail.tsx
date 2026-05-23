@@ -121,7 +121,7 @@ const programData: Record<string, {
     image: prekImg,
     galleryImages: [
       { src: prekClassroom, alt: "Pre-K children at desks working on writing activities", position: "object-bottom" },
-      { src: readingImg, alt: "Small group reading with the teacher" },
+      { src: prekSmallHandsImg, alt: "Pre-K children in front of a 'Small Hands Change the World' classroom wall", position: "object-bottom" },
       { src: musicImg, alt: "Pre-K children in music class" },
     ],
     overview: "Our Pre-K program is designed to give children the confidence, skills, and enthusiasm they need to thrive in kindergarten and beyond. Through a comprehensive, research-based curriculum, children develop strong academic foundations in reading, writing, and math alongside the social-emotional skills needed in a school setting.",
