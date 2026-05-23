@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
-import leadershipImg from "@/assets/leadership-team.jpg";
+import leadershipImg from "@/assets/leadership-trivedi.png";
 import staffImg from "@/assets/staff-team.jpg";
 import familiesImg from "@/assets/about-mission-basketball.jpg";
 import heroImg from "@/assets/difference-hero.jpg";
