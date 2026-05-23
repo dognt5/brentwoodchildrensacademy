@@ -11,6 +11,7 @@ import toddlerImg from "@/assets/programs-toddler.jpg";
 import preschoolImg from "@/assets/programs-preschool.jpg";
 import prekImg from "@/assets/programs-prek.jpg";
 import schoolAgeImg from "@/assets/school-age-program.jpg";
+import schoolAgePlayground from "@/assets/school-age-playground.jpg";
 import summerImg from "@/assets/summer-camp.jpg";
 import infantClassroom from "@/assets/infant-classroom.jpg";
 import preschoolClassroom from "@/assets/preschool-classroom.jpg";
@@ -159,7 +160,7 @@ const programData: Record<string, {
     image: schoolAgeImg,
     galleryImages: [
       { src: schoolAgeImg, alt: "School age children doing STEM activities" },
-      { src: artImg, alt: "Creative arts activities after school" },
+      { src: schoolAgePlayground, alt: "Large outdoor playground with slides and climbing wall", position: "object-center" },
       { src: outdoorImg, alt: "Outdoor recreation and sports" },
     ],
     overview: "Our School Age program — known as the Varsity Club — provides a safe, engaging, and enriching environment for children before and after school. We bridge the school day with meaningful homework help, exciting enrichment, and plenty of time for socialization, play, and physical activity.",
