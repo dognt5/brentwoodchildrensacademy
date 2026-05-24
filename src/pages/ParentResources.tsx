@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { MessageSquare, Camera, FileText, HelpCircle, CheckCircle } from "lucide-react";
+import { MessageSquare, FileText, HelpCircle, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
