@@ -50,7 +50,7 @@ const About = () => {
                     At Brentwood Children's Academy, our mission is to provide a safe, nurturing, and stimulating environment where every child can grow, learn, and thrive. We believe that the early years are the most formative of a child's life — and we are deeply honored to be trusted with that time.
                   </p>
                   <p className="text-muted-foreground font-body leading-relaxed mb-5">
-                    Founded on the belief that every child deserves an exceptional start, we combine expert knowledge in early childhood education with a genuine, heartfelt love for children. Our TRS 4-Star rated centers in Houston and in Houston serv in Houston serv in Houston serv in Houston servesgh 12 years.
+                    Founded on the belief that every child deserves an exceptional start, we combine expert knowledge in early childhood education with a genuine, heartfelt love for children. Our TRS Highest Rank rated centers in Houston and in Houston serv in Houston serv in Houston serv in Houston servesgh 12 years.
                   </p>
                   <p className="text-muted-foreground font-body leading-relaxed">
                     We don't just watch children — we invest in them. We celebrate their milestones, encourage their curiosity, and partner with parents to ensure every child reaches their fullest potential.
