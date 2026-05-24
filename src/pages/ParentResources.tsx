@@ -14,7 +14,6 @@ import outdoorImg from "@/assets/outdoor-playground.jpg";
 
 const resources = [
   { icon: MessageSquare, title: "Parent Testimonials", description: "Real stories from families who trust Brentwood Children's Academy with their little ones.", color: "bg-primary/10 text-primary", link: "/testimonials" },
-  { icon: Camera, title: "Photo Gallery", description: "Take a virtual tour through our classrooms, playgrounds, and special events.", color: "bg-secondary/10 text-secondary", link: "/gallery" },
   { icon: FileText, title: "Enrollment Information", description: "Everything you need to know about enrolling your child, from documents to start dates.", color: "bg-accent/20 text-accent-foreground", link: "/contact" },
   { icon: HelpCircle, title: "FAQs", description: "Quick answers to the questions we hear most from parents every day.", color: "bg-coral/10 text-coral", link: "#faqs" },
 ];
