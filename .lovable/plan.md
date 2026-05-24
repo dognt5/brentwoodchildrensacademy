@@ -1,9 +1,17 @@
-## Goal
-On the Preschool program page, the second gallery image (the smiling boy in front of the handprint board) is cropped too low, hiding his face.
+## Move "See It For Yourself" gallery up on Robotics & STEAM page
 
-## Change
-In `src/pages/ProgramDetail.tsx`, the gallery images render with `className="w-full h-full object-cover"`. The default `object-position` is center, which clips the top of a tall portrait photo.
+**File:** `src/pages/Robotics.tsx`
 
-Add `object-top` to the gallery `img` so portrait photos anchor to the top and the child's face stays visible. This affects only the gallery grid on program detail pages (all 3 slots), keeping the framing consistent across programs.
+**Change:** Relocate the "See It For Yourself — Inside Our Robotics & STEAM Program" gallery section from its current position (Section 7, after the STEAM Room) to Section 3, immediately after the hero and age banner.
 
-No new assets, no other pages affected.
+**New section order:**
+1. Hero
+2. Age banner
+3. **See It For Yourself gallery** (moved up)
+4. KIBO steps
+5. Skills
+6. Age groups
+7. STEAM Room
+8. Remaining sections / CTA
+
+No content, styling, or copy changes — purely reordering the existing JSX block.
