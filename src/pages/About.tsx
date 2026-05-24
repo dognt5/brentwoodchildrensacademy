@@ -195,10 +195,10 @@ const About = () => {
                   <Star className="w-8 h-8" />
                 </div>
                 <h2 className="font-display font-bold text-2xl md:text-3xl text-foreground mb-4">
-                  Texas Rising Star 4-Star Rated
+                  Texas Rising Star Highest Rank Rated
                 </h2>
                 <p className="text-muted-foreground font-body text-lg leading-relaxed max-w-2xl mx-auto mb-6">
-                  Brentwood Children's Academy consistently holds a Texas Rising Star 4-Star rating — the highest level achievable — and proudly participates in the Center of Excellence (CoE) program. These distinctions reflect our unwavering commitment to curriculum quality, staff excellence, family engagement, and safe, supportive environments.
+                  Brentwood Children's Academy consistently holds a Texas Rising Star Highest Rank rating — the highest level achievable — and proudly participates in the Center of Excellence (CoE) program. These distinctions reflect our unwavering commitment to curriculum quality, staff excellence, family engagement, and safe, supportive environments.
                 </p>
                 <div className="grid sm:grid-cols-3 gap-4 text-left">
                   {[
