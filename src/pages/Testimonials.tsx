@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
-import heroImg from "@/assets/hero-children.jpg";
+import heroImg from "@/assets/difference-hero.jpg";
 import familiesImg from "@/assets/families-dropoff.jpg";
 
 const testimonials = [
