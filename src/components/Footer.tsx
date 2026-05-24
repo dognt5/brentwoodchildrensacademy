@@ -18,10 +18,10 @@ const Footer = () => {
               </div>
             </Link>
             <p className="font-body text-sm leading-relaxed text-card/60 mb-4">
-              Nurturing young minds with love, laughter, and learning. TRS 4/4 -Star rated childcare in Houston, TX.
+              Nurturing young minds with love, laughter, and learning. TRS Highest Rank rated childcare in Houston, TX.
             </p>
             <div className="flex items-center gap-2 text-card/60 font-body text-xs">
-              <span className="bg-accent/20 text-accent px-2 py-1 rounded-full font-semibold">⭐ TRS 4/4 -Star Rated</span>
+              <span className="bg-accent/20 text-accent px-2 py-1 rounded-full font-semibold">⭐ TRS Highest Rank Rated</span>
               <Link to="/es" className="bg-primary/20 text-primary px-2 py-1 rounded-full font-semibold hover:bg-primary/30 transition-colors">Se Habla Español</Link>
             </div>
           </div>
