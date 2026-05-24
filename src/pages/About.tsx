@@ -12,7 +12,7 @@ import heroImg from "@/assets/difference-hero.jpg";
 
 const values = [
   { icon: Heart, title: "Love & Nurturing", description: "Every child is treated with patience, warmth, and genuine love as a cherished member of our extended family — because they are." },
-  { icon: Award, title: "Excellence", description: "We hold ourselves to the highest standards in early childhood education, curriculum quality, and staff development. TRS 4-Star is our floor, not our ceiling." },
+  { icon: Award, title: "Excellence", description: "We hold ourselves to the highest standards in early childhood education, curriculum quality, and staff development. TRS Highest Rank is our floor, not our ceiling." },
   { icon: Users, title: "Community", description: "We build strong, lasting partnerships with families and actively support the Houston community we call home." },
   { icon: BookOpen, title: "Growth", description: "We foster continuous learning — for children, for families, and for every member of our dedicated teaching team." },
   { icon: Handshake, title: "Integrity", description: "Transparency, honesty, and trust guide every interaction we have with families, staff, and partners. We say what we mean and mean what we say." },
@@ -50,7 +50,7 @@ const About = () => {
                     At Brentwood Children's Academy, our mission is to provide a safe, nurturing, and stimulating environment where every child can grow, learn, and thrive. We believe that the early years are the most formative of a child's life — and we are deeply honored to be trusted with that time.
                   </p>
                   <p className="text-muted-foreground font-body leading-relaxed mb-5">
-                    Founded on the belief that every child deserves an exceptional start, we combine expert knowledge in early childhood education with a genuine, heartfelt love for children. Our TRS 4-Star rated centers in Houston and in Houston serv in Houston serv in Houston serv in Houston servesgh 12 years.
+                    Founded on the belief that every child deserves an exceptional start, we combine expert knowledge in early childhood education with a genuine, heartfelt love for children. Our TRS Highest Rank rated centers in Houston and in Houston serv in Houston serv in Houston serv in Houston servesgh 12 years.
                   </p>
                   <p className="text-muted-foreground font-body leading-relaxed">
                     We don't just watch children — we invest in them. We celebrate their milestones, encourage their curiosity, and partner with parents to ensure every child reaches their fullest potential.
@@ -195,10 +195,10 @@ const About = () => {
                   <Star className="w-8 h-8" />
                 </div>
                 <h2 className="font-display font-bold text-2xl md:text-3xl text-foreground mb-4">
-                  Texas Rising Star 4-Star Rated
+                  Texas Rising Star Highest Rank Rated
                 </h2>
                 <p className="text-muted-foreground font-body text-lg leading-relaxed max-w-2xl mx-auto mb-6">
-                  Brentwood Children's Academy consistently holds a Texas Rising Star 4-Star rating — the highest level achievable — and proudly participates in the Center of Excellence (CoE) program. These distinctions reflect our unwavering commitment to curriculum quality, staff excellence, family engagement, and safe, supportive environments.
+                  Brentwood Children's Academy consistently holds a Texas Rising Star Highest Rank rating — the highest level achievable — and proudly participates in the Center of Excellence (CoE) program. These distinctions reflect our unwavering commitment to curriculum quality, staff excellence, family engagement, and safe, supportive environments.
                 </p>
                 <div className="grid sm:grid-cols-3 gap-4 text-left">
                   {[

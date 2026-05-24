@@ -18,7 +18,7 @@ const features = [
   },
   {
     icon: Star,
-    title: "TRS 4-Star Rating",
+    title: "TRS Highest Rank Rating",
     description: "Texas Rising Star's highest rating — and a Center of Excellence (CoE) participant — reflecting our proven commitment to quality education.",
     color: "bg-accent/20 text-accent-foreground",
   },

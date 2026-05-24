@@ -26,7 +26,7 @@ const ScheduleTour = () => {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center gap-8 text-center">
               {[
-                { icon: Star, label: "TRS 4-Star Rated", sub: "Texas's Highest Rating" },
+                { icon: Star, label: "TRS Highest Rank Rated", sub: "Texas's Highest Rating" },
                 { icon: CheckCircle, label: "No Pressure Tours", sub: "We're here to answer questions" },
                 { icon: Phone, label: "713-466-9407", sub: "Call anytime Mon–Fri" },
                 { icon: MapPin, label: "Convenient Location", sub: "Houston / Eldridge Pkwy" },
