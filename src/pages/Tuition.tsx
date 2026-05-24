@@ -20,7 +20,7 @@ const tuitionCards = [
       "Weekly and monthly payment options available",
       "No registration fees, no hidden charges",
       "Transparent billing statements every billing cycle",
-      "Competitive pricing compared to other TRS 4-Star centers",
+      "Competitive pricing compared to other TRS Highest Rank centers",
     ],
   },
   {
