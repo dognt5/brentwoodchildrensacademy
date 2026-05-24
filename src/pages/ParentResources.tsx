@@ -31,7 +31,7 @@ const faqs = [
   { question: "Do you provide meals and snacks?", answer: "We provide nutritious snacks throughout the day. Families are welcome to pack lunches, and we accommodate allergies and dietary restrictions with advance notice." },
   { question: "Do you offer bilingual care?", answer: "Yes — Se Habla Español. We have bilingual staff to ensure Spanish-speaking families feel fully welcomed, informed, and at home." },
   { question: "How do you handle emergencies?", answer: "All staff are CPR and First Aid certified. We have comprehensive emergency action plans, conduct regular drills, and maintain immediate communication with parents during any incident." },
-  { question: "Can I tour before enrolling?", answer: "Absolutely — and we strongly encourage it! Tours are free, no-pressure, and available Monday through Friday, 9 AM to 4 PM by appointment. Walk-ins are welcome when scheduling allows." },
+  { question: "Can I tour before enrolling?", answer: "Absolutely — and we strongly encourage it! Tours are free, no-pressure, and available Monday through Friday, after 9 AM by appointment. Walk-ins are welcome when scheduling allows." },
 ];
 
 const ParentResources = () => {

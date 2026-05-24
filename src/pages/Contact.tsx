@@ -89,7 +89,7 @@ const Contact = () => {
                   </div>
                   <div className="mt-4 flex items-center gap-2 text-muted-foreground font-body text-xs">
                     <Clock className="w-4 h-4 text-primary flex-shrink-0" />
-                    <span>Tour hours: Mon–Fri, 9:00 AM – 4:00 PM (by appointment)</span>
+                    <span>Tour hours: Mon–Fri, after 9:00 AM (by appointment)</span>
                   </div>
                 </div>
 
