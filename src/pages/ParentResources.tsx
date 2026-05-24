@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { MessageSquare, Camera, FileText, HelpCircle, CheckCircle } from "lucide-react";
+import { MessageSquare, FileText, HelpCircle, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
@@ -8,13 +8,9 @@ import CTABlock from "@/components/CTABlock";
 import SectionHeader from "@/components/SectionHeader";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import heroImg from "@/assets/difference-hero.jpg";
-import preschoolImg from "@/assets/preschool-classroom.jpg";
-import artImg from "@/assets/art-activities.jpg";
-import outdoorImg from "@/assets/outdoor-playground.jpg";
 
 const resources = [
   { icon: MessageSquare, title: "Parent Testimonials", description: "Real stories from families who trust Brentwood Children's Academy with their little ones.", color: "bg-primary/10 text-primary", link: "/testimonials" },
-  { icon: Camera, title: "Photo Gallery", description: "Take a virtual tour through our classrooms, playgrounds, and special events.", color: "bg-secondary/10 text-secondary", link: "/gallery" },
   { icon: FileText, title: "Enrollment Information", description: "Everything you need to know about enrolling your child, from documents to start dates.", color: "bg-accent/20 text-accent-foreground", link: "/contact" },
   { icon: HelpCircle, title: "FAQs", description: "Quick answers to the questions we hear most from parents every day.", color: "bg-coral/10 text-coral", link: "#faqs" },
 ];
@@ -57,24 +53,6 @@ const ParentResources = () => {
                   </Link>
                 </motion.div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Photo strip */}
-        <section className="py-10 bg-green-light">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-3 gap-4 max-w-4xl mx-auto">
-              {[preschoolImg, artImg, outdoorImg].map((img, i) => (
-                <div key={i} className="rounded-2xl overflow-hidden h-40 md:h-56">
-                  <img src={img} alt="Brentwood Children's Academy" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-              ))}
-            </div>
-            <div className="text-center mt-8">
-              <Link to="/gallery" className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-bold font-body hover:opacity-90 transition-all shadow-md">
-                View Full Photo Gallery →
-              </Link>
             </div>
           </div>
         </section>
