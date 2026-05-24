@@ -67,7 +67,7 @@ const DifferenceSection = () => {
             The Brentwood Difference
           </h2>
           <p className="text-muted-foreground font-body text-lg mt-4 max-w-2xl mx-auto">
-            More than childcare — we're a TRS 4-Star community dedicated to nurturing every child's fullest potential.
+            More than childcare — having received Texas Rising Star's highest certification we are dedicated to nurturing every child's fullest potential.
           </p>
         </motion.div>
 
