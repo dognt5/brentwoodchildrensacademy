@@ -26,7 +26,6 @@ const navLinks = [
     children: [
       { label: "All Resources", href: "/parent-resources" },
       { label: "Testimonials", href: "/testimonials" },
-      { label: "Photo Gallery", href: "/gallery" },
       { label: "FAQs", href: "/parent-resources#faqs" },
     ],
   },
