@@ -51,7 +51,7 @@ const galleryGroups = [
       { src: outdoorImg, alt: "Children playing on colorful outdoor playground equipment" },
       { src: summerCampImg, alt: "Summer camp water play fun" },
       { src: fieldTripImg, alt: "Children on a field trip to a local attraction" },
-      { src: schoolAgeImg, alt: "School age STEM activities" },
+      { src: schoolAgeImg, alt: "School age STEAM activities" },
     ],
   },
   {

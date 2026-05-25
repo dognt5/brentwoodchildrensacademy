@@ -101,7 +101,7 @@ const Espanol = () => {
             </div>
             <div className="bg-card rounded-2xl p-8 shadow-md">
               <p className="text-foreground font-body text-base md:text-lg leading-relaxed mb-5">
-                Nuestro Campamento de Verano es lo más destacado del año para las familias de Brentwood. Cada semana presenta una aventura temática única con excursiones, proyectos STEM prácticos, juegos de agua, artes creativas y exploración al aire libre.
+                Nuestro Campamento de Verano es lo más destacado del año para las familias de Brentwood. Cada semana presenta una aventura temática única con excursiones, proyectos STEAM prácticos, juegos de agua, artes creativas y exploración al aire libre.
               </p>
               <p className="text-muted-foreground font-body leading-relaxed mb-6">
                 El campamento está disponible para todas las edades (0 a 12 años) y se ofrece durante todo el verano con horarios flexibles. Se recomienda inscribirse temprano ya que los lugares se llenan rápido. Pregunte por nuestros descuentos para hermanos y precios especiales para familias que regresan.
@@ -110,7 +110,7 @@ const Espanol = () => {
                 {[
                   "Excursiones semanales a museos y parques",
                   "Juegos de agua y actividades al aire libre",
-                  "Desafíos STEM y artes creativas",
+                  "Desafíos STEAM y artes creativas",
                   "Espectáculos de talento y artes escénicas",
                   "Personal certificado en RCP y primeros auxilios",
                   "Meriendas conscientes de alergias",

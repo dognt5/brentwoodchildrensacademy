@@ -40,7 +40,7 @@ const programs = [
   {
     title: "Summer Camp",
     ages: "All Ages",
-    description: "An exciting summer adventure with themed weeks, field trips, STEM projects, water play, and creative arts all summer long.",
+    description: "An exciting summer adventure with themed weeks, field trips, STEAM projects, water play, and creative arts all summer long.",
     image: summerImg,
     link: "/programs/summer-camp",
     objectPosition: "center 40%",

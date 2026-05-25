@@ -105,7 +105,7 @@ const programData: Record<string, {
     enrichment: [
       { icon: Music, title: "Music & Performing Arts", description: "Weekly music classes with singing, instruments, and movement tied to learning themes." },
       { icon: Palette, title: "Creative Arts", description: "Daily art projects exploring painting, sculpture, collage, and mixed media expression." },
-      { icon: Star, title: "STEM Discovery", description: "Hands-on experiments and building challenges that introduce early STEM concepts through play." },
+      { icon: Star, title: "STEAM Discovery", description: "Hands-on experiments and building challenges that introduce early STEAM concepts through play." },
     ],
     safety: [
       "State-compliant classrooms with experienced, background-checked teachers",
@@ -142,7 +142,7 @@ const programData: Record<string, {
     ],
     enrichment: [
       { icon: BookOpen, title: "Reading Club", description: "Small-group guided reading sessions to build vocabulary, comprehension, and reading confidence." },
-      { icon: Star, title: "STEM Lab", description: "Weekly STEM challenges including engineering, basic coding concepts, and hands-on science." },
+      { icon: Star, title: "STEAM Lab", description: "Weekly STEAM challenges including engineering, basic coding concepts, and hands-on science." },
       { icon: Music, title: "Performing Arts", description: "Drama, music, and public speaking activities to build confidence, creativity, and communication skills." },
     ],
     safety: [
@@ -162,7 +162,7 @@ const programData: Record<string, {
     badge: "Ages 5 – 12 years",
     image: schoolAgeImg,
     galleryImages: [
-      { src: schoolAgeImg, alt: "School age children doing STEM activities" },
+      { src: schoolAgeImg, alt: "School age children doing STEAM activities" },
       { src: schoolAgePlayground, alt: "Large outdoor playground with slides and climbing wall", position: "object-bottom" },
       { src: schoolAgeScience, alt: "School age children exploring with science viewers in the classroom", position: "object-center" },
     ],
@@ -171,7 +171,7 @@ const programData: Record<string, {
     curriculum: [
       "Dedicated homework help time with teacher support and quiet environment",
       "Reading and literacy enrichment to reinforce school-day learning",
-      "STEM projects and hands-on engineering and science challenges",
+      "STEAM projects and hands-on engineering and science challenges",
       "Leadership development and teamwork activities",
       "Community service and social responsibility projects",
       "Financial literacy basics and life skills introduction",
@@ -179,7 +179,7 @@ const programData: Record<string, {
       "Health and nutrition awareness programs",
     ],
     enrichment: [
-      { icon: Star, title: "STEM Challenges", description: "Weekly engineering and science challenges that promote critical thinking and problem-solving." },
+      { icon: Star, title: "STEAM Challenges", description: "Weekly engineering and science challenges that promote critical thinking and problem-solving." },
       { icon: Palette, title: "Creative Arts", description: "Art projects, crafts, photography, and creative expression for all interests and skill levels." },
       { icon: Leaf, title: "Outdoor Adventures", description: "Organized sports, nature exploration, fitness activities, and team-building games." },
     ],
@@ -204,11 +204,11 @@ const programData: Record<string, {
       { src: summerCampHorse, alt: "Summer camp child smiling on horseback during a field trip", position: "object-center" },
       { src: summerCampIcecream, alt: "Summer campers in matching shirts and paper hats on a Blue Bell Ice Cream factory field trip", position: "object-center" },
     ],
-    overview: "Our Summer Camp is the highlight of the year for Brentwood families! Each week features a unique themed adventure with field trips to local attractions, hands-on STEM projects, water play, creative arts, outdoor exploration, and performing arts showcases. Children build friendships, discover new talents, and create memories that last a lifetime.",
+    overview: "Our Summer Camp is the highlight of the year for Brentwood families! Each week features a unique themed adventure with field trips to local attractions, hands-on STEAM projects, water play, creative arts, outdoor exploration, and performing arts showcases. Children build friendships, discover new talents, and create memories that last a lifetime.",
     overviewExtra: "Camp is available for all ages (0 to 12 years) and runs throughout the summer with flexible scheduling options. Early registration is recommended as spots fill quickly. Ask about our sibling discounts and special early-enrollment pricing for returning families.",
     curriculum: [
       "Weekly themed units: space, ocean, dinosaurs, world cultures, superheroes, nature, and more",
-      "STEM challenges and maker space activities tied to each week's theme",
+      "STEAM challenges and maker space activities tied to each week's theme",
       "Creative writing, storytelling, and journaling",
       "Nature science, outdoor exploration, and environmental education",
       "Cooking and healthy nutrition workshops",
