@@ -99,12 +99,12 @@ const features = [
   {
     icon: Sun,
     title: "Enrichment Activities",
-    description: "Music, art, STEM, outdoor play, and performing arts woven into every day to spark curiosity, creativity, and confidence.",
+    description: "Music, art, STEAM, outdoor play, and performing arts woven into every day to spark curiosity, creativity, and confidence.",
     color: "bg-secondary/10 text-secondary",
     image: enrichmentImg,
     details: [
       "Daily music, art, and creative expression activities for all ages",
-      "STEM projects introducing science, technology, engineering, and math",
+      "STEAM projects introducing science, technology, engineering, and math",
       "Outdoor play and physical fitness incorporated into every daily schedule",
       "Cultural celebrations and community awareness events throughout the year",
       "Seasonal field trips to local Houston attractions",

@@ -43,15 +43,15 @@ const programs = [
     description: "Before and after-school care with dedicated homework assistance, enrichment activities, organized sports, and meaningful social development in a safe, supervised environment.",
     image: schoolAgeImg,
     link: "/programs/school-age",
-    highlights: ["Homework help with teacher support", "STEM enrichment projects", "Organized sports & outdoor play", "Leadership development"],
+    highlights: ["Homework help with teacher support", "STEAM enrichment projects", "Organized sports & outdoor play", "Leadership development"],
   },
   {
     title: "Summer Camp",
     ages: "All Ages",
-    description: "An exciting summer adventure with weekly themed units, field trips to local attractions, water play, STEM challenges, performing arts, and creative projects to keep minds active all summer.",
+    description: "An exciting summer adventure with weekly themed units, field trips to local attractions, water play, STEAM challenges, performing arts, and creative projects to keep minds active all summer.",
     image: summerImg,
     link: "/programs/summer-camp",
-    highlights: ["Weekly themed adventure units", "Field trips to museums & parks", "Water play & outdoor activities", "Arts, STEM & performing arts"],
+    highlights: ["Weekly themed adventure units", "Field trips to museums & parks", "Water play & outdoor activities", "Arts, STEAM & performing arts"],
   },
 ];
 

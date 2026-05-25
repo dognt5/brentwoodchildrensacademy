@@ -37,7 +37,7 @@ const features = [
   {
     icon: Sun,
     title: "Enrichment Activities",
-    description: "Music, art, outdoor play, and STEM activities woven into every day across all age groups to spark curiosity and creativity.",
+    description: "Music, art, outdoor play, and STEAM activities woven into every day across all age groups to spark curiosity and creativity.",
     color: "bg-secondary/10 text-secondary",
   },
 ];
