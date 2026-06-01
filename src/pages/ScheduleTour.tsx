@@ -119,7 +119,7 @@ const ScheduleTour = () => {
                   <h3 className="font-display font-bold text-xl text-foreground mb-4">Tour Hours</h3>
                   <div className="flex items-center gap-3 text-muted-foreground font-body mb-2">
                     <Clock className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span>Monday – Friday, after 9:00 AM</span>
+                    <span>Monday – Friday, after 10:00 AM</span>
                   </div>
                   <p className="text-muted-foreground font-body text-sm">
                     Tours are available by appointment. Walk-ins are welcome when our schedule allows — call ahead for the best experience.
