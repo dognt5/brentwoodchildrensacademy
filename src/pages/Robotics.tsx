@@ -455,7 +455,7 @@ const Robotics = () => {
                 </Link>
                 <Link
                   to="/contact"
-                  className="bg-transparent text-secondary-foreground border-2 border-secondary-foreground/60 px-8 py-4 rounded-full text-base font-bold font-body hover:bg-secondary-foreground/10 transition-all"
+                  className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-bold font-body hover:opacity-90 transition-all shadow-md"
                 >
                   Contact Us
                 </Link>
