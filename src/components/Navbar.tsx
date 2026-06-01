@@ -138,6 +138,14 @@ const Navbar = () => {
                     )}
                   </AnimatePresence>
                 </div>
+              ) : link.label === "Contact Us" ? (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-bold font-body hover:opacity-90 transition-opacity shadow-md"
+                >
+                  {link.label}
+                </Link>
               ) : (
                 <Link
                   key={link.label}
