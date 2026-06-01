@@ -41,7 +41,7 @@ const CTABlock = ({
             </a>
             <a
               href="/contact"
-              className="bg-primary-foreground/15 backdrop-blur-sm text-primary-foreground border-2 border-primary-foreground/30 px-8 py-4 rounded-full text-base font-bold font-body hover:bg-primary-foreground/25 transition-all"
+              className="bg-card text-foreground px-8 py-4 rounded-full text-base font-bold font-body hover:opacity-90 transition-all shadow-md"
             >
               Contact Us
             </a>
