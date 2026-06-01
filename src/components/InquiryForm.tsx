@@ -424,7 +424,7 @@ const InquiryForm = ({ tourMode = false }: InquiryFormProps) => {
               />
             </div>
             <p className="text-muted-foreground font-body text-xs -mt-2">
-              Tours available Mon–Fri, after 9:00 AM. We'll confirm your time within one business day.
+              Tours available Mon–Fri, after 9:30 AM. We'll confirm your time within one business day.
             </p>
           </>
         )}
