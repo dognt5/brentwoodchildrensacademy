@@ -45,6 +45,7 @@ const hearAboutOptions = [
 ] as const;
 
 const tourTimeOptions = [
+  "9:30 AM",
   "10:00 AM",
   "10:30 AM",
   "11:00 AM",
