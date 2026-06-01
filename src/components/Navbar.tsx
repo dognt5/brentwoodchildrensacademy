@@ -191,7 +191,11 @@ const Navbar = () => {
                     <Link
                       to={link.href}
                       onClick={() => !link.children && setMobileOpen(false)}
-                      className="text-sm font-semibold font-body text-foreground py-2 block"
+                      className={`text-sm font-semibold font-body py-2 block ${
+                        link.label === "Contact Us"
+                          ? "bg-primary text-primary-foreground px-5 rounded-full text-center shadow-md"
+                          : "text-foreground"
+                      }`}
                     >
                       {link.label}
                     </Link>
