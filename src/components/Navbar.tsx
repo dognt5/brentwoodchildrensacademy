@@ -138,6 +138,14 @@ const Navbar = () => {
                     )}
                   </AnimatePresence>
                 </div>
+              ) : link.label === "Contact Us" ? (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-bold font-body hover:opacity-90 transition-opacity shadow-md"
+                >
+                  {link.label}
+                </Link>
               ) : (
                 <Link
                   key={link.label}
@@ -183,7 +191,11 @@ const Navbar = () => {
                     <Link
                       to={link.href}
                       onClick={() => !link.children && setMobileOpen(false)}
-                      className="text-sm font-semibold font-body text-foreground py-2 block"
+                      className={`text-sm font-semibold font-body py-2 block ${
+                        link.label === "Contact Us"
+                          ? "bg-primary text-primary-foreground px-5 rounded-full text-center shadow-md"
+                          : "text-foreground"
+                      }`}
                     >
                       {link.label}
                     </Link>
