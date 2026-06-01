@@ -28,19 +28,27 @@ const ScheduleTour = () => {
               {[
                 { icon: Star, label: "TRS Highest Rank Rated", sub: "Texas's Highest Rating" },
                 { icon: CheckCircle, label: "No Pressure Tours", sub: "We're here to answer questions" },
-                { icon: Phone, label: "713-466-9407", sub: "Call anytime Mon–Fri" },
+                { icon: Phone, label: "713-466-9407", sub: "Call anytime Mon–Fri", href: "tel:713-466-9407" },
                 { icon: MapPin, label: "Convenient Location", sub: "Houston / Eldridge Pkwy" },
-              ].map((item) => (
-                <div key={item.label} className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-5 h-5" />
-                  </div>
-                  <div className="text-left">
-                    <p className="font-body font-bold text-foreground text-sm">{item.label}</p>
-                    <p className="font-body text-muted-foreground text-xs">{item.sub}</p>
-                  </div>
-                </div>
-              ))}
+              ].map((item) => {
+                const Wrapper: any = item.href ? "a" : "div";
+                const wrapperProps = item.href ? { href: item.href } : {};
+                return (
+                  <Wrapper
+                    key={item.label}
+                    {...wrapperProps}
+                    className={`flex items-center gap-3 ${item.href ? "hover:opacity-80 transition-opacity" : ""}`}
+                  >
+                    <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+                      <item.icon className="w-5 h-5" />
+                    </div>
+                    <div className="text-left">
+                      <p className="font-body font-bold text-foreground text-sm">{item.label}</p>
+                      <p className="font-body text-muted-foreground text-xs">{item.sub}</p>
+                    </div>
+                  </Wrapper>
+                );
+              })}
             </div>
           </div>
         </section>
