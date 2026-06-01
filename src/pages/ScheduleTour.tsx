@@ -45,14 +45,14 @@ const ScheduleTour = () => {
           </div>
         </section>
 
-        <section className="py-20 md:py-28 bg-background">
+        <section className="py-14 md:py-28 bg-background">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 max-w-6xl mx-auto">
               {/* Left - Form */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.05 }}
               >
                 <h2 className="font-display font-bold text-2xl md:text-3xl text-foreground mb-2">
                   Request a Tour
@@ -67,7 +67,7 @@ const ScheduleTour = () => {
               <motion.div
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.05 }}
                 className="space-y-6"
               >
                 <div className="rounded-2xl overflow-hidden h-52">
