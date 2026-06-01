@@ -67,7 +67,7 @@ const ScheduleTour = () => {
               <motion.div
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.05 }}
                 className="space-y-6"
               >
                 <div className="rounded-2xl overflow-hidden h-52">
