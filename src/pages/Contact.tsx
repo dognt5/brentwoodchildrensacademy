@@ -29,6 +29,7 @@ const Contact = () => {
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
+                className="order-2 lg:order-1"
               >
                 <h2 className="font-display font-bold text-2xl md:text-3xl text-foreground mb-2">
                   Send Us a Message
@@ -44,7 +45,7 @@ const Contact = () => {
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="space-y-6"
+                className="space-y-6 order-1 lg:order-2"
               >
                 <div className="rounded-2xl overflow-hidden h-52">
                   <img src={familiesImg} alt="Brentwood Children's Academy classroom" className="w-full h-full object-cover object-center" loading="lazy" />
