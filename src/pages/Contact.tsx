@@ -39,8 +39,8 @@ const Contact = () => {
                   src="https://live.childcarecrm.com/portal/index.php?formId=25a21cec8b8c9cd514198dbba85508ec&webForm=077413ea-2900-4543-be24-151ca3a179a7"
                   title="Brentwood Children's Academy Inquiry Form"
                   width="100%"
-                  height="900"
-                  style={{ border: "none", minHeight: "900px" }}
+                  className="h-[600px] md:h-[900px]"
+                  style={{ border: "none" }}
                   scrolling="yes"
                 />
               </motion.div>

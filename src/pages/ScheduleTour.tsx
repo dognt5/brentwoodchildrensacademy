@@ -72,8 +72,8 @@ const ScheduleTour = () => {
                   src="https://live.childcarecrm.com/forms/tour-booking/chooser?customerId=25a21cec8b8c9cd514198dbba85508ec&formId=b42a0ab3-0e2f-443b-ba55-bed7e2c55200"
                   title="Brentwood Children's Academy Tour Booking"
                   width="100%"
-                  height="900"
-                  style={{ border: "none", minHeight: "900px" }}
+                  className="h-[600px] md:h-[900px]"
+                  style={{ border: "none" }}
                   scrolling="yes"
                 />
               </motion.div>
