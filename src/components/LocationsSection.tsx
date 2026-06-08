@@ -30,43 +30,81 @@ const LocationsSection = () => {
           </p>
         </motion.div>
 
-        <div className="max-w-lg mx-auto">
-          {locations.map((loc, i) => (
-            <motion.div
-              key={loc.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.15, duration: 0.5 }}
-              className="relative bg-card rounded-2xl p-8 border border-border hover:shadow-lg transition-shadow"
-            >
-              <h3 className="font-display font-bold text-xl text-foreground mb-4">{loc.name}</h3>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3 text-muted-foreground font-body">
-                  <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <a href={loc.mapUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                    {loc.address}
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-stretch">
+          {locations.map((loc, i) => {
+            const encoded = encodeURIComponent(loc.address);
+            return (
+              <motion.div
+                key={loc.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.15, duration: 0.5 }}
+                className="relative bg-card rounded-2xl p-8 border border-border hover:shadow-lg transition-shadow flex flex-col"
+              >
+                <h3 className="font-display font-bold text-xl text-foreground mb-4">{loc.name}</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3 text-muted-foreground font-body">
+                    <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <a href={loc.mapUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                      {loc.address}
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-3 text-muted-foreground font-body">
+                    <Phone className="w-5 h-5 text-primary flex-shrink-0" />
+                    <a href={`tel:${loc.phone}`} className="hover:text-primary transition-colors">{loc.phone}</a>
+                  </div>
+                  <div className="flex items-center gap-3 text-muted-foreground font-body">
+                    <Clock className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span>{loc.hours}</span>
+                  </div>
+                </div>
+                <div className="mt-6 flex flex-wrap gap-2">
+                  <a
+                    href={`https://www.google.com/maps/dir/?api=1&destination=${encoded}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-primary/10 text-primary font-bold font-body text-sm px-4 py-2 rounded-full hover:bg-primary/20 transition-colors"
+                  >
+                    Google Maps
+                  </a>
+                  <a
+                    href={`https://maps.apple.com/?daddr=${encoded}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-secondary/10 text-secondary font-bold font-body text-sm px-4 py-2 rounded-full hover:bg-secondary/20 transition-colors"
+                  >
+                    Apple Maps
+                  </a>
+                  <a
+                    href={`https://waze.com/ul?q=${encoded}&navigate=yes`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-accent/10 text-accent font-bold font-body text-sm px-4 py-2 rounded-full hover:bg-accent/20 transition-colors"
+                  >
+                    Waze
                   </a>
                 </div>
-                <div className="flex items-center gap-3 text-muted-foreground font-body">
-                  <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                  <a href={`tel:${loc.phone}`} className="hover:text-primary transition-colors">{loc.phone}</a>
-                </div>
-                <div className="flex items-center gap-3 text-muted-foreground font-body">
-                  <Clock className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>{loc.hours}</span>
-                </div>
-              </div>
-              <a
-                href={loc.mapUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-block bg-primary/10 text-primary font-bold font-body text-sm px-5 py-2.5 rounded-full hover:bg-primary/20 transition-colors"
-              >
-                Get Directions
-              </a>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="rounded-2xl overflow-hidden border border-border shadow-sm min-h-[320px]"
+          >
+            <iframe
+              title="Brentwood Children's Academy location map"
+              src="https://www.google.com/maps?q=7210+N+Eldridge+Pkwy+Houston+TX+77041&output=embed"
+              className="w-full h-full min-h-[320px]"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </motion.div>
         </div>
       </div>
     </section>
