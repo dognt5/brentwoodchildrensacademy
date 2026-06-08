@@ -53,10 +53,43 @@ const Navbar = () => {
             </a>
           </div>
           <div className="flex items-center gap-3 flex-wrap text-xs">
-            <span className="flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5" />
-              Houston, TX
-            </span>
+            <div className="relative group">
+              <button
+                type="button"
+                className="flex items-center gap-1.5 hover:opacity-80 transition-opacity"
+                aria-label="Open in maps"
+              >
+                <MapPin className="w-3.5 h-3.5" />
+                Houston, TX
+                <ChevronDown className="w-3 h-3" />
+              </button>
+              <div className="absolute right-0 top-full mt-1 hidden group-hover:block group-focus-within:block z-50 min-w-[180px] bg-card text-foreground rounded-lg shadow-lg border border-border py-1">
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=7210+N+Eldridge+Pkwy+Houston+TX+77041"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-3 py-2 text-xs font-body hover:bg-muted transition-colors"
+                >
+                  Open in Google Maps
+                </a>
+                <a
+                  href="https://maps.apple.com/?daddr=7210+N+Eldridge+Pkwy+Houston+TX+77041"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-3 py-2 text-xs font-body hover:bg-muted transition-colors"
+                >
+                  Open in Apple Maps
+                </a>
+                <a
+                  href="https://waze.com/ul?q=7210%20N%20Eldridge%20Pkwy%20Houston%20TX%2077041&navigate=yes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-3 py-2 text-xs font-body hover:bg-muted transition-colors"
+                >
+                  Open in Waze
+                </a>
+              </div>
+            </div>
             <div className="flex items-center gap-2">
               <a
                 href="https://www.instagram.com/brentwoodchildrensacademy/"
