@@ -35,7 +35,14 @@ const Contact = () => {
                 <p className="text-muted-foreground font-body mb-8">
                   Fill out the form below and a member of our friendly team will respond within one business day. We welcome questions in English and Spanish.
                 </p>
-                <InquiryForm />
+                <iframe
+                  src="https://live.childcarecrm.com/portal/index.php?formId=25a21cec8b8c9cd514198dbba85508ec&webForm=077413ea-2900-4543-be24-151ca3a179a7"
+                  title="Brentwood Children's Academy Inquiry Form"
+                  width="100%"
+                  height="900"
+                  style={{ border: "none", minHeight: "900px" }}
+                  scrolling="yes"
+                />
               </motion.div>
 
               {/* Contact info + locations */}
