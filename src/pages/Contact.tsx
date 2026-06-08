@@ -3,7 +3,6 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
-import InquiryForm from "@/components/InquiryForm";
 import familiesImg from "@/assets/preschool-classroom.jpg";
 import exteriorImg from "@/assets/center-exterior.jpg";
 import differenceHero from "@/assets/difference-hero.jpg";
