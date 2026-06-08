@@ -68,7 +68,14 @@ const ScheduleTour = () => {
                 <p className="text-muted-foreground font-body mb-8">
                   Fill out the form below and our team will contact you within one business day to confirm your visit. Tours are free, friendly, and absolutely no-pressure.
                 </p>
-                <InquiryForm tourMode />
+                <iframe
+                  src="https://live.childcarecrm.com/forms/tour-booking/chooser?customerId=25a21cec8b8c9cd514198dbba85508ec&formId=b42a0ab3-0e2f-443b-ba55-bed7e2c55200"
+                  title="Brentwood Children's Academy Tour Booking"
+                  width="100%"
+                  height="900"
+                  style={{ border: "none", minHeight: "900px" }}
+                  scrolling="yes"
+                />
               </motion.div>
 
               {/* Right - Info */}
